@@ -1,9 +1,9 @@
 [
   {
-    "title": "My Project",
-    "slug": "project-1",
-    "url": "https://example.com/",
-    "image": "./images/project1.jpg",
+    "title": "Sascha Bates Blog",
+    "slug": "Sascha-Bates-Blog",
+    "url": "https://sascha-bates.netlify.com/",
+    "image": "./images/sb.png",
     "description": "I built this to show off my sweet skills!"
   },
   {
