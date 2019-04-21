@@ -1,7 +1,8 @@
-import React from 'react';
-import { graphql, useStaticQuery } from 'gatsby';
-import Layout from '../components/layout';
-import ProjectPreview from '../components/project-preview';
+import React from 'react'
+import { graphql, useStaticQuery } from 'gatsby'
+import Layout from '../components/layout'
+import ProjectPreview from '../components/project-preview'
+import SEO from '../components/seo'
 
 const Portfolio = () => {
   const data = useStaticQuery(graphql`
@@ -29,6 +30,7 @@ const Portfolio = () => {
 
   return (
     <Layout>
+      <SEO title="Portfolio" description="Portfolio for Joey Robinson" keywords={[`Joey Robinson`, `Portfolio`, `Front-End`, `Front-End Development`, `React`, `GatsbyJS`, `Joey Robinson Portfolio`]} />
       {projects.map(({ node: project }) => {
         const title = project.title;
         const description = project.description;

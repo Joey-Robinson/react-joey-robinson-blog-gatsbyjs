@@ -5,7 +5,7 @@ import { Link } from 'gatsby'
 
 const Home = () => (
   <Layout>
-    <SEO title="Home" keywords={[`Joey Robinson`, `Blog`, `Front-End`, `Front-End Development`, `React`, `GatsbyJS`, `Joey Robinson Portfolio`]} />
+    <SEO title="Home" description="Home for Joey Robinson" keywords={[`Joey Robinson`, `Blog`, `Front-End`, `Front-End Development`, `React`, `GatsbyJS`, `Joey Robinson Portfolio`]} />
     <section className="Home">
       <h1>Hi</h1>
       <Link to="/portfolio/">To Portfolio</Link>

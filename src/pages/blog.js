@@ -25,7 +25,7 @@ export const pageQuery = graphql`
 
 const Blog = ({ data }) => (
   <Layout>
-    <SEO title="Home" keywords={[`Joey Robinson`, `Blog`, `Front-End`, `Front-End Development`, `React`, `GatsbyJS`, `Joey Robinson Portfolio`]} />
+    <SEO title="Blog" description="Blog for Joey Robinson" keywords={[`Joey Robinson`, `Blog`, `Front-End`, `Front-End Development`, `React`, `GatsbyJS`, `Joey Robinson Blog`]} />
     <section className="blog">
       {data.allMarkdownRemark.edges.map(post => (
         <div className="blog-display" key={post.node.id}>
