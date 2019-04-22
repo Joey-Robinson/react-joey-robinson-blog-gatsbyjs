@@ -1,0 +1,18 @@
+.footer {
+  grid-row: -1;
+  grid-column: 1 / -1;
+  border-top: 2.5px solid brown;
+  background: linear-gradient(45deg, rgb(143, 6, 170), rgb(81, 34, 158), rgb(59, 36, 102));
+  border-top-left-radius: 10rem;
+  border-top-right-radius: 10rem;
+  height: 10vh;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  color: white;
+
+  &--center {
+    grid-column: 3;
+    justify-items: center;
+    align-self: center;
+  }
+}

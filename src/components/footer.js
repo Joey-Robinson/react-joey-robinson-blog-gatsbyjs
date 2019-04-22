@@ -1,8 +1,10 @@
 import React from 'react'
 
 const Footer = () => (
-  <footer>
-    From Footer
+  <footer className="footer">
+    <div className="footer--center">
+      <h1>&copy; {new Date().getFullYear()} Joey Robinson</h1>
+    </div>
   </footer>
 )
 

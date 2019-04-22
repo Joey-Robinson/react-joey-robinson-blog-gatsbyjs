@@ -1,9 +1,11 @@
 // Abstracts
+@import './abstracts/animations';
 @import './abstracts/mixins';
 // Base
 @import './base/base';
 @import './base/typography';
 // Components
+@import './components/footer';
 @import './components/header';
 @import './components/nav';
 // Layouts

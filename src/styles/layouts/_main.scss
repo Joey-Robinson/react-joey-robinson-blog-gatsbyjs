@@ -1,7 +1,7 @@
 .content {
   display: grid;
   grid-template-columns: 100vw;
-  grid-template-rows: 10vh 90vh;
-  background: #222;
+  grid-template-rows: 10vh 90vh 10vh;
+  background: rgb(165, 164, 164);
   min-height: 100vh;
 }

@@ -1,14 +1,10 @@
 .header {
   grid-column: 1;
   grid-row: 1;
+  background: transparent;
   display: grid;
   grid-template-columns: 60vw 40vw;
-  grid-template-rows: 1fr;
-  border-bottom-left-radius: 10rem;
-  border-bottom-right-radius: 10rem;
-  background: linear-gradient(45deg, rgb(59, 36, 102), rgb(81, 34, 158), rgb(143, 6, 170));
-  z-index: 10;
-  border-bottom: 2.5px solid grey;
+  width: 100vw;
 
   h1 {
     grid-column: 1;
@@ -19,5 +15,46 @@
     color: white;
     text-shadow: 2px 2px 2px black;
     margin-left: 3rem;
+
+    span {
+      color: yellow;
+      padding: 0 0 0 4px;
+    }
+  }
+
+  &--button {
+
+    &__open {
+      @include headerButton;
+      align-self: start;
+      background: linear-gradient(45deg, rgb(59, 36, 102), rgb(81, 34, 158), rgb(143, 6, 170));
+      width: 100vw;
+      border-bottom-left-radius: 10rem;
+      border-bottom-right-radius: 10rem;
+      height: 3rem;
+    }
+
+    &__close {
+      @include headerButton;
+      width: 95vw;
+      align-self: end;
+      background: transparent;
+      padding: 0 0 1rem 0;
+    }
+  }
+
+  &__container {
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 60vw 40vw;
+    grid-template-rows: 1fr;
+    border-bottom-left-radius: 10rem;
+    border-bottom-right-radius: 10rem;
+    background: linear-gradient(45deg, rgb(59, 36, 102), rgb(81, 34, 158), rgb(143, 6, 170));
+    z-index: 2;
+  }
+
+  &__hidden {
+    display: none;
   }
 }

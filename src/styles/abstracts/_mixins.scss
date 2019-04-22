@@ -1,66 +1,108 @@
+@mixin headerButton {
+  font-size: 1.6rem;
+  grid-column: 1;
+  grid-row: 1;
+  justify-self: center;
+  position: absolute;
+  z-index: 3;
+  outline: none;
+  border: none;
+  text-shadow: 2px 2px black;
+  color: white;
+  cursor: pointer;
+  border-bottom-left-radius: 100rem;
+  border-bottom-right-radius: 100rem;
+
+  // &:hover {
+  //   animation-name: spin;
+  //   animation-duration: 5000ms;
+  //   animation-iteration-count: infinite;
+  //   animation-timing-function: linear;
+  // }
+
+}
+
 @mixin respond($breakpoint) {
-  @if $breakpoint == ultraSmall {
+  @if $breakpoint==ultraSmall {
     @media only screen and (max-width: 25em) {
       @content
-    };
+    }
+
+    ;
   }
-  @if $breakpoint == phone {
-    @media only screen and (max-width:  37.5em) { // 600px
+
+  @if $breakpoint==phone {
+    @media only screen and (max-width: 37.5em) {
+      // 600px
       @content
-    };
+    }
+
+    ;
   }
-  @if $breakpoint == customSmall {
-    @media only screen and (max-width: 50em) { // 800px
+
+  @if $breakpoint==customSmall {
+    @media only screen and (max-width: 50em) {
+      // 800px
       @content
-    };
+    }
+
+    ;
   }
-  @if $breakpoint == ultraSpecific {
-    @media only screen and (min-width: 53.125em) { // 850px
+
+  @if $breakpoint==ultraSpecific {
+    @media only screen and (min-width: 53.125em) {
+      // 850px
       @content
-    };
+    }
+
+    ;
   }
-  @if $breakpoint == tabPort {
-    @media only screen and (max-width:  56.25em) { // 900px
+
+  @if $breakpoint==tabPort {
+    @media only screen and (max-width: 56.25em) {
+      // 900px
       @content
-    };
+    }
+
+    ;
   }
-  @if $breakpoint == customMedium {
-    @media only screen and (max-width: 62.5em) { // 1000px
+
+  @if $breakpoint==customMedium {
+    @media only screen and (max-width: 62.5em) {
+      // 1000px
       @content
-    };
+    }
+
+    ;
   }
-  @if $breakpoint == tabLand {
-    @media only screen and (max-width:  75em) { // 1200px
+
+  @if $breakpoint==tabLand {
+    @media only screen and (max-width: 75em) {
+      // 1200px
       @content
-    };
+    }
+
+    ;
   }
-  @if $breakpoint == bigDesktop {
-    @media only screen and (max-width:  112.5em) { // 1800px
+
+  @if $breakpoint==bigDesktop {
+    @media only screen and (max-width: 112.5em) {
+      // 1800px
       @content
-    };
+    }
+
+    ;
   }
 }
 
-@include respond(phone) {
+@include respond(phone) {}
 
-}
+@include respond(customSmall) {}
 
-@include respond(customSmall) {
+@include respond(tabPort) {}
 
-}
+@include respond(customMedium) {}
 
-@include respond(tabPort) {
+@include respond(tabLand) {}
 
-}
-
-@include respond(customMedium) {
-
-}
-
-@include respond(tabLand) {
-
-}
-
-@include respond(bigDesktop) {
-
-}
+@include respond(bigDesktop) {}
