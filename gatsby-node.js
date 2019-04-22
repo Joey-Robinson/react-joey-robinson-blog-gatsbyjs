@@ -32,7 +32,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
     const title = node.frontmatter.path
     actions.createPage({
       path: `${title}`,
-      component: require.resolve('./src/templates/blogPost.js'),
+      component: require.resolve('./src/templates/blogs.js'),
     })
   })
 

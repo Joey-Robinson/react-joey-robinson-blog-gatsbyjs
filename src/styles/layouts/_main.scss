@@ -1,6 +1,6 @@
 .content {
   display: grid;
   grid-template-columns: 5vw 90vw 5vw;
-  grid-template-rows: 15vh 110vh 10vh;
+  grid-template-rows: 15vh minmax(auto, 110vh) 10vh;
   background: rgb(165, 164, 164);
 }
