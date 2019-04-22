@@ -31,23 +31,25 @@ const Portfolio = () => {
   return (
     <Layout>
       <SEO title="Portfolio" description="Portfolio for Joey Robinson" keywords={[`Joey Robinson`, `Portfolio`, `Front-End`, `Front-End Development`, `React`, `GatsbyJS`, `Joey Robinson Portfolio`]} />
-      {projects.map(({ node: project }) => {
-        const title = project.title;
-        const description = project.description;
-        const slug = project.slug;
-        const imageData = project.image.childImageSharp.fluid;
-        const url = project.url
+      <section className="portfolio">
+        {projects.map(({ node: project }) => {
+          const title = project.title;
+          const description = project.description;
+          const slug = project.slug;
+          const imageData = project.image.childImageSharp.fluid;
+          const url = project.url
 
-        return (
-          <ProjectPreview
-            title={title}
-            description={description}
-            slug={slug}
-            imageData={imageData}
-            url={url}
-          />
-        );
-      })}
+          return (
+            <ProjectPreview
+              title={title}
+              description={description}
+              slug={slug}
+              imageData={imageData}
+              url={url}
+            />
+          );
+        })}
+      </section>
     </Layout>
   );
 };

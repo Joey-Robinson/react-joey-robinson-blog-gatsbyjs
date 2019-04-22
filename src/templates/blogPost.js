@@ -35,14 +35,14 @@ const BlogTemplate = ({ data }) => {
   const post = data.markdownRemark
   return (
     <Layout>
-      <div className="blog-content">
-        <Link className="blog-content-goBack" to="/">Go Back</Link>
+      <div className="blogs">
+        <Link className="blogs--content__back" to="/blog/">Go Back</Link>
         <h5>{post.frontmatter.date}</h5>
         <h1>{post.frontmatter.author}</h1>
         <div
-          className="blog-content-main"
+          className="blogs--content__main"
           dangerouslySetInnerHTML={{ __html: post.html }} />
-        <h4 className="blog-content-maker">
+        <h4 className="blogs--content__maker">
           Posted by: {post.frontmatter.title} on {post.frontmatter.path}
         </h4>
       </div>

@@ -1,11 +1,12 @@
 .header {
-  grid-column: 1;
+  grid-column: 1 / -1;
   grid-row: 1;
   background: transparent;
   display: grid;
   grid-template-columns: 60vw 40vw;
   width: 100vw;
-
+  height: 10vh;
+  position: fixed;
   h1 {
     grid-column: 1;
     font-size: 3rem;

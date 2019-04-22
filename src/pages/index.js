@@ -7,7 +7,7 @@ import '../styles/main.scss'
 const Home = () => (
   <Layout>
     <SEO title="Home" description="Home for Joey Robinson" keywords={[`Joey Robinson`, `Blog`, `Front-End`, `Front-End Development`, `React`, `GatsbyJS`, `Joey Robinson Portfolio`]} />
-    <section className="Home">
+    <section className="home">
       <h1>Hi</h1>
       <Link to="/portfolio/">To Portfolio</Link>
       <Link to="/blog/">To Blog</Link>
