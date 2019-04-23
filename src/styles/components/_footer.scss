@@ -1,14 +1,16 @@
 .footer {
   grid-row: 4;
-  grid-column: 1 / -1;
+  grid-column: 1;
   background: transparent;
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: 1fr;
   color: white;
+  z-index: 10;
+  justify-items: center;
 
-  &--center {
-    grid-column: 3;
-    justify-items: center;
+  h1 {
+    grid-column: 1;
+    justify-self: center;
     align-self: center;
   }
 }

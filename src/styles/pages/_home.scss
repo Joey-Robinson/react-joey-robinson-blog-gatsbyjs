@@ -1,42 +1,30 @@
 .home {
   grid-column: 1;
   grid-row: 2;
-  align-self: center;
-  justify-self: center;
-  height: 100vh;
-}
+  max-height: 200vh;
+  z-index: 10;
+  display: grid;
+  grid-template-columns: 100vw;
+  grid-template-rows: 100vh 100vh;
 
-.stars,
-.twinkling,
-.sky {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  width: 100%;
-  height: 100%;
-  display: block;
-}
+  &--content__top {
+    grid-column: 1;
+    grid-row: 1;
+    z-index: 20;
+    font-size: 5rem;
+    color: white;
+    justify-self: center;
+    align-self: center;
+  }
 
-.stars {
-  background: #000 url(http://www.script-tutorials.com/demos/360/images/stars.png) repeat top center;
-  z-index: 0;
-}
+  &--content__bottom {
+    grid-column: 1;
+    grid-row: 2;
+    z-index: 20;
+    font-size: 5rem;
+    color: white;
+    justify-self: center;
+    align-self: center;
 
-.twinkling {
-  background: transparent url(http://www.script-tutorials.com/demos/360/images/twinkling.png) repeat top center;
-  z-index: 1;
-
-  -moz-animation: move-twink-back 200s linear infinite;
-  -ms-animation: move-twink-back 200s linear infinite;
-  -o-animation: move-twink-back 200s linear infinite;
-  -webkit-animation: move-twink-back 200s linear infinite;
-  animation: move-twink-back 200s linear infinite;
-}
-
-.sky {
-  background: linear-gradient(#03001e, #7303c0, #ff41cc);
-  z-index: 2;
-  opacity: 0.5;
+  }
 }

@@ -7,10 +7,12 @@ const Home = () => (
   <Layout>
     <SEO title="Home" description="Home for Joey Robinson" keywords={[`Joey Robinson`, `Blog`, `Front-End`, `Front-End Development`, `React`, `GatsbyJS`, `Joey Robinson Portfolio`]} />
     <section className="home">
-    <div class="stars"></div>
-    <div class="twinkling"></div>
-    <div class="sky"></div>
-      <h1>Hi</h1>
+    <div className="home--content__top">
+      <h1>weonfwe</h1>
+    </div>
+    <div className="home--content__bottom">
+      <h1>From home--content__bottom</h1>
+    </div>
     </section>
   </Layout>
 )

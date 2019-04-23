@@ -41,7 +41,8 @@ const BlogTemplate = ({ data }) => {
         <h1>{post.frontmatter.author}</h1>
         <div
           className="blogs--content__main"
-          dangerouslySetInnerHTML={{ __html: post.html }} />
+          dangerouslySetInnerHTML={{ __html: post.html }} 
+        />
         <h4 className="blogs--content__maker">
           Posted by: {post.frontmatter.title} on {post.frontmatter.path}
         </h4>

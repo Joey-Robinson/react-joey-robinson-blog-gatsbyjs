@@ -1,7 +1,12 @@
 .blog {
-  grid-column: 2;
+  grid-column: 1;
   grid-row: 2;
-  background: purple;
-  align-self: center;
-  height: 100%;
+  max-height: 200vh;
+  z-index: 10;
+  display: grid;
+  grid-template-columns: 100vw;
+
+  &--display {
+    z-index: 20;
+  }
 }
