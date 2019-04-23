@@ -6,9 +6,8 @@
   grid-template-columns: 60vw 40vw;
   width: 100vw;
   height: 10vh;
-  position: sticky;
-  top: 0;
-  z-index: 10;
+  position: fixed;
+  z-index: 5;
 
   h1 {
     grid-column: 1;
@@ -18,7 +17,7 @@
     padding: 0 4rem;
     color: white;
     text-shadow: 2px 2px 2px black;
-    margin-left: 3rem;
+    margin: 0 0 2rem 3rem;
 
     span {
       color: yellow;
@@ -31,7 +30,6 @@
     &__open {
       @include headerButton;
       align-self: start;
-      background: linear-gradient(45deg, rgb(59, 36, 102), rgb(81, 34, 158), rgb(143, 6, 170));
       width: 100vw;
       height: 3rem;
     }
@@ -40,8 +38,7 @@
       @include headerButton;
       width: 95vw;
       align-self: end;
-      background: transparent;
-      padding: 0 0 1rem 0;
+      padding: 0 0 2rem 0;
     }
   }
 
@@ -50,7 +47,6 @@
     display: grid;
     grid-template-columns: 60vw 40vw;
     grid-template-rows: 1fr;
-    background: linear-gradient(45deg, rgb(59, 36, 102), rgb(81, 34, 158), rgb(143, 6, 170));
     z-index: 2;
   }
 

@@ -1,7 +1,7 @@
 .footer {
   grid-row: 4;
   grid-column: 1 / -1;
-  background: linear-gradient(45deg, rgb(143, 6, 170), rgb(81, 34, 158), rgb(59, 36, 102));
+  background: transparent;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   color: white;

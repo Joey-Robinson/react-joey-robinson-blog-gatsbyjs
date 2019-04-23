@@ -10,6 +10,7 @@
   text-shadow: 2px 2px black;
   color: white;
   cursor: pointer;
+  background: transparent;
 }
 
 @mixin respond($breakpoint) {
