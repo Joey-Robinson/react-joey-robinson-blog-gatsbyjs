@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Link } from 'gatsby'
+// import { Link } from 'gatsby'
 import AniLink from "gatsby-plugin-transition-link/AniLink"
 
 class Header extends Component {
@@ -30,19 +30,19 @@ class Header extends Component {
           <nav className="header__container--nav">
             <ul>
               <li>
-                <Link to="/">Home</Link>
+                <AniLink swipe direction="left" top="entry" to="/">Home</AniLink>
               </li>
               <li>
                 <AniLink swipe top="entry" to="/portfolio/">Portfolio</AniLink>
               </li>
               <li>
-                <Link to="/blog/">Blog</Link>
+                <AniLink swipe top="entry" to="/blog/">Blog</AniLink>
               </li>
               <li>
-                <Link to="/about/">About</Link>
+                <AniLink swipe top="entry" to="/about/">About</AniLink>
               </li>
               <li>
-                <Link to="/contact/">Contact</Link>
+                <AniLink swipe top="entry" to="/contact/">Contact</AniLink>
               </li>
             </ul>
           </nav>

@@ -5,9 +5,11 @@
   display: grid;
   grid-template-columns: 60vw 40vw;
   width: 100vw;
-  height: 10vh;
-  position: fixed;
+  height: 8vh;
+  position: sticky;
+  top: 0;
   z-index: 10;
+
   h1 {
     grid-column: 1;
     font-size: 3rem;
@@ -31,8 +33,6 @@
       align-self: start;
       background: linear-gradient(45deg, rgb(59, 36, 102), rgb(81, 34, 158), rgb(143, 6, 170));
       width: 100vw;
-      border-bottom-left-radius: 10rem;
-      border-bottom-right-radius: 10rem;
       height: 3rem;
     }
 
@@ -50,8 +50,6 @@
     display: grid;
     grid-template-columns: 60vw 40vw;
     grid-template-rows: 1fr;
-    border-bottom-left-radius: 10rem;
-    border-bottom-right-radius: 10rem;
     background: linear-gradient(45deg, rgb(59, 36, 102), rgb(81, 34, 158), rgb(143, 6, 170));
     z-index: 2;
   }

@@ -10,16 +10,6 @@
   text-shadow: 2px 2px black;
   color: white;
   cursor: pointer;
-  border-bottom-left-radius: 100rem;
-  border-bottom-right-radius: 100rem;
-
-  // &:hover {
-  //   animation-name: spin;
-  //   animation-duration: 5000ms;
-  //   animation-iteration-count: infinite;
-  //   animation-timing-function: linear;
-  // }
-
 }
 
 @mixin respond($breakpoint) {
