@@ -12,6 +12,9 @@ const Home = () => (
       <Link to="/portfolio/">To Portfolio</Link>
       <Link to="/blog/">To Blog</Link>
     </section>
+      <section className="hometwo">
+        <h1>from home two</h1>
+      </section>
   </Layout>
 )
 
