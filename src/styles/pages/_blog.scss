@@ -15,9 +15,13 @@
     align-self: start;
     justify-self: center;
     display: grid;
-
     margin: 3rem 0 0 0;
     padding: 1rem 1rem;
+    transition: all .3s ease-in-out;
+
+    &:hover {
+      background: rgba(65, 74, 76, .65);
+    }
 
     a {
       display: block;
@@ -31,6 +35,7 @@
     justify-self: left;
     grid-row: 1;
     grid-column: 1;
+    padding: 0 3rem;
 
     h1 {
       font-size: 3rem;
@@ -42,13 +47,17 @@
     grid-row: 1;
     grid-column: 1;
     font-size: 2rem;
-    padding: 1.5rem 0 0 0;
+    padding: 1.5rem 3rem 0 3rem;
   }
 
   &--display__excerpt {
     justify-self: center;
     grid-row: 2;
-    padding: 1rem 0;
+    padding: 1rem 3rem;
     font-size: 1.6rem;
+
+    a {
+      color: white;
+    }
   }
 }

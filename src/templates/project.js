@@ -1,7 +1,7 @@
-import React from 'react';
-import { graphql } from 'gatsby';
-import Layout from '../components/layout';
-import Project from '../components/project';
+import React from 'react'
+import { graphql } from 'gatsby'
+import Layout from '../components/layout'
+import Project from '../components/project'
 
 export const query = graphql`
   query($slug: String!) {
@@ -9,6 +9,7 @@ export const query = graphql`
       title
       description
       url
+      technology
       image {
         childImageSharp {
           fluid {
@@ -18,14 +19,15 @@ export const query = graphql`
       }
     }
   }
-`;
+`
 
 const ProjectTemplate = ({ data }) => {
-  const project = data.projectsJson;
-  const title = project.title;
-  const description = project.description;
-  const imageData = project.image.childImageSharp.fluid;
-  const url = project.url;
+  const project = data.projectsJson
+  const title = project.title
+  const description = project.description
+  const url = project.url
+  const technology = project.technology
+  const imageData = project.image.childImageSharp.fluid
 
   return (
     <Layout>
@@ -34,9 +36,10 @@ const ProjectTemplate = ({ data }) => {
         description={description}
         imageData={imageData}
         url={url}
+        technology={technology}
       />
     </Layout>
-  );
-};
+  )
+}
 
-export default ProjectTemplate;
+export default ProjectTemplate

@@ -30,19 +30,19 @@ class Header extends Component {
           <nav className="header__container--nav">
             <ul>
               <li>
-                <AniLink swipe direction="left" top="entry" to="/">Home</AniLink>
+                <AniLink direction="left" cover bg="#663399" to="/">Home</AniLink>
               </li>
               <li>
-                <AniLink swipe top="entry" to="/portfolio/">Portfolio</AniLink>
+                <AniLink direction="right" cover bg="#663399" to="/portfolio/">Portfolio</AniLink>
               </li>
               <li>
-                <AniLink swipe top="entry" to="/blog/">Blog</AniLink>
+                <AniLink direction="right" cover bg="#663399" to="/blog/">Blog</AniLink>
               </li>
               <li>
-                <AniLink swipe top="entry" to="/about/">About</AniLink>
+                <AniLink direction="right" cover bg="#663399" to="/about/">About</AniLink>
               </li>
               <li>
-                <AniLink swipe top="entry" to="/contact/">Contact</AniLink>
+                <AniLink direction="right" cover bg="#663399" to="/contact/">Contact</AniLink>
               </li>
             </ul>
           </nav>

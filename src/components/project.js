@@ -2,11 +2,12 @@ import React from 'react'
 import { Link } from 'gatsby'
 import Image from 'gatsby-image'
 
-const Project = ({ title, description, url, imageData }) => (
+const Project = ({ title, description, technology, url, imageData }) => (
   <div className="project">
     <h1>{title}</h1>
-    <Image fluid={imageData} alt={title} />
+      <Image fluid={imageData} alt={title} />
     <p>{description}</p>
+    <p>{technology}</p>
     <p>
       <a href={url} target="_blank" rel="noopener noreferrer">View this project online &rarr;</a>
     </p>

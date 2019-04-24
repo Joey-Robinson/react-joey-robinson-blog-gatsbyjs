@@ -2,8 +2,8 @@ import React from 'react'
 import { Link } from 'gatsby'
 import Image from 'gatsby-image'
 
-const ProjectPreview = ({ title, description, slug, imageData }) => (
-  <div className="project-preview">
+const ProjectPreview = ({ title, description, technology, slug, imageData }) => (
+  <div className="portfolio--preview">
     <Link to={`portfolio/${slug}/`}>
       <Image fluid={imageData} alt={title} />
     </Link>
@@ -11,6 +11,7 @@ const ProjectPreview = ({ title, description, slug, imageData }) => (
       <Link to={`portfolio/${slug}/`}>{title}</Link>
     </h2>
     <p>{description}</p>
+    <p>{technology}</p>
     <p>
       <Link to={`portfolio/${slug}/`}>View this project &rarr;</Link>
     </p>

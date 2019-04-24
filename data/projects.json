@@ -1,16 +1,17 @@
-[
-  {
+[{
     "title": "Sascha Bates Blog",
     "slug": "Sascha-Bates-Blog",
     "url": "https://sascha-bates.netlify.com/",
     "image": "./images/sb.png",
-    "description": "I built this to show off my sweet skills!"
+    "description": "The recreation of Sascha Bates' blog.",
+    "technology": "Tech"
   },
   {
     "title": "Another Project",
     "slug": "project-2",
     "url": "https://example.org/",
     "image": "./images/project2.jpg",
-    "description": "This one is also good."
+    "description": "This one is also good.",
+    "technology": "Tech"
   }
 ]

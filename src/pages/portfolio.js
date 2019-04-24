@@ -14,6 +14,7 @@ const Portfolio = () => {
             slug
             description
             url
+            technology
             image {
               childImageSharp {
                 fluid {
@@ -38,7 +39,10 @@ const Portfolio = () => {
           const slug = project.slug;
           const imageData = project.image.childImageSharp.fluid;
           const url = project.url
+          const technology = project.technology
 
+          {/* This Component is done */}
+          
           return (
             <ProjectPreview
               title={title}
@@ -46,6 +50,7 @@ const Portfolio = () => {
               slug={slug}
               imageData={imageData}
               url={url}
+              technology={technology}
             />
           );
         })}
