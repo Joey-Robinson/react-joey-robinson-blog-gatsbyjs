@@ -1,5 +1,5 @@
 import React from 'react'
-import Link from 'gatsby-link'
+import AniLink from "gatsby-plugin-transition-link/AniLink"
 import Layout from '../components/layout'
 import SEO from '../components/seo'
 import { graphql } from 'gatsby'
@@ -29,14 +29,14 @@ const Blog = ({ data }) => (
     <section className="blog">
       {data.allMarkdownRemark.edges.map(post => (
         <div className="blog--display" key={post.node.id}>
-          <Link
+          <AniLink swipe top="entry" 
             className="blog--display__title"
             to={post.node.frontmatter.path}
           >
             <h1>
               {post.node.frontmatter.title}
             </h1>
-          </Link>
+          </AniLink>
           <div className="blog--display__date">
             {post.node.frontmatter.date}
           </div>

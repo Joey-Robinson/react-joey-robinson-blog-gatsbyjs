@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link } from 'gatsby'
+import AniLink from "gatsby-plugin-transition-link/AniLink"
 import { graphql } from 'gatsby'
 import Layout from '../components/layout'
 
@@ -37,7 +37,7 @@ const BlogTemplate = ({ data }) => {
     <Layout>
       <div className="blogs">
         <div className="blogs--content__back">
-          <Link to="/blog/">&#8592; Go Back</Link>
+          <AniLink swipe direction="left" top="entry"to="/blog/">&#8592; Go Back</AniLink>
         </div>
         <div className="blogs--content__title">
           <h1>{post.frontmatter.title}</h1>
