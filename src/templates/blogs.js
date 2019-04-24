@@ -36,15 +36,18 @@ const BlogTemplate = ({ data }) => {
   return (
     <Layout>
       <div className="blogs">
-        <Link className="blogs--content__back" to="/blog/">Go Back</Link>
-        <h5>{post.frontmatter.date}</h5>
-        <h1>{post.frontmatter.author}</h1>
+        <div className="blogs--content__back">
+          <Link to="/blog/">&#8592; Go Back</Link>
+        </div>
+        <div className="blogs--content__title">
+          <h1>{post.frontmatter.title}</h1>
+        </div>
         <div
           className="blogs--content__main"
           dangerouslySetInnerHTML={{ __html: post.html }} 
         />
         <h4 className="blogs--content__maker">
-          Posted by: {post.frontmatter.title} on {post.frontmatter.path}
+          Posted by: {post.frontmatter.author} on {post.frontmatter.date}
         </h4>
       </div>
     </Layout>

@@ -3,10 +3,52 @@
   grid-row: 2;
   max-height: 200vh;
   z-index: 10;
-  display: grid;
-  grid-template-columns: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+  color: white;
 
   &--display {
     z-index: 20;
+    grid-column: 1 / -1;
+    grid-row: 1 / -1;
+    align-self: start;
+    justify-self: center;
+    display: grid;
+
+    margin: 3rem 0 0 0;
+    padding: 1rem 1rem;
+
+    a {
+      display: block;
+      color: yellow;
+      text-shadow: 1px 1px white;
+    }
+
+  }
+
+  &--display__title {
+    justify-self: left;
+    grid-row: 1;
+    grid-column: 1;
+
+    h1 {
+      font-size: 3rem;
+    }
+  }
+
+  &--display__date {
+    justify-self: right;
+    grid-row: 1;
+    grid-column: 1;
+    font-size: 2rem;
+    padding: 1.5rem 0 0 0;
+  }
+
+  &--display__excerpt {
+    justify-self: center;
+    grid-row: 2;
+    padding: 1rem 0;
+    font-size: 1.6rem;
   }
 }

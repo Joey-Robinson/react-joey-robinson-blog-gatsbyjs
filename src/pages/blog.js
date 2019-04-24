@@ -10,7 +10,7 @@ export const pageQuery = graphql`
       edges {
         node {
           id
-          excerpt(pruneLength: 50)
+          excerpt(pruneLength: 150)
           frontmatter {
             path
             title
@@ -30,17 +30,17 @@ const Blog = ({ data }) => (
       {data.allMarkdownRemark.edges.map(post => (
         <div className="blog--display" key={post.node.id}>
           <Link
-            className="blog-display-title"
+            className="blog--display__title"
             to={post.node.frontmatter.path}
           >
-            <h1 className="blog-display-title-h1">
+            <h1>
               {post.node.frontmatter.title}
             </h1>
           </Link>
-          <div className="blog-display-postedBy">
+          <div className="blog--display__date">
             {post.node.frontmatter.date}
           </div>
-          <p className="blog-display-excerpt">
+          <p className="blog--display__excerpt">
             {post.node.excerpt}
           </p>
         </div>
