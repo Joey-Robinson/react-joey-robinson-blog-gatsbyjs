@@ -3,9 +3,9 @@ import { Link } from 'gatsby'
 import Image from 'gatsby-image'
 
 const ProjectPreview = ({ title, description, technology, slug, imageData }) => (
-  <div className="portfolio--preview">
+  <div className="portfolio--preview preview">
     <Link to={`portfolio/${slug}/`}>
-      <Image fluid={imageData} alt={title} />
+      <Image className="wow" fluid={imageData} alt={title} />
     </Link>
     <h2>
       <Link to={`portfolio/${slug}/`}>{title}</Link>

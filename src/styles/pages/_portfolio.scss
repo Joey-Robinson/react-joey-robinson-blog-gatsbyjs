@@ -1,33 +1,37 @@
 .portfolio {
   grid-column: 1;
   grid-row: 2;
-  align-self: end;
-  justify-self: center;
   height: auto;
   width: 100vw;
   z-index: 10;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 20vh repeat(3, 1fr);
+  display: flex;
+  flex-direction: column;
+  flex-flow: column;
   font-size: 5rem;
   color: white;
+}
 
-  &--preview {
-    grid-column: 1 / -1;
-    grid-row: 2 / -1;
-    // align-self: center;
-    // justify-self: center;
-    display: grid;
-    // grid-template-rows: auto;
+.preview {
+  margin-top: 20vh;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  justify-content: center;
+  justify-items: center;
 
-    picture {
-      width: 5rem;
-      height: 5rem;
-    }
-
-    img {
-      width: 5rem;
-      height: 5rem;
-    }
+  picture {
+    position: initial;
+    display: block;
+    height: 50rem;
+    width: 100rem;
   }
+
+  a {
+    color: yellow;
+  }
+}
+
+.gatsby-image-wrapper {
+  display: flex;
+  // grid-template-columns: repeat(auto-fill, minmax(1fr, 1fr));
 }

@@ -13,5 +13,13 @@
     "image": "./images/project2.jpg",
     "description": "This one is also good.",
     "technology": "Tech"
+  },
+  {
+    "title": "Another Project",
+    "slug": "project-2",
+    "url": "https://example.org/",
+    "image": "./images/project2.jpg",
+    "description": "This one is also good.",
+    "technology": "Tech"
   }
 ]

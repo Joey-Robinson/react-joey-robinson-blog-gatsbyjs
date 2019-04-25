@@ -3,7 +3,7 @@ import { Link } from 'gatsby'
 import Image from 'gatsby-image'
 
 const Project = ({ title, description, technology, url, imageData }) => (
-  <div className="project">
+  <div>
     <h1>{title}</h1>
       <Image fluid={imageData} alt={title} />
     <p>{description}</p>

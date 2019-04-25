@@ -6,9 +6,9 @@ const Layout = ({ children }) => (
   <>
     <main className="content">
       <Header />
-      <div class="content--stars"></div>
-    <div class="content--twinkling"></div>
-    <div class="content--sky"></div>
+      <div className="content--stars"></div>
+      <div className="content--twinkling"></div>
+      <div className="content--sky"></div>
       {children}
       <Footer />
     </main>

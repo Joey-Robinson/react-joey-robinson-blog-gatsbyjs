@@ -40,8 +40,6 @@ const Portfolio = () => {
           const imageData = project.image.childImageSharp.fluid;
           const url = project.url
           const technology = project.technology
-
-          {/* This Component is done */}
           
           return (
             <ProjectPreview
