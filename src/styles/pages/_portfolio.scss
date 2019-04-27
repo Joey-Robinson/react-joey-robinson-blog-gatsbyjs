@@ -1,6 +1,8 @@
 .portfolio {
   grid-column: 1;
   grid-row: 2;
+  min-height: 1725vh;
+  background: #222;
   height: auto;
   width: 100vw;
   z-index: 10;
@@ -12,17 +14,27 @@
 }
 
 .preview {
+  background: linear-gradient(#03001e, #7303c0, #ff41cc);
+  height: 57.35rem;
   margin-top: 20vh;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: repeat(4, 1fr);
+  margin: 5rem 0;
 
   &--image {
+    align-self: center;
     grid-column: 2;
     grid-row: 1 / -1;
     display: block;
     position: relative;
     padding: 0 3rem 0 0;
+
+    a {
+      display: block;
+      height: 50rem;
+      width: 100rem;
+    }
   }
 
   &--content {
@@ -31,6 +43,10 @@
     justify-self: left;
     font-size: 1.6rem;
     margin-left: 3rem;
+
+    p {
+      display: block;
+    }
 
     // display: flex;
     // flex-direction: column;
@@ -41,6 +57,14 @@
     &__view {
       margin: 0;
       padding: 1rem 0 1rem 0;
+    }
+
+    &__heading {
+      margin-top: 5rem;
+    }
+
+    &__description {
+      margin-top: 5rem;
     }
   }
 

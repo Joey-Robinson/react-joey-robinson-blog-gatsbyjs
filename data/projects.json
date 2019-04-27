@@ -33,7 +33,7 @@
   {
     "title": "Joey Robinson Personal Site",
     "slug": "Joey-Robinson",
-    "url": "https://joeyrobinson.netlify.com/",
+    "url": "https://github.com/Joey-Robinson/JoeyRobinson",
     "image": "./images/personalsite.jpg",
     "description": "Personal portfolio website. Third iteration.",
     "technology": "React, GatsbyJS, CSS Grid, SCSS"

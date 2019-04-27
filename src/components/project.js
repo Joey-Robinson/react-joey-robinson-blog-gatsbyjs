@@ -12,7 +12,7 @@ const Project = ({ title, description, technology, url, imageData }) => (
       <a href={url} target="_blank" rel="noopener noreferrer">View this project online &rarr;</a>
     </p>
     <p>
-      <Link to="/">&larr; back to all projects</Link>
+      <Link to="/portfolio/">&larr; back to all projects</Link>
     </p>
   </div>
 );
