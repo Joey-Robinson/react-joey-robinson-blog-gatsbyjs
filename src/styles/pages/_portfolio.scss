@@ -14,14 +14,39 @@
 .preview {
   margin-top: 20vh;
   display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr;
-  justify-content: center;
-  justify-items: center;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(4, 1fr);
+
+  &--image {
+    grid-column: 2;
+    grid-row: 1 / -1;
+    display: block;
+    position: relative;
+    padding: 0 3rem 0 0;
+  }
+
+  &--content {
+    grid-column: 1;
+    grid-row: 1;
+    justify-self: left;
+    font-size: 1.6rem;
+    margin-left: 3rem;
+
+    // display: flex;
+    // flex-direction: column;
+    // flex-wrap: wrap;
+    // justify-content: space-around;
+    &__description,
+    &__technology,
+    &__view {
+      margin: 0;
+      padding: 1rem 0 1rem 0;
+    }
+  }
 
   picture {
-    position: initial;
-    display: block;
+    grid-column: 1;
+    grid-row: 1;
     height: 50rem;
     width: 100rem;
   }
@@ -32,6 +57,9 @@
 }
 
 .gatsby-image-wrapper {
+  grid-column: 1;
+  justify-self: right;
+  float: right;
+  right: 0;
   display: flex;
-  // grid-template-columns: repeat(auto-fill, minmax(1fr, 1fr));
 }
