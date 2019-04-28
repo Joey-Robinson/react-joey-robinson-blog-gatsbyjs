@@ -9,13 +9,13 @@ const ProjectPreview = ({ title, description, technology, slug, imageData }) => 
     </Link>
       <div className="preview--content">
         <h2 className="preview--content__heading">
-          <Link to={`portfolio/${slug}/`}>{title}</Link>
+          <Link to={`portfolio/${slug}/`}>{title} &rarr;</Link>
         </h2>
-          <p className="preview--content__description">{description}</p>
-          <p className="preview--content__technology">{technology}</p> 
-          <p className="preview--content__view">
+          {/* <p className="preview--content__description">{description}</p> */}
+          <p className="preview--content__technology"><span>Tech:</span> {technology}</p> 
+          {/* <p className="preview--content__view">
             <Link to={`portfolio/${slug}/`}>View this project &rarr;</Link>
-          </p>
+          </p> */}
       </div>
   </div>
 );

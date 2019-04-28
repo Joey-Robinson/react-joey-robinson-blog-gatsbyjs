@@ -1,20 +1,20 @@
 import React from 'react'
-import AniLink from 'gatsby-plugin-transition-link'
+import { Link } from 'gatsby'
 import Image from 'gatsby-image'
 
 const Project = ({ title, description, technology, url, imageData }) => (
-  <div>
-    <h1>{title}</h1>
-      <Image fluid={imageData} alt={title} />
-    <p>{description}</p>
-    <p>{technology}</p>
-    <p>
+  <section className="project">
+    <h1 className="project--title">{title}</h1>
+      <Image className="project--image image" fluid={imageData} alt={title} />
+    <p className="project--description">{description}</p>
+    <p className="project--technology">{technology}</p>
+    <p className="project--live">
       <a href={url} target="_blank" rel="noopener noreferrer">View this project online &rarr;</a>
     </p>
-    <p>
-      <AniLink direction="left" cover bg="#05012b" to="/portfolio/">&larr; back to all projects</AniLink>
+    <p className="project--back">
+      <Link to="/portfolio/">&larr; Back to all projects</Link>
     </p>
-  </div>
+  </section>
 );
 
 export default Project

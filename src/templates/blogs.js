@@ -37,7 +37,7 @@ const BlogTemplate = ({ data }) => {
     <Layout>
       <div className="blogs">
         <div className="blogs--content__back">
-          <AniLink direction="left" cover bg="#05012b" to="/blog/">&#8592; Go Back</AniLink>
+          <AniLink swipe direction="left" top="entry"to="/blog/">&#8592; Go Back</AniLink>
         </div>
         <div className="blogs--content__title">
           <h1>{post.frontmatter.title}</h1>
@@ -46,9 +46,9 @@ const BlogTemplate = ({ data }) => {
           className="blogs--content__main"
           dangerouslySetInnerHTML={{ __html: post.html }} 
         />
-        <p className="blogs--content__maker">
+        <h4 className="blogs--content__maker">
           Posted by: {post.frontmatter.author} on {post.frontmatter.date}
-        </p>
+        </h4>
       </div>
     </Layout>
   )

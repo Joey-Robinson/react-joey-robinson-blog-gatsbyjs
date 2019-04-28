@@ -10,9 +10,6 @@ const Home = () => (
     <div className="home--content__top">
       <h1>weonfwe</h1>
     </div>
-    <div className="home--content__bottom">
-      <h1>From home--content__bottom</h1>
-    </div>
     </section>
   </Layout>
 )

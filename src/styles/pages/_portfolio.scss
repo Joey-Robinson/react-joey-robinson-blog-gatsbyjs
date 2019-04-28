@@ -21,6 +21,12 @@
   grid-template-rows: repeat(4, 1fr);
   margin: 5rem 0;
 
+  span {
+    font-size: 2rem;
+    color: yellow;
+    text-shadow: 1px 1px black;
+  }
+
   &--image {
     align-self: center;
     grid-column: 2;
@@ -55,11 +61,11 @@
     &__technology,
     &__view {
       margin: 0;
-      padding: 3rem 3rem 3rem 0;
+      padding: 0 3rem 3rem 0;
     }
 
     &__heading {
-      margin-top: 5rem;
+      // margin-top: 5rem;
       font-size: 2rem;
     }
   }

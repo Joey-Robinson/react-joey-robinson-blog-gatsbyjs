@@ -1,0 +1,83 @@
+.project {
+  grid-column: 1;
+  grid-row: 2;
+  display: grid;
+  grid-template-columns: 1fr;
+  width: 100vw;
+  grid-template-rows: 10vh 20vh 70vh;
+  max-height: 100vh;
+  color: white;
+
+  picture {
+    grid-column: 1;
+    grid-row: 3;
+    height: 50rem;
+    width: 100rem;
+  }
+
+  p {
+    font-size: 1.8rem;
+  }
+
+  &--image {
+    z-index: 100;
+    grid-row: 3;
+    display: block;
+    position: absolute;
+    justify-self: center;
+    align-self: start;
+  }
+
+  &--title {
+    grid-column: 1;
+    grid-row: 2;
+    align-self: start;
+    justify-self: center;
+    font-size: 3rem;
+  }
+
+  &--description {
+    grid-column: 1;
+    grid-row: 2;
+    align-self: center;
+    justify-self: center;
+  }
+
+  &--technology {
+    grid-column: 1;
+    grid-row: 2;
+    margin-top: 6rem;
+    align-self: center;
+    justify-self: center;
+  }
+
+  &--live {
+    grid-column: 1;
+    grid-row: 2;
+    align-self: start;
+    justify-self: right;
+    padding: 0 3rem 0 0;
+
+    a {
+      color: yellow;
+    }
+  }
+
+  &--back {
+    grid-column: 1;
+    grid-row: 2;
+    align-self: start;
+    justify-self: left;
+    padding: 0 0 0 3rem;
+
+    a {
+      color: yellow;
+    }
+  }
+}
+
+.gatsby-image-wrapper {
+  grid-column: 1;
+  justify-self: center;
+  display: flex;
+}

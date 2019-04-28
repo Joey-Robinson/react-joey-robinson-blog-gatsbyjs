@@ -1,11 +1,11 @@
 .content {
   display: grid;
   grid-template-columns: 100vw;
-  grid-template-rows: 8vh 100vh 10vh;
+  grid-template-rows: 8vh 92vh;
   background: linear-gradient(#03001e, #7303c0, #ff41cc);
-  min-height: 200vh;
-  height: 200vh;
-
+  height: 100vh;
+  max-height: 100vh;
+  min-height: 100vh;
   // &--stars,
   // &--twinkling,
   // &--sky {
