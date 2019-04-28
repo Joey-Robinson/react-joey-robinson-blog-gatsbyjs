@@ -2,7 +2,7 @@
   grid-column: 1;
   grid-row: 2;
   min-height: 1725vh;
-  background: #222;
+  background: linear-gradient(#05012b, #7303c0);
   height: auto;
   width: 100vw;
   z-index: 10;
@@ -14,7 +14,6 @@
 }
 
 .preview {
-  background: linear-gradient(#03001e, #7303c0, #ff41cc);
   height: 57.35rem;
   margin-top: 20vh;
   display: grid;
@@ -56,15 +55,12 @@
     &__technology,
     &__view {
       margin: 0;
-      padding: 1rem 0 1rem 0;
+      padding: 3rem 3rem 3rem 0;
     }
 
     &__heading {
       margin-top: 5rem;
-    }
-
-    &__description {
-      margin-top: 5rem;
+      font-size: 2rem;
     }
   }
 

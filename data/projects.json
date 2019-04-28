@@ -3,7 +3,7 @@
     "slug": "Sascha-Bates-Blog",
     "url": "https://sascha-bates.netlify.com/",
     "image": "./images/sb.png",
-    "description": "The recreation of Sascha Bates' blog.",
+    "description": "The recreation of Sascha Bates' blog. Using more modern technologies to implement a newer blog and some updated informaion.",
     "technology": "GatsbyJS, CSS Grid, SCSS"
   },
   {
@@ -11,7 +11,7 @@
     "slug": "Sweetest-Southern-Creations",
     "url": "http://sweetestsoutherncreations.com/",
     "image": "./images/ssc.jpg",
-    "description": "Website created for business owner to showcase crafted goods.",
+    "description": "Website created for business owner to showcase crafted goods. I was able to increase traffic to business' Facebook page and now their website.",
     "technology": "CSS Grid, SCSS, Vanilla JavaScript, HTML"
   },
   {
@@ -19,7 +19,7 @@
     "slug": "Gamer-Vanity-Site",
     "url": "https://meowkats.netlify.com/",
     "image": "./images/gamervanity.png",
-    "description": "Website creted as a tribute page for a friend",
+    "description": "Website creted as a tribute page for a friend. I wanted to have a showcase of sorts to highlight the players accomplishments in an easy to digest manner.",
     "technology": "Webpack, Babel, SCSS, Vanilla JavaScript, CSS Grid, HTML, Parallel API Calls"
   },
   {
@@ -35,7 +35,7 @@
     "slug": "Joey-Robinson",
     "url": "https://github.com/Joey-Robinson/JoeyRobinson",
     "image": "./images/personalsite.jpg",
-    "description": "Personal portfolio website. Third iteration.",
+    "description": "Personal portfolio website. Third iteration. This was originally ",
     "technology": "React, GatsbyJS, CSS Grid, SCSS"
   },
   {
@@ -43,15 +43,15 @@
     "slug": "Vjs-todo",
     "url": "https://joey-robinson.github.io/todo/",
     "image": "./images/vjstodo.png",
-    "description": "A simple to do list with localStorage",
-    "technology": "Vanilla JavaScript, CSS, Font Awesome, Materialize CSS"
+    "description": "A simple to do list. I created this to text my ability using Vanilla technologies and feel comfortable with what I made.",
+    "technology": "Vanilla JavaScript, CSS, Font Awesome, Materialize CSS, Local Storage"
   },
   {
     "title": "Vanilla JavaScript Quote Generator",
     "slug": "Vjs-quote-generator",
     "url": "https://vjs-quote-generator.netlify.com/",
     "image": "./images/vjsrandomquote.png",
-    "description": "A random quote generator.",
+    "description": "Web app that generates random quotes. The quotes are pre-written and randomlly selected.",
     "technology": "Vanilla JavaScript, HTML, CSS"
   },
   {
@@ -59,7 +59,7 @@
     "slug": "Vjs-calculator",
     "url": "https://vjs-calculator.netlify.com/",
     "image": "./images/vjscalculator.png",
-    "description": "A calculator web app",
+    "description": "Web app that was created to again showcase skills in Vanilla technology usage.",
     "technology": "Vanilla JavaScript, HTML, CSS"
   },
   {
@@ -67,7 +67,7 @@
     "slug": "Vjs-markdown-previewer",
     "url": "https://vjs-markdown-previewer.netlify.com/",
     "image": "./images/vjsmarkdownpreviewer.png",
-    "description": "A markdown previewer web app",
+    "description": "Web app to preview basic text into markdown using markdown syntax.",
     "technology": "Vanilla JavaScript, marked, HTML, CSS"
   },
   {
@@ -75,7 +75,7 @@
     "slug": "TF-soundboard",
     "url": "https://tf-soundboard.netlify.com/",
     "image": "./images/tfsoundboard.jpg",
-    "description": "A soundboard made for the guild <TF> on Hyjal",
+    "description": "Web app that was made for the guild <TF> on Hyjal. Again using Vanilla technologies, I was able to use sound files from twitch.tv clips to make this.",
     "technology": "Vanilla JavaScript, CSS, CSS Grid, HTML"
   },
   {
@@ -83,7 +83,7 @@
     "slug": "Vjs-periodic-table",
     "url": "https://vanillajs-periodic-table.netlify.com/",
     "image": "./images/vjsperiodictable.png",
-    "description": "A periodic table for the broswer.",
+    "description": "An in browser periodic table. This was made just the sake of making it. ",
     "technology": "Vanilla JavaScript, HTML, CSS"
   },
   {
@@ -91,7 +91,7 @@
     "slug": "React-todo",
     "url": "https://react-todo-no-hooks.netlify.com/",
     "image": "./images/reacttodo.png",
-    "description": "An inbrowser todo list",
+    "description": "Web app using different technologies than the other version.",
     "technology": "React, CSS"
   },
   {
@@ -99,7 +99,7 @@
     "slug": "Vjs-calorie-counter",
     "url": "https://vjs-calorie-counter.netlify.com/",
     "image": "./images/caloriecounter.png",
-    "description": "Web app to keep track of calorie intake",
+    "description": "Web app to keep track of calorie intake. Useful for monitoring personal intake, as it makes use of Local Storage.",
     "technology": "Vanilla JavaScript, localStorage, CSS, Font Awesome, Materialize CSS"
   },
   {
