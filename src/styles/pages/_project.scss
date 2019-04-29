@@ -2,17 +2,19 @@
   grid-column: 1;
   grid-row: 2;
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: 30.5vw 1fr;
   width: 100vw;
-  grid-template-rows: 10vh 20vh 70vh;
+  grid-template-rows: 10vh repeat(5, 1fr);
   max-height: 100vh;
   color: white;
 
   picture {
-    grid-column: 1;
+    grid-column: 2;
     grid-row: 3;
     height: 50rem;
     width: 100rem;
+    justify-self: right;
+    display: block;
   }
 
   p {
@@ -20,43 +22,61 @@
   }
 
   &--image {
-    z-index: 100;
-    grid-row: 3;
     display: block;
     position: absolute;
-    justify-self: center;
+    justify-self: right;
     align-self: start;
   }
 
   &--title {
     grid-column: 1;
     grid-row: 2;
-    align-self: start;
-    justify-self: center;
-    font-size: 3rem;
+    align-self: center;
+    justify-self: left;
+    font-size: 2.5rem;
+    padding: 3rem 0 0 3rem;
+    text-decoration: underline;
+    z-index: 11;
   }
 
   &--description {
     grid-column: 1;
-    grid-row: 2;
-    align-self: center;
-    justify-self: center;
+    grid-row: 2 / 4;
+    align-self: end;
+    justify-self: left;
+    padding: 0 0 0 3rem;
   }
 
   &--technology {
     grid-column: 1;
-    grid-row: 2;
-    margin-top: 6rem;
+    grid-row: 4;
     align-self: center;
-    justify-self: center;
+    justify-self: left;
+    padding: 0 3rem 0 3rem;
+
+    span {
+      color: yellow;
+    }
   }
 
   &--live {
     grid-column: 1;
-    grid-row: 2;
-    align-self: start;
-    justify-self: right;
-    padding: 0 3rem 0 0;
+    grid-row: 5;
+    align-self: end;
+    justify-self: left;
+    padding: 0 0 0 3rem;
+
+    a {
+      color: yellow;
+    }
+  }
+
+  &--github {
+    grid-column: 1;
+    grid-row: 5;
+    align-self: center;
+    justify-self: left;
+    padding: 0 0 0 3rem;
 
     a {
       color: yellow;
@@ -68,7 +88,8 @@
     grid-row: 2;
     align-self: start;
     justify-self: left;
-    padding: 0 0 0 3rem;
+    padding: 0 0 4rem 3rem;
+    z-index: 11;
 
     a {
       color: yellow;
@@ -77,7 +98,9 @@
 }
 
 .gatsby-image-wrapper {
-  grid-column: 1;
-  justify-self: center;
+  grid-column: 2;
+  align-self: start;
+  grid-row: 2 / -1;
+  justify-self: right;
   display: flex;
 }

@@ -15,6 +15,7 @@ const Portfolio = () => {
             description
             url
             technology
+            github
             image {
               childImageSharp {
                 fluid {
@@ -40,7 +41,8 @@ const Portfolio = () => {
           const imageData = project.image.childImageSharp.fluid;
           const url = project.url
           const technology = project.technology
-          
+          const github = project.github
+
           return (
             <ProjectPreview
               title={title}
@@ -49,6 +51,7 @@ const Portfolio = () => {
               imageData={imageData}
               url={url}
               technology={technology}
+              github={github}
             />
           );
         })}

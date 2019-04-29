@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-// import { Link } from 'gatsby'
 import AniLink from "gatsby-plugin-transition-link/AniLink"
 
 class Header extends Component {
