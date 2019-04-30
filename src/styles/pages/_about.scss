@@ -1,0 +1,11 @@
+.about {
+  grid-column: 1;
+  grid-row: 2;
+  display: grid;
+  grid-template-columns: 1fr;
+  width: 100vw;
+  grid-template-rows: 10vh repeat(5, 1fr);
+  max-height: 100vh;
+  color: white;
+  background: linear-gradient(#03001e, #7303c0, #ff41cc);
+}

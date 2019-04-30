@@ -1,9 +1,9 @@
 [{
-    "title": "Sascha Bates Blog",
-    "slug": "Sascha-Bates-Blog",
+    "title": "Private Blog",
+    "slug": "Private-Blog",
     "url": "https://sascha-bates.netlify.com/",
     "image": "./images/sb.png",
-    "description": "The recreation of Sascha Bates' blog. Using more modern technologies to implement a newer blog and some updated informaion.",
+    "description": "The recreation of a blog that had previously been made with Octopress. Using more modern technologies to implement a newer blog and updated informaion.",
     "technology": "GatsbyJS, CSS Grid, SCSS",
     "github": "https://www.google.com/"
   },

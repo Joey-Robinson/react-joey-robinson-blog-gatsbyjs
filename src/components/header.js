@@ -35,13 +35,10 @@ class Header extends Component {
                 <AniLink direction="right" cover bg="#05012b" to="/portfolio/">Portfolio</AniLink>
               </li>
               <li>
-                <AniLink direction="right" cover bg="#05012b" to="/blog/">Blog</AniLink>
-              </li>
-              <li>
                 <AniLink direction="right" cover bg="#05012b" to="/about/">About</AniLink>
               </li>
               <li>
-                <AniLink direction="right" cover bg="#05012b" to="/contact/">Contact</AniLink>
+                <AniLink direction="right" cover bg="#05012b" to="/blog/">Blog</AniLink>
               </li>
             </ul>
           </nav>
