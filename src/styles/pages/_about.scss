@@ -1,11 +1,31 @@
 .about {
   grid-column: 1;
-  grid-row: 2;
+  grid-row: 1 / -1;
+  height: 100vh;
+  max-height: 100vh;
+  z-index: 20;
   display: grid;
   grid-template-columns: 1fr;
-  width: 100vw;
-  grid-template-rows: 10vh repeat(5, 1fr);
-  max-height: 100vh;
-  color: white;
+  grid-template-rows: 10vh 1fr 1fr;
   background: linear-gradient(#03001e, #7303c0, #ff41cc);
+  color: white;
+
+  &--main {
+    grid-row: 2;
+    grid-column: 1;
+    justify-self: center;
+    align-self: center;
+
+    h1 {
+      text-align: center;
+      padding: 1rem 0;
+      font-size: 3rem;
+    }
+
+    p {
+      text-shadow: 2px 2px black;
+      font-size: 1.9rem;
+      padding: 1rem 24rem;
+    }
+  }
 }
