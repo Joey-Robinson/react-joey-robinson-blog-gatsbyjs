@@ -5,17 +5,26 @@
   max-height: 100vh;
   z-index: 20;
   display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 10vh 1fr 1fr;
+  grid-template-columns: 30vw 65vw 5vw;
+  grid-template-rows: 10vh 20vh 1fr 1fr;
   background: linear-gradient(#03001e, #7303c0, #ff41cc);
 
-  &--content__top {
-    grid-column: 1;
+  &--content__banner {
     grid-row: 2;
-    align-self: center;
-    justify-self: center;
+    grid-column: 1 / -1;
+    height: 20vh;
+    background: url("https://images.pexels.com/photos/414276/pexels-photo-414276.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260") no-repeat center center / cover;
+  }
+
+  &--content__top {
+    grid-column: 2;
+    grid-row: 2;
     color: white;
     text-shadow: 2px 2px black;
+    z-index: 30;
+    // background: rgba(34, 34, 34, .3);
+    margin: 12rem 0 0 0;
+    justify-self: right;
 
     a {
       color: yellow;
@@ -28,13 +37,13 @@
 
     p {
       font-size: 1.8rem;
-      padding: 1rem 24rem;
+      padding: 1rem 6rem;
     }
   }
 
   &--content__bottom {
     grid-column: 1;
-    grid-row: 3;
+    grid-row: 4;
     // z-index: 20;
     font-size: 5rem;
     color: white;

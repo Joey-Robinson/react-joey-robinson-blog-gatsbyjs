@@ -12,6 +12,9 @@ const Home = () => (
   <Layout>
     <SEO title="Home" description="Home for Joey Robinson" keywords={[`Joey Robinson`, `Blog`, `Front-End`, `Front-End Development`, `React`, `GatsbyJS`, `Joey Robinson Portfolio`]} />
     <section className="home">
+      <div className="home--content__banner">
+        {/* <img src="https://images.pexels.com/photos/414276/pexels-photo-414276.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt=""/> */}
+      </div>
       <div className="home--content__top">
         <h1>Hi, I'm Joey Robinson</h1>
         <p>I'm a Frontend Developer and I like making things. My primary focus is using React (GatsbyJS) and Vanilla JavaScript. I'm not a designer but I enjoy working with S/CSS and CSS Grid. I'm looking to create and maintain amazing websites and web applications. Feel free to contact me with any questions or comments.</p>

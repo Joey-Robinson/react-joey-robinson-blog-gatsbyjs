@@ -36,6 +36,9 @@ const BlogTemplate = ({ data }) => {
   return (
     <Layout>
       <div className="blogs">
+        <div className="blogs--content__top">
+
+        </div>
         <div className="blogs--content__back">
           <AniLink swipe direction="left" top="entry"to="/blog/">&#8592; Go Back</AniLink>
         </div>
@@ -47,7 +50,7 @@ const BlogTemplate = ({ data }) => {
           dangerouslySetInnerHTML={{ __html: post.html }} 
         />
         <h4 className="blogs--content__maker">
-          Posted by: {post.frontmatter.author} on {post.frontmatter.date}
+          {post.frontmatter.date}
         </h4>
       </div>
     </Layout>
