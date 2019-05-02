@@ -34,6 +34,7 @@ const Portfolio = () => {
     <Layout>
       <SEO title="Portfolio" description="Portfolio for Joey Robinson" keywords={[`Joey Robinson`, `Portfolio`, `Front-End`, `Front-End Development`, `React`, `GatsbyJS`, `Joey Robinson Portfolio`]} />
       <section className="portfolio">
+      <h1 className="portfolio__heading">Projects</h1> 
         {projects.map(({ node: project }) => {
           const title = project.title;
           const description = project.description;

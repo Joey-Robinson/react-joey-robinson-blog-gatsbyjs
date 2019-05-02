@@ -1,18 +1,13 @@
 import React from 'react'
 import AniLink from "gatsby-plugin-transition-link/AniLink"
-import Image from 'gatsby-image'
 
-const ProjectPreview = ({ title, description, technology, slug, imageData }) => (
-  <div className="portfolio--preview preview">
-    <AniLink direction="right" cover bg="#222222" className="preview--image" to={`/${slug}`}>
-      <Image className="wow" fluid={imageData} alt={title} />
-    </AniLink>
-      <div className="preview--content">
-        <h2 className="preview--content__heading">
-          <AniLink direction="right" cover bg="#222222" to={`/${slug}`}>{title} &rarr;</AniLink>
-        </h2>
-          <p className="preview--content__technology"><span>Tech:</span> {technology}</p> 
-      </div>
+const ProjectPreview = ({ title, technology, slug }) => (
+  <div className="projects">
+    <h1 className="projects__heading">
+      <AniLink direction="right" cover bg="#222222" to={`/${slug}`}>{title} &rarr;</AniLink>
+    </h1>
+      <p className="projects__technology"><span>Tech:</span> {technology}</p> 
+      <hr/>
   </div>
 );
 

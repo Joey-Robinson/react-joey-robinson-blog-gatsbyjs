@@ -1,91 +1,61 @@
 .portfolio {
   grid-column: 1;
   grid-row: 2;
-  min-height: 1725vh;
+  // min-height: 1725vh;
   background: #222222;
-  height: auto;
+  height: 280vh;
   width: 100vw;
   z-index: 10;
-  display: flex;
-  flex-direction: column;
-  flex-flow: column;
-  font-size: 5rem;
-  color: white;
-}
-
-.preview {
-  height: 57.35rem;
-  margin-top: 20vh;
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: repeat(4, 1fr);
-  margin: 5rem 0;
+  grid-template-columns: 20vw 80vw;
+  color: white;
 
-  span {
-    font-size: 2rem;
-    color: yellow;
-    text-shadow: 1px 1px black;
-  }
-
-  &--image {
-    align-self: center;
-    grid-column: 2;
-    grid-row: 1 / -1;
+  &__heading {
     display: block;
-    position: relative;
-    padding: 0 3rem 0 0;
-
-    a {
-      display: block;
-      height: 50rem;
-      width: 100rem;
-    }
-  }
-
-  &--content {
+    position: absolute;
+    top: 20rem;
+    left: 0;
     grid-column: 1;
-    grid-row: 1;
-    justify-self: left;
-    font-size: 1.6rem;
-    margin-left: 3rem;
-
-    p {
-      display: block;
-    }
-
-    // display: flex;
-    // flex-direction: column;
-    // flex-wrap: wrap;
-    // justify-content: space-around;
-    &__description,
-    &__technology,
-    &__view {
-      margin: 0;
-      padding: 0 3rem 3rem 0;
-    }
-
-    &__heading {
-      // margin-top: 5rem;
-      font-size: 2rem;
-    }
-  }
-
-  picture {
-    grid-column: 1;
-    grid-row: 1;
-    height: 50rem;
-    width: 100rem;
-  }
-
-  a {
-    color: yellow;
+    // justify-self: left;
+    font-size: 5rem;
+    transform: rotate(90deg);
   }
 }
 
-.gatsby-image-wrapper {
-  grid-column: 1;
+.projects {
+  grid-column: 2;
   justify-self: right;
-  float: right;
-  right: 0;
-  display: flex;
+  padding: 0 3rem 0 0;
+  display: grid;
+  grid-template-columns: 60vw;
+
+  hr {
+    color: black;
+    height: 1.3px;
+  }
+
+  &__heading {
+    align-self: end;
+  }
+
+  &__technology {
+    align-self: start;
+    justify-self: right;
+  }
+
+  a,
+  span {
+    color: yellow;
+  }
+
+  h1,
+  a {
+    font-size: 3rem;
+    justify-self: right;
+  }
+
+  p {
+    font-size: 1.9rem;
+    padding: 0 3rem 0 3rem;
+  }
 }
