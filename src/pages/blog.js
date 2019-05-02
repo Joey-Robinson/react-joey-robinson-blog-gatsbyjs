@@ -30,7 +30,7 @@ const Blog = ({ data }) => (
       {data.allMarkdownRemark.edges.map(post => (
         <div className="blog--display" key={post.node.id}>
           <AniLink 
-            direction="right" cover bg="#05012b"
+            direction="right" cover bg="#222222"
             className="blog--display__title"
             to={post.node.frontmatter.path}
           >
@@ -44,7 +44,8 @@ const Blog = ({ data }) => (
           <p className="blog--display__excerpt">
           <AniLink
             to={post.node.frontmatter.path} 
-            direction="right" cover bg="#663399">
+            direction="right" cover bg="#222222"
+          >
             {post.node.excerpt}
           </AniLink>
           </p>

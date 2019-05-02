@@ -23,13 +23,13 @@
     transition: all .3s ease-in-out;
 
     &:hover {
-      background: rgba(65, 74, 76, .65);
+      background: rgba(153, 50, 204, .35);
     }
 
     a {
       display: block;
       color: yellow;
-      text-shadow: 1px 1px white;
+      text-shadow: 1px 1px black;
     }
 
   }
@@ -61,6 +61,8 @@
 
     a {
       color: white;
+      font-weight: 700;
+      // letter-spacing: 3px;
     }
   }
 }

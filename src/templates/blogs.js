@@ -40,7 +40,7 @@ const BlogTemplate = ({ data }) => {
 
         </div>
         <div className="blogs--content__back">
-          <AniLink swipe direction="left" top="entry"to="/blog/">&#8592; Go Back</AniLink>
+          <AniLink direction="left" cover bg="#222222" to="/blog/">&#8592; Go Back</AniLink>
         </div>
         <div className="blogs--content__title">
           <h1>{post.frontmatter.title}</h1>
