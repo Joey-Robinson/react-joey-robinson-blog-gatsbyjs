@@ -7,8 +7,8 @@
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 10vh 1fr 1fr;
-  background: linear-gradient(#03001e, #7303c0, #ff41cc);
   color: white;
+  background: #222222;
 
   &--main {
     grid-row: 2;

@@ -8,7 +8,7 @@
   height: 200vh;
   grid-template-columns: 3vw 82vw 5vw 10vw;
   grid-template-rows: 10vh 25vh repeat(4, 1fr);
-  background: linear-gradient(#03001e, #7303c0, #ff41cc);
+  background: #222;
 
   &--content__top {
     background: url("https://cdn.pixabay.com/photo/2016/06/02/02/33/triangles-1430105_1280.png") no-repeat center center / cover;

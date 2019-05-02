@@ -6,9 +6,6 @@ const Layout = ({ children }) => (
   <>
     <main className="content">
       <Header />
-      <div className="content--stars"></div>
-      <div className="content--twinkling"></div>
-      <div className="content--sky"></div>
       {children}
       <Footer />
     </main>

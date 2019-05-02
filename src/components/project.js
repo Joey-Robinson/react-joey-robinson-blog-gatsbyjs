@@ -17,7 +17,7 @@ const Project = ({ title, description, technology, url, github, imageData }) => 
       <a href={url} target="_blank" rel="noopener noreferrer">View this project online &rarr;</a>
     </p>
     <p className="project--back">
-      <AniLink direction="left" cover bg="#05012b" to="/portfolio/">&larr; Back to all projects</AniLink>
+      <AniLink direction="left" cover bg="#222222" to="/portfolio/">&larr; Back to all projects</AniLink>
     </p>
   </section>
 );

@@ -29,16 +29,16 @@ class Header extends Component {
           <nav className="header__container--nav">
             <ul>
               <li>
-                <AniLink direction="left" cover bg="#05012b" to="/">Home</AniLink>
+                <AniLink direction="left" cover bg="#222222" to="/">Home</AniLink>
               </li>
               <li>
-                <AniLink direction="right" cover bg="#05012b" to="/portfolio/">Portfolio</AniLink>
+                <AniLink direction="right" cover bg="#222222" to="/portfolio/">Portfolio</AniLink>
               </li>
               <li>
-                <AniLink direction="right" cover bg="#05012b" to="/about/">About</AniLink>
+                <AniLink direction="right" cover bg="#222222" to="/about/">About</AniLink>
               </li>
               <li>
-                <AniLink direction="right" cover bg="#05012b" to="/blog/">Blog</AniLink>
+                <AniLink direction="right" cover bg="#222222" to="/blog/">Blog</AniLink>
               </li>
             </ul>
           </nav>
