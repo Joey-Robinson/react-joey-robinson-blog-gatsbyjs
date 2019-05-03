@@ -30,7 +30,7 @@ const About = () => (
             >
               Anime Newsnetwork &rarr;
             </a>
-            Reports on the status of anime, manga, and more.
+            Reports on anime, manga, and more.
           </li>
           <li>
             <a
