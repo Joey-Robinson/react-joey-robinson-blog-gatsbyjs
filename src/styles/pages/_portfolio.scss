@@ -1,7 +1,6 @@
 .portfolio {
   grid-column: 1;
   grid-row: 2;
-  // min-height: 1725vh;
   background: #222222;
   height: 290vh;
   width: 100vw;
@@ -9,14 +8,14 @@
   display: grid;
   grid-template-columns: 20vw 80vw;
   color: white;
+  margin-top: 5rem;
 
   &__heading {
     display: block;
     position: fixed;
-    top: 15rem;
+    top: 20rem;
     left: 0;
     grid-column: 1;
-    // justify-self: left;
     font-size: 5rem;
     transform: rotate(90deg);
   }
@@ -66,7 +65,7 @@
   }
 
   p {
-    font-size: 1.9rem;
+    font-size: 1.6rem;
     padding: 0 3rem 0 3rem;
   }
 }

@@ -13,7 +13,7 @@
     "url": "http://sweetestsoutherncreations.com/",
     "image": "./images/ssc.jpg",
     "description": "Website created for business owner to showcase crafted goods. I was able to increase traffic to business' Facebook page and now their website.",
-    "technology": "CSS Grid, SCSS, Vanilla JavaScript, HTML",
+    "technology": "CSS Grid, SCSS, JS, HTML",
     "github": "https://github.com/Joey-Robinson/SweetestSouthernCreations"
   },
   {
@@ -22,7 +22,7 @@
     "url": "https://meowkats.netlify.com/",
     "image": "./images/gamervanity.png",
     "description": "Website creted as a tribute page for a friend. I wanted to have a showcase of sorts to highlight the players accomplishments in an easy to digest manner.",
-    "technology": "Webpack, Babel, SCSS, Vanilla JavaScript, CSS Grid, HTML, Parallel API Calls",
+    "technology": "Webpack, Babel, SCSS, JS, CSS Grid, HTML, Parallel API Calls",
     "github": "https://github.com/Joey-Robinson/secondTribute"
   },
   {
@@ -31,11 +31,11 @@
     "url": "https://joey-robinson.github.io/shellgame/",
     "image": "./images/vjsshellgame.png",
     "description": "Web app create to help improve memory. The app is based off of the World Of Warcraft world quest of the same name",
-    "technology": "Vanilla JavaScript, CSS",
+    "technology": "JS, CSS",
     "github": "https://github.com/Joey-Robinson/shellgame"
   },
   {
-    "title": "Joey Robinson Personal Site",
+    "title": "Personal Site",
     "slug": "Joey-Robinson",
     "url": "https://github.com/Joey-Robinson/JoeyRobinson",
     "image": "./images/personalsite.jpg",
@@ -44,39 +44,39 @@
     "github": "https://github.com/Joey-Robinson/JoeyRobinson"
   },
   {
-    "title": "Vanilla JavaScript Todo List",
+    "title": "JS Todo List",
     "slug": "Vjs-todo",
     "url": "https://joey-robinson.github.io/todo/",
     "image": "./images/vjstodo.png",
-    "description": "A simple to do list. I created this to text my ability using Vanilla technologies and feel comfortable with what I made.",
-    "technology": "Vanilla JavaScript, CSS, Font Awesome, Materialize CSS, Local Storage",
+    "description": "A simple to do list. I created this to text my ability using  technologies and feel comfortable with what I made.",
+    "technology": "JS, CSS, Font Awesome, Materialize CSS, Local Storage",
     "github": "https://github.com/Joey-Robinson/todo"
   },
   {
-    "title": "Vanilla JavaScript Quote Generator",
+    "title": "JS Quote Generator",
     "slug": "Vjs-quote-generator",
     "url": "https://vjs-quote-generator.netlify.com/",
     "image": "./images/vjsrandomquote.png",
     "description": "Web app that generates random quotes. The quotes are pre-written and randomlly selected.",
-    "technology": "Vanilla JavaScript, HTML, CSS",
+    "technology": "JS, HTML, CSS",
     "github": "https://github.com/Joey-Robinson/vjs-quote-generator"
   },
   {
-    "title": "Vanilla JavaScript Calculator",
+    "title": "JS Calculator",
     "slug": "Vjs-calculator",
     "url": "https://vjs-calculator.netlify.com/",
     "image": "./images/vjscalculator.png",
-    "description": "Web app that was created to again showcase skills in Vanilla technology usage.",
-    "technology": "Vanilla JavaScript, HTML, CSS",
+    "description": "Web app that was created to again showcase skills in  technology usage.",
+    "technology": "JS, HTML, CSS",
     "github": "https://github.com/Joey-Robinson/vjs-calculator"
   },
   {
-    "title": "Vanilla JavaScript Markdown Previewer",
+    "title": "JS Markdown Previewer",
     "slug": "Vjs-markdown-previewer",
     "url": "https://vjs-markdown-previewer.netlify.com/",
     "image": "./images/vjsmarkdownpreviewer.png",
     "description": "Web app to preview basic text into markdown using markdown syntax.",
-    "technology": "Vanilla JavaScript, marked, HTML, CSS",
+    "technology": "JS, marked, HTML, CSS",
     "github": "https://github.com/Joey-Robinson/vjs-markdown-previewer"
   },
   {
@@ -84,17 +84,17 @@
     "slug": "TF-soundboard",
     "url": "https://tf-soundboard.netlify.com/",
     "image": "./images/tfsoundboard.jpg",
-    "description": "Web app that was made for the guild <TF> on Hyjal. Again using Vanilla technologies, I was able to use sound files from twitch.tv clips to make this.",
-    "technology": "Vanilla JavaScript, CSS, CSS Grid, HTML",
+    "description": "Web app that was made for the guild <TF> on Hyjal. Again using  technologies, I was able to use sound files from twitch.tv clips to make this.",
+    "technology": "JS, CSS, CSS Grid, HTML",
     "github": "https://github.com/Joey-Robinson/tf-soundboard"
   },
   {
-    "title": "Vanilla JavaScript Periodic Table",
+    "title": "JS Periodic Table",
     "slug": "Vjs-periodic-table",
-    "url": "https://vanillajs-periodic-table.netlify.com/",
+    "url": "https://js-periodic-table.netlify.com/",
     "image": "./images/vjsperiodictable.png",
     "description": "An in browser periodic table. This was made just the sake of making it. ",
-    "technology": "Vanilla JavaScript, HTML, CSS",
+    "technology": "JS, HTML, CSS",
     "github": "https://github.com/Joey-Robinson/vJS-Periodic-Table"
   },
   {
@@ -107,16 +107,16 @@
     "github": "https://github.com/Joey-Robinson/react-todo-list-no-hooks"
   },
   {
-    "title": "Vanilla JavaScript Calorie Counter",
+    "title": "JS Calorie Counter",
     "slug": "Vjs-calorie-counter",
     "url": "https://vjs-calorie-counter.netlify.com/",
     "image": "./images/caloriecounter.png",
     "description": "Web app to keep track of calorie intake. Useful for monitoring personal intake, as it makes use of Local Storage.",
-    "technology": "Vanilla JavaScript, localStorage, CSS, Font Awesome, Materialize CSS",
+    "technology": "JS, localStorage, CSS, Font Awesome, Materialize CSS",
     "github": "https://github.com/Joey-Robinson/CalorieCounter"
   },
   {
-    "title": "React Pixabay Image Search",
+    "title": "Pixabay Search",
     "slug": "React-pixabay",
     "url": "https://react-pixabay-image-search.netlify.com/",
     "image": "./images/reactpixabayimagesearch.jpg",
@@ -125,7 +125,7 @@
     "github": "https://github.com/Joey-Robinson/react-pixabay-image-search"
   },
   {
-    "title": "React Lyric Search",
+    "title": "Lyric Search",
     "slug": "React-lyric-search",
     "url": "https://react-lyric-searches.netlify.com/",
     "image": "./images/reactlyricsearch.png",
@@ -134,7 +134,7 @@
     "github": "https://github.com/Joey-Robinson/react-lyric-search"
   },
   {
-    "title": "React Studio Ghibli API",
+    "title": "Studio Ghibli",
     "slug": "React-ghibli",
     "url": "https://react-studio-ghibli-api.netlify.com/",
     "image": "./images/reactstudioghibli.png",
@@ -143,12 +143,12 @@
     "github": "https://github.com/Joey-Robinson/react-studio-ghibli-api"
   },
   {
-    "title": "Vanilla JavaScript Time Tracker",
+    "title": "JS Time Tracker",
     "slug": "Vjs-time-tracker",
     "url": "https://vjs-time-tracker.netlify.com/",
     "image": "./images/vjstimer.png",
     "description": "Web app to keep track of multiple timers.",
-    "technology": "Vanilla JavaScript, Babel, Webpack, SCSS, Font Awesome",
+    "technology": "JS, Babel, Webpack, SCSS, Font Awesome",
     "github": "https://github.com/Joey-Robinson/vJS-time-tracker"
   },
   {
@@ -157,11 +157,11 @@
     "url": "https://joey-robinson.github.io/muhhoard/",
     "image": "./images/vjshoard.png",
     "description": "Web app to keep track of Accursed Hoard locations in Heaven on High in Final Fantasy 14.",
-    "technology": "Vanilla JavaScript, SCSS, CSS Grid, HTML",
+    "technology": "JS, SCSS, CSS Grid, HTML",
     "github": "https://github.com/Joey-Robinson/muhhoard"
   },
   {
-    "title": "React Mysidia Free Company",
+    "title": "Mysidia FC",
     "slug": "React-mysidia-fc",
     "url": "https://mysidiafc.netlify.com/#/",
     "image": "./images/reactmysidia.jpg",
@@ -170,21 +170,21 @@
     "github": "https://github.com/Joey-Robinson/MysidiaSite"
   },
   {
-    "title": "Vanilla JavaScript Chuck Norris Joke Generator",
+    "title": "JS Joke Generator",
     "slug": "Vjs-chuck-jokes",
     "url": "https://joey-robinson.github.io/ChuckNorrisJokes/",
     "image": "./images/vjschucknorris.png",
     "description": "Web app that returns a variety of jokes pertaining to Chuck Norris",
-    "technology": "Vanilla JavaScript, CSS, HTML",
+    "technology": "JS, CSS, HTML",
     "github": "https://github.com/Joey-Robinson/ChuckNorrisJokes"
   },
   {
-    "title": "Vanilla JavaScript Number Guesser",
+    "title": "JS Number Guesser",
     "slug": "Vjs-number-guesser",
     "url": "https://joey-robinson.github.io/numberguess/",
     "image": "./images/vjsnumberguesser.png",
     "description": "Web app that allows user to guess a number between 1 and 100.",
-    "technology": "Vanilla JavaScript, HTML",
+    "technology": "JS, HTML",
     "github": "https://github.com/Joey-Robinson/numberguess"
   }
 ]
