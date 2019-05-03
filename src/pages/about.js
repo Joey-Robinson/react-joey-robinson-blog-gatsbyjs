@@ -1,14 +1,24 @@
-import React from 'react'
-import Layout from '../components/layout'
-import SEO from '../components/seo'
- 
+import React from "react"
+import Layout from "../components/layout"
+import SEO from "../components/seo"
+
 const About = () => (
   <Layout>
-    <SEO title="About" description="About Page for Joey Robinson" keywords={[`Joey Robinson`, `Blog`, `Front-End`, `Front-End Development`, `React`, `GatsbyJS`, `Joey Robinson Portfolio`]} />
+    <SEO
+      title="About"
+      description="About Page for Joey Robinson"
+      keywords={[
+        `Joey Robinson`,
+        `Blog`,
+        `Front-End`,
+        `Front-End Development`,
+        `React`,
+        `GatsbyJS`,
+        `Joey Robinson Portfolio`,
+      ]}
+    />
     <section className="about">
-      <div className="about--top">
-
-      </div>
+      <div className="about--top" />
       <div className="about__resources">
         <h1>Resources:</h1>
         <ul>
@@ -20,7 +30,7 @@ const About = () => (
             >
               AniChart &rarr;
             </a>
-              Seasonal anime chart viewer.
+            Seasonal anime chart viewer.
           </li>
           <li>
             <a
@@ -38,7 +48,7 @@ const About = () => (
               rel="noopener noreferrer"
               href="https://myanimelist.net/"
             >
-            Myanime List &rarr;
+              Myanime List &rarr;
             </a>
             Social Networking for Anime.
           </li>
@@ -48,7 +58,7 @@ const About = () => (
               rel="noopener noreferrer"
               href="https://reactjs.org/"
             >
-            ReactJS &rarr;
+              ReactJS &rarr;
             </a>
             Official docs for react.
           </li>
@@ -58,17 +68,13 @@ const About = () => (
               rel="noopener noreferrer"
               href="https://www.gatsbyjs.org/"
             >
-            GatsbyJS &rarr;
+              GatsbyJS &rarr;
             </a>
             Official site for GatsbyJS.
           </li>
           <li>
-            <a
-              target="_blank"
-              rel="noopener noreferrer"
-              href="https://dev.to/"
-            >
-            Dev.to &rarr;
+            <a target="_blank" rel="noopener noreferrer" href="https://dev.to/">
+              Dev.to &rarr;
             </a>
             Great resource for development articles.
           </li>
@@ -78,7 +84,7 @@ const About = () => (
               rel="noopener noreferrer"
               href="https://developer.mozilla.org/en-US/"
             >
-            MDN &rarr;
+              MDN &rarr;
             </a>
             Mozilla Developer Network.
           </li>
@@ -88,7 +94,7 @@ const About = () => (
               rel="noopener noreferrer"
               href="https://css-tricks.com/"
             >
-            CSS Tricks &rarr;
+              CSS Tricks &rarr;
             </a>
             Everything you need for CSS & more.
           </li>
@@ -98,7 +104,7 @@ const About = () => (
               rel="noopener noreferrer"
               href="https://stackoverflow.com/"
             >
-            Stackoverflow &rarr;
+              Stackoverflow &rarr;
             </a>
             Duplicate, deleted.
           </li>
@@ -106,17 +112,31 @@ const About = () => (
       </div>
       <div className="about--left">
         <h1>Me</h1>
-        <p>I'm Joey Robinson. I'm a Frontend Developer. I'm currently not employed anywhere. I've been teaching myself to write code since 2017 and I absolutely love it. In addition to being a developer, I also love learning. Not just about development trends and technologies, but learning in general.</p>
-        <p>I'm a huge Geek or Nerd. Whatever fits. I love technology, movies, and anime. I especially love anime. It's been an important part of my life for the better part of 20 years.</p>
-        <p>I just want to make amazing things. I made this website to showcase some of my skills and I hope that someone will notice it. I love everything about writing code. I love being able to control what someone sees and when they see it.</p>
-        <p>In the right column, I have a list of resources I use on almost a daily basis. </p>
-      </div>
-      <div className="about--empty">
-        &nbsp;
+        <p>
+          I'm Joey Robinson. I'm a Frontend Developer. I'm currently not
+          employed anywhere. I've been teaching myself to write code since 2017
+          and I absolutely love it. In addition to being a developer, I also
+          love learning. Not just about development trends and technologies, but
+          learning in general.
+        </p>
+        <p>
+          I'm a huge Geek or Nerd. Whatever fits. I love technology, movies, and
+          anime. I especially love anime. It's been an important part of my life
+          for the better part of 20 years.
+        </p>
+        <p>
+          I just want to make amazing things. I made this website to showcase
+          some of my skills and I hope that someone will notice it. I love
+          everything about writing code. I love being able to control what
+          someone sees and when they see it.
+        </p>
+        <p>
+          In the right column, I have a list of resources I use on almost a
+          daily basis.{" "}
+        </p>
       </div>
     </section>
   </Layout>
 )
-
 
 export default About
