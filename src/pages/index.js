@@ -37,14 +37,14 @@ const Home = () => (
           </a>
         </li>
         <li>
-          <a href="mailto:joeyrobinsondev@gmail.com">
-            <MdEmail />
-          </a>
+        <a href="https://twitter.com/joeyrobinsondev" target="_blank" rel="noopener noreferrer">
+          <FaTwitterSquare />
+        </a>
         </li>
         <li>
-          <a href="https://twitter.com/joeyrobinsondev" target="_blank" rel="noopener noreferrer">
-            <FaTwitterSquare />
-          </a>
+        <a href="mailto:joeyrobinsondev@gmail.com">
+          <MdEmail />
+        </a>
         </li>
       </ul>
     </section>

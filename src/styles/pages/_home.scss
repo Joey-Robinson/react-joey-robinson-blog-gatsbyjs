@@ -25,7 +25,6 @@
     background: #222;
     margin: 25rem 0 0 0;
     justify-self: center;
-    // align-self: center;
 
     a {
       color: yellow;
@@ -33,12 +32,11 @@
 
     h1 {
       font-size: 3rem;
-      // padding: 6rem 0 0 0;
     }
   }
 
   &--content__bottom {
-    grid-column: 1;
+    grid-column: 2;
     grid-row: 4;
     // z-index: 20;
     font-size: 5rem;
@@ -46,7 +44,6 @@
     justify-self: center;
     align-self: end;
     columns: 4;
-    display: none;
 
     a {
       color: yellow;
