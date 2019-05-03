@@ -17,28 +17,23 @@
   }
 
   &--content__top {
-    grid-column: 2 / -1;
+    grid-column: 2;
     grid-row: 2;
     color: white;
     text-shadow: 2px 2px black;
     z-index: 30;
     background: #222;
-    margin: 9rem 0 0 0;
-    justify-self: right;
+    margin: 25rem 0 0 0;
+    justify-self: center;
+    // align-self: center;
 
     a {
       color: yellow;
     }
 
     h1 {
-      text-align: center;
       font-size: 3rem;
-      padding: 6rem 0 0 0;
-    }
-
-    p {
-      font-size: 1.8rem;
-      padding: 1rem 12rem;
+      // padding: 6rem 0 0 0;
     }
   }
 

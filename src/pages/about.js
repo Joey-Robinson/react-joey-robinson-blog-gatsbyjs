@@ -6,6 +6,9 @@ const About = () => (
   <Layout>
     <SEO title="About" description="About Page for Joey Robinson" keywords={[`Joey Robinson`, `Blog`, `Front-End`, `Front-End Development`, `React`, `GatsbyJS`, `Joey Robinson Portfolio`]} />
     <section className="about">
+      <div className="about--top">
+        
+      </div>
       <div className="about--main">
         <h1>A bit of history:</h1>
         <p>Well, this is me. As stated on the home page, I'm a Frontend Developer. I started this journey roughly 2 years and I absolutely love it. I love being able to control every aspect of what I or someone else sees. I'm just trying to make amazing stuff with what I've learned and hopefully soon I make find a more professional role that will enable me to do that on a larger scale.</p>

@@ -6,7 +6,8 @@ import { FaLinkedin } from 'react-icons/fa/index.esm'
 import { FaGithub } from 'react-icons/fa/index.esm'
 import { MdEmail } from 'react-icons/md/index.esm'
 import { FaTwitterSquare } from 'react-icons/fa/index.esm'
-import AniLink from "gatsby-plugin-transition-link/AniLink"
+// import AniLink from "gatsby-plugin-transition-link/AniLink"
+import Typed from 'react-typed'
 
 const Home = () => (
   <Layout>
@@ -14,9 +15,15 @@ const Home = () => (
     <section className="home">
       <div className="home--content__banner"></div>
       <div className="home--content__top">
-        <h1>Hi, I'm Joey.</h1>
-        <p>I'm a Frontend Developer and I like making things. My primary focus is using React (GatsbyJS) and Vanilla JavaScript. I'm not a designer but I enjoy working with S/CSS and CSS Grid. I'm looking to create and maintain amazing websites and web applications. Feel free to contact me with any questions or comments.</p>
-        <p>A bit more about me: I started web development in 2017 and have been teaching myself everything I can inside of the development sphere. To read more about me head over to the <AniLink direction="right" cover bg="#05012b" to="/about/">About</AniLink> page.</p>
+        <h1>Hi! I'm Joey, I'm a&nbsp;
+          <Typed
+            strings={['Develoepr', 'Developer.', 'Reader.', '(Poor) Writer.', 'Person.', 'Geek.', 'Nerd.']}
+            typeSpeed={90}
+            backSpeed={110}
+            backDelay={1000}
+            loop
+          />
+      </h1>
       </div>
       <ul className="home--content__bottom">
         <li>
