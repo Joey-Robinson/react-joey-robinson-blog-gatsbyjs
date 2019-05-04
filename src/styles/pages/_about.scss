@@ -16,19 +16,25 @@
     grid-column: 3;
     justify-self: center;
     align-self: start;
-    color: #222;
-    background: #b3b9c5;
+    color: #b3b9c5;
+    background: #2d2d2d;
     width: 69.84rem;
     font-size: 1.6rem;
 
     ul {
-      line-height: .75;
+      line-height: 0.75;
     }
 
     a {
       margin: 1rem 1.5rem 1rem 6rem;
       color: yellow;
       display: inline-block;
+      transition: all .3s ease-in-out;
+
+      &:hover {
+        transition: all .3s ease-in-out;
+        color: darkorchid;
+      }
     }
 
     h1 {

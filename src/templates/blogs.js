@@ -2,6 +2,7 @@ import React from 'react'
 import AniLink from "gatsby-plugin-transition-link/AniLink"
 import { graphql } from 'gatsby'
 import Layout from '../components/layout'
+import BlogInformation from '../components/blog-information'
 
 export const postQuery = graphql`
   query BlogPostByPath($path: String) {
@@ -49,6 +50,9 @@ const BlogTemplate = ({ data }) => {
           className="blogs--content__main"
           dangerouslySetInnerHTML={{ __html: post.html }} 
         />
+        <div className="blogs--content__left">
+          <BlogInformation />
+        </div>
         <h4 className="blogs--content__maker">
           {post.frontmatter.date}
         </h4>

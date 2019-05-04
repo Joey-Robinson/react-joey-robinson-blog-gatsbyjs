@@ -20,7 +20,7 @@ const About = () => (
     <section className="about">
       <div className="about--top" />
       <div className="about__resources">
-        <h1>Resources:</h1>
+        <h1>Resources</h1>
         <ul>
           <li>
             <a
