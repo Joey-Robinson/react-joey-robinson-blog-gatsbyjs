@@ -81,3 +81,28 @@
     color: yellow;
   }
 }
+
+.previous {
+  color: #b3b9c5;
+  font-size: 2rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  position: fixed;
+  margin: 5rem 0 0 6rem;
+
+  li {
+    padding: 1rem 3rem;
+    border-bottom: 1px solid #b3b9c5;
+    border-left: 1px solid #b3b9c5;
+  }
+
+  a {
+    color: yellow;
+    transition: all .3s ease-in-out;
+
+    &:hover {
+      transition: all .3s ease-in-out;
+      color: darkorchid;
+    }
+  }
+}

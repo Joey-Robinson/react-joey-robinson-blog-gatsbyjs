@@ -21,14 +21,14 @@ export default () => (
   }
 `}
     render={data => (
-      <ul>
+      <ul className="previous">
       {data.allMarkdownRemark.edges.map(post => (
         <li key={post.node.id}>
           <AniLink
             direction="right" cover bg="#222222"
             to={post.node.frontmatter.path}
           >
-          {post.node.frontmatter.title}
+          {post.node.frontmatter.title} &rarr; <br/>
           </AniLink>
           {post.node.frontmatter.date}
         </li>
