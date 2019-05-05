@@ -1,8 +1,8 @@
-import React from 'react'
-import { graphql, useStaticQuery } from 'gatsby'
-import Layout from '../components/layout'
-import ProjectPreview from '../components/project-preview'
-import SEO from '../components/seo'
+import React from "react"
+import { graphql, useStaticQuery } from "gatsby"
+import Layout from "../components/layout"
+import ProjectPreview from "../components/project-preview"
+import SEO from "../components/seo"
 
 const Portfolio = () => {
   const data = useStaticQuery(graphql`
@@ -27,19 +27,31 @@ const Portfolio = () => {
         }
       }
     }
-  `);
-  const projects = data.allProjectsJson.edges;
+  `)
+  const projects = data.allProjectsJson.edges
 
   return (
     <Layout>
-      <SEO title="Portfolio" description="Portfolio for Joey Robinson" keywords={[`Joey Robinson`, `Portfolio`, `Front-End`, `Front-End Development`, `React`, `GatsbyJS`, `Joey Robinson Portfolio`]} />
+      <SEO
+        title="Portfolio"
+        description="Portfolio for Joey Robinson"
+        keywords={[
+          `Joey Robinson`,
+          `Portfolio`,
+          `Front-End`,
+          `Front-End Development`,
+          `React`,
+          `GatsbyJS`,
+          `Joey Robinson Portfolio`,
+        ]}
+      />
       <section className="portfolio">
-      <h1 className="portfolio__heading">Projects</h1> 
+        <h1 className="portfolio__heading">Projects</h1>
         {projects.map(({ node: project }) => {
-          const title = project.title;
-          const description = project.description;
-          const slug = project.slug;
-          const imageData = project.image.childImageSharp.fluid;
+          const title = project.title
+          const description = project.description
+          const slug = project.slug
+          const imageData = project.image.childImageSharp.fluid
           const url = project.url
           const technology = project.technology
           const github = project.github
@@ -54,11 +66,11 @@ const Portfolio = () => {
               technology={technology}
               github={github}
             />
-          );
+          )
         })}
       </section>
     </Layout>
-  );
-};
+  )
+}
 
-export default Portfolio;
+export default Portfolio

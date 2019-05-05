@@ -2,11 +2,28 @@
   grid-column: 1;
   grid-row: 2;
   display: grid;
-  grid-template-columns: 30.5vw 1fr;
+  grid-template-columns: 28.5vw 1fr;
   width: 100vw;
   grid-template-rows: 10vh repeat(5, 1fr);
   max-height: 100vh;
-  color: white;
+  color: #b3b9c5;
+
+  &--left {
+    grid-column: 1;
+    grid-row: 2 / 6;
+    height: 573.6px;
+    background: #2d2d2d;
+  }
+
+  a {
+    color: yellow;
+    transition: all .3s ease-in-out;
+
+    &:hover {
+      transition: all .3s ease-in-out;
+      color: darkorchid;
+    }
+  }
 
   picture {
     grid-column: 2;
@@ -35,7 +52,7 @@
     align-self: center;
     justify-self: left;
     font-size: 2.5rem;
-    padding: 3rem 0 0 3rem;
+    padding: 6rem 0 0 3rem;
     text-decoration: underline;
     z-index: 11;
   }
@@ -43,16 +60,16 @@
   &--description {
     grid-column: 1;
     grid-row: 2 / 4;
-    align-self: end;
+    align-self: center;
     justify-self: left;
-    padding: 0 6rem 0 3rem;
+    padding: 12rem 6rem 0 3rem;
     font-size: 1.8rem;
   }
 
   &--technology {
     grid-column: 1;
     grid-row: 4;
-    align-self: center;
+    align-self: end;
     justify-self: left;
     padding: 0 3rem 0 3rem;
 
@@ -67,22 +84,14 @@
     align-self: end;
     justify-self: left;
     padding: 0 0 0 3rem;
-
-    a {
-      color: yellow;
-    }
   }
 
   &--github {
     grid-column: 1;
     grid-row: 5;
-    align-self: start;
+    align-self: center;
     justify-self: left;
     padding: 3rem 0 0 3rem;
-
-    a {
-      color: yellow;
-    }
   }
 
   &--back {
@@ -90,12 +99,8 @@
     grid-row: 2;
     align-self: start;
     justify-self: left;
-    padding: 0 0 4rem 3rem;
+    padding: 3rem 0 0 3rem;
     z-index: 11;
-
-    a {
-      color: yellow;
-    }
   }
 }
 

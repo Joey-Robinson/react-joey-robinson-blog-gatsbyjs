@@ -2,7 +2,6 @@
   grid-column: 1;
   grid-row: 1;
   z-index: 20;
-  color: white;
   display: grid;
   min-height: 150vh;
   height: 250vh;
@@ -10,6 +9,7 @@
   grid-template-columns: 3vw 1fr 2fr 1fr;
   grid-template-rows: 10vh 15vh 5vh repeat(4, 1fr);
   background: #222;
+  color: white;
 
   &--content__left {
     grid-column: 2;
