@@ -1,29 +1,30 @@
 .blog {
   grid-column: 1;
   grid-row: 2;
-  background: #222222;
-  // height: 290vh;
-  width: 100vw;
+  min-height: 150vh;
+  max-height: 200vh;
   z-index: 10;
-  display: grid;
-  grid-template-columns: 20vw 80vw;
+  display: flex;
+  flex-direction: column;
   color: white;
-  margin-top: 5rem;
+  width: 100vw;
+  background: #222222;
+  justify-items: right;
 
   &--top {
-    grid-row: 2;
-    grid-column: 1 / -1;
-    height: 25vh;
+    position: absolute;
+    top: 10vh;
+    height: 20vh;
+    width: 100vw;
     background: url("https://cdn.pixabay.com/photo/2016/06/02/02/31/background-1430103_1280.png") no-repeat center center / cover;
   }
 
   &--display {
+    background: #222;
     z-index: 20;
     grid-column: 1 / -1;
     grid-row: 1 / -1;
-    align-self: start;
-    justify-self: center;
-    margin: 3rem auto 0 auto;
+    margin: 10rem auto 0 auto;
     display: grid;
     padding: 1rem 1rem;
     transition: all .3s ease-in-out;
