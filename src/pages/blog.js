@@ -50,7 +50,7 @@ const Blog = ({ data }) => (
               className="blog--display__title blog--list__title"
               to={post.node.frontmatter.path}
             >
-              <h1>{post.node.frontmatter.title}</h1>
+              <h1>{post.node.frontmatter.title} &rarr;</h1>
             </AniLink>
             <div className="blog--display__date blog--list__date">
               {post.node.frontmatter.date}

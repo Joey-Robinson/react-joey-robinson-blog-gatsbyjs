@@ -73,7 +73,6 @@
   grid-column: 1;
   grid-row: 1 / -1;
   min-height: 100vh;
-  // max-height: 100vh;
   z-index: 20;
   display: grid;
   grid-template-columns: 3vw 1fr 1fr;
@@ -128,6 +127,12 @@
   &__title {
     padding: 0 1rem;
     color: yellow;
+    transition: all .3s ease-in-out;
+
+    &:hover {
+      transition: all .3s ease-in-out;
+      color: darkorchid;
+    }
   }
 
   &__date {
