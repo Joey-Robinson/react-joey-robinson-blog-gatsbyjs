@@ -40,32 +40,35 @@ const Blog = ({ data }) => (
     />
     <section className="blog">
       <div className="blog--top" />
-      {data.allMarkdownRemark.edges.map(post => (
-        <div className="blog--display" key={post.node.id}>
-          <AniLink
-            direction="right"
-            cover
-            bg="#222222"
-            className="blog--display__title"
-            to={post.node.frontmatter.path}
-          >
-            <h1>{post.node.frontmatter.title}</h1>
-          </AniLink>
-          <div className="blog--display__date">
-            {post.node.frontmatter.date}
-          </div>
-          <p className="blog--display__excerpt">
+      <ul className="blog--list">
+        {data.allMarkdownRemark.edges.map(post => (
+          <li className="blog--display blog--list__display" key={post.node.id}>
             <AniLink
-              to={post.node.frontmatter.path}
               direction="right"
               cover
               bg="#222222"
+              className="blog--display__title blog--list__title"
+              to={post.node.frontmatter.path}
             >
-              {post.node.excerpt}
+              <h1>{post.node.frontmatter.title}</h1>
             </AniLink>
-          </p>
-        </div>
-      ))}
+            <div className="blog--display__date blog--list__date">
+              {post.node.frontmatter.date}
+            </div>
+            <br />
+            <p className="blog--display__excerpt blog--list__excerpt">
+              <AniLink
+                to={post.node.frontmatter.path}
+                direction="right"
+                cover
+                bg="#222222"
+              >
+                {post.node.excerpt}
+              </AniLink>
+            </p>
+          </li>
+        ))}
+      </ul>
     </section>
   </Layout>
 )
