@@ -29,7 +29,12 @@ const Project = ({
       </a>
     </p>
     <p className="project--back">
-      <AniLink direction="left" cover bg="#222222" to="/portfolio/">
+      <AniLink
+        direction="left"
+        cover
+        bg="linear-gradient(to left, #b3b9c5, #90939c, #6e6f74, #4c4c4f, #2d2d2d)"
+        to="/portfolio/"
+      >
         &larr; Back to all projects
       </AniLink>
     </p>

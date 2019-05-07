@@ -46,7 +46,7 @@ const Blog = ({ data }) => (
             <AniLink
               direction="right"
               cover
-              bg="#222222"
+              bg="linear-gradient(to right, #b3b9c5, #90939c, #6e6f74, #4c4c4f, #2d2d2d)"
               className="blog--display__title blog--list__title"
               to={post.node.frontmatter.path}
             >
@@ -61,7 +61,7 @@ const Blog = ({ data }) => (
                 to={post.node.frontmatter.path}
                 direction="right"
                 cover
-                bg="#222222"
+                bg="linear-gradient(to right, #b3b9c5, #90939c, #6e6f74, #4c4c4f, #2d2d2d)"
               >
                 {post.node.excerpt}
               </AniLink>
