@@ -72,7 +72,7 @@
 .blog {
   grid-column: 1;
   grid-row: 1 / -1;
-  min-height: 100vh;
+  height: 100vh;
   z-index: 20;
   display: grid;
   grid-template-columns: 3vw 1fr 1fr;
@@ -83,7 +83,7 @@
   &--top {
     grid-row: 2 / 4;
     grid-column: 1 / -1;
-    height: 20vh;
+    height: 25vh;
     width: 100vw;
     background: url("https://cdn.pixabay.com/photo/2016/06/02/02/31/background-1430103_1280.png") no-repeat center center / cover;
   }

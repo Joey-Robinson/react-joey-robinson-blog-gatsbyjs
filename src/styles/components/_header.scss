@@ -37,9 +37,9 @@
 
     &__close {
       @include headerButton;
-      width: 95vw;
+      width: 100vw;
       align-self: end;
-      padding: 0 0 2rem 0;
+      padding: 3px;
     }
   }
 
