@@ -76,7 +76,7 @@
   z-index: 20;
   display: grid;
   grid-template-columns: 3vw 1fr 1fr;
-  grid-template-rows: 10vh 15vh 5vh repeat(4, 1fr);
+  grid-template-rows: 10vh 15vh repeat(4, 1fr);
   color: #b3b9c5;
   background: #222222;
 
@@ -91,9 +91,9 @@
   ul {
     width: 97vw;
     grid-column: 2 / -1;
-    grid-row: 2 / -1;
+    grid-row: 3;
     background: #222;
-    align-self: center;
+    align-self: end;
 
     div {
       display: block;
