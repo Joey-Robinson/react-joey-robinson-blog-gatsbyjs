@@ -11,10 +11,8 @@ export const pageQuery = graphql`
         node {
           title
           slug
+          excerpt
           publishedDate(formatString: "MMMM Do, YYYY")
-          body {
-            json
-          }
         }
       }
     }
@@ -64,7 +62,7 @@ const Blog = ({ data }) => (
                 cover
                 bg="linear-gradient(to right, #b3b9c5, #90939c, #6e6f74, #4c4c4f, #2d2d2d)"
               >
-                Hi
+                {post.node.excerpt}
               </AniLink>
             </p>
           </li>
