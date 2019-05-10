@@ -4,7 +4,7 @@ import SEO from "../components/seo"
 import "../styles/main.scss"
 import { FaLinkedin } from "react-icons/fa/index.esm"
 import { FaGithub } from "react-icons/fa/index.esm"
-import { MdEmail } from "react-icons/md/index.esm"
+import { FaGoogle } from "react-icons/fa/index.esm"
 import { FaTwitterSquare } from "react-icons/fa/index.esm"
 import Typed from "react-typed"
 
@@ -76,7 +76,7 @@ const Home = () => (
         </li>
         <li>
           <a href="mailto:joeyrobinsondev@gmail.com">
-            <MdEmail aria-label="Email" />
+            <FaGoogle aria-label="Email" />
           </a>
         </li>
       </ul>

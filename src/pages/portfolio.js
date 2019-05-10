@@ -11,6 +11,7 @@ const Portfolio = () => {
         edges {
           node {
             title
+            id
             slug
             description
             url
@@ -55,6 +56,7 @@ const Portfolio = () => {
           const url = project.url
           const technology = project.technology
           const github = project.github
+          const id = project.id
 
           return (
             <ProjectPreview
@@ -65,6 +67,7 @@ const Portfolio = () => {
               url={url}
               technology={technology}
               github={github}
+              key={id}
             />
           )
         })}

@@ -26,10 +26,6 @@
     margin: 25rem 0 0 0;
     justify-self: center;
 
-    a {
-      color: yellow;
-    }
-
     h1 {
       font-size: 3rem;
     }
@@ -47,7 +43,13 @@
 
     a {
       color: yellow;
+      transition: all .3s ease-in-out;
       display: block;
+
+      &:hover {
+        color: darkorchid;
+        transition: all .3s ease-in-out;
+      }
     }
   }
 }

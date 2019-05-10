@@ -29,14 +29,6 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
     })
   })
 
-  // result.data.allContentfulBlogPost.edges.forEach(edge => {
-  //   actions.createPage({
-  //     path: `/${edge.node.slug}`,
-  //     component: require.resolve("./src/templates/blogs.js"),
-  //     context: edge.node.slug,
-  //   })
-  // })
-
   projects.forEach(({ node: project }) => {
     const slug = project.slug
     actions.createPage({

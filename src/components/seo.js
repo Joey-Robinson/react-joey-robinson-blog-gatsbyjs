@@ -22,7 +22,7 @@ const SEO = ({ description, lang, meta, keywords, title }) => {
 
   return (
     <Helmet
-      htmlAttributes={{ lang, }}
+      htmlAttributes={{ lang }}
       title={title}
       titleTemplate={`%s | ${site.siteMetadata.title}`}
       meta={[
@@ -62,9 +62,9 @@ const SEO = ({ description, lang, meta, keywords, title }) => {
         .concat(
           keywords.length > 0
             ? {
-              name: `keywords`,
-              content: keywords.join(`, `),
-            }
+                name: `keywords`,
+                content: keywords.join(`, `),
+              }
             : []
         )
         .concat(meta)}

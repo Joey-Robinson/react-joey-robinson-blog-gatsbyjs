@@ -1,8 +1,5 @@
-import React from 'react'
+import React from "react"
 
-
-const HeaderLayer = (({ className }) => (
-  <div className={className}></div>
-))
+const HeaderLayer = ({ className }) => <div className={className} />
 
 export default HeaderLayer

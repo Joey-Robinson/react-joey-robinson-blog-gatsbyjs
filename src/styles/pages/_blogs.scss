@@ -3,9 +3,9 @@
   grid-row: 1;
   z-index: 20;
   display: grid;
-  min-height: 150vh;
-  height: 250vh;
-  max-height: 300vh;
+  min-height: 100vh;
+  height: 150vh;
+  max-height: 200vh;
   grid-template-columns: 3vw 1fr 2fr 1fr;
   grid-template-rows: 10vh 15vh 5vh repeat(4, 1fr);
   background: #222;
@@ -45,7 +45,7 @@
 
   &--content__main {
     grid-column: 3 / 5;
-    width: 100%;
+    // width: 100%;
     grid-row: 3 / -1;
     justify-self: center;
     align-self: start;
@@ -58,7 +58,7 @@
       text-shadow: 2px 2px black;
       font-size: 1.8rem;
       margin: 3rem 0 0 0;
-      padding: 3rem 12rem;
+      padding: 3rem 6rem 0 6rem;
     }
   }
 
