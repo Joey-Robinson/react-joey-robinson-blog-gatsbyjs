@@ -6,16 +6,14 @@ import { graphql } from "gatsby"
 
 export const pageQuery = graphql`
   query BlogIndexQuery {
-    allMarkdownRemark(sort: { order: DESC, fields: [frontmatter___date] }) {
+    allContentfulBlogPost(sort: { fields: publishedDate, order: DESC }) {
       edges {
         node {
-          id
-          excerpt(pruneLength: 150)
-          frontmatter {
-            path
-            title
-            date(formatString: "MMMM DD, YYYY")
-            author
+          title
+          slug
+          publishedDate(formatString: "MMMM Do, YYYY")
+          body {
+            json
           }
         }
       }
@@ -41,29 +39,32 @@ const Blog = ({ data }) => (
     <section className="blog">
       <div className="blog--top" />
       <ul className="blog--list">
-        {data.allMarkdownRemark.edges.map(post => (
-          <li className="blog--display blog--list__display" key={post.node.id}>
+        {data.allContentfulBlogPost.edges.map(post => (
+          <li
+            className="blog--display blog--list__display"
+            key={post.node.title}
+          >
             <AniLink
               direction="right"
               cover
               bg="linear-gradient(to right, #b3b9c5, #90939c, #6e6f74, #4c4c4f, #2d2d2d)"
               className="blog--display__title blog--list__title"
-              to={post.node.frontmatter.path}
+              to={`/${post.node.slug}`}
             >
-              <h1>{post.node.frontmatter.title} &rarr;</h1>
+              <h1>{post.node.title} &rarr;</h1>
             </AniLink>
             <div className="blog--display__date blog--list__date">
-              {post.node.frontmatter.date}
+              {post.node.publishedDate}
             </div>
             <br />
             <p className="blog--display__excerpt blog--list__excerpt">
               <AniLink
-                to={post.node.frontmatter.path}
+                to={`/${post.node.slug}`}
                 direction="right"
                 cover
                 bg="linear-gradient(to right, #b3b9c5, #90939c, #6e6f74, #4c4c4f, #2d2d2d)"
               >
-                {post.node.excerpt}
+                Hi
               </AniLink>
             </p>
           </li>

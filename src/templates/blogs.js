@@ -3,37 +3,31 @@ import AniLink from "gatsby-plugin-transition-link/AniLink"
 import { graphql } from "gatsby"
 import Layout from "../components/layout"
 import BlogInformation from "../components/blog-information"
+import { documentToReactComponents } from "@contentful/rich-text-react-renderer"
 
 export const postQuery = graphql`
-  query BlogPostByPath($path: String) {
-    markdownRemark(frontmatter: { path: { eq: $path } }) {
-      html
-      frontmatter {
-        path
-        title
-        author
-        date(formatString: "MMMM DD, YYYY")
+  query BlogPostByPath($slug: String) {
+    contentfulBlogPost(slug: { eq: $slug }) {
+      title
+      publishedDate(formatString: "MMMM Do, YYYY")
+      body {
+        json
       }
     }
   }
 `
 
-// {
-//   "data": {
-//     "markdownRemark": {
-//       "html": "<p>Hello</p>",
-//       "frontmatter": {
-//         "path": "/test-blog-post/",
-//         "title": "Test Blog Post",
-//         "author": "JBear",
-//         "date": "February 01, 2019"
-//       }
-//     }
-//   }
-// }
-
 const BlogTemplate = ({ data }) => {
-  const post = data.markdownRemark
+  const post = data.contentfulBlogPost
+  const options = {
+    renderNode: {
+      "embeded-asset-block": node => {
+        const alt = node.data.target.fields.title["en-US"]
+        const url = node.data.target.fields.file["en-US"].url
+        return <img src={url} alt={alt} />
+      },
+    },
+  }
   return (
     <Layout>
       <div className="blogs">
@@ -49,16 +43,15 @@ const BlogTemplate = ({ data }) => {
           </AniLink>
         </div>
         <div className="blogs--content__title">
-          <h1>{post.frontmatter.title}</h1>
+          <h1>{post.title}</h1>
         </div>
-        <div
-          className="blogs--content__main"
-          dangerouslySetInnerHTML={{ __html: post.html }}
-        />
+        <div className="blogs--content__main">
+          {documentToReactComponents(post.body.json, options)}
+        </div>
         <div className="blogs--content__left">
           <BlogInformation />
         </div>
-        <h4 className="blogs--content__maker">{post.frontmatter.date}</h4>
+        <h4 className="blogs--content__maker">{post.publishedDate}</h4>
       </div>
     </Layout>
   )
