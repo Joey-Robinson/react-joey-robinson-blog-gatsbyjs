@@ -24,7 +24,7 @@ class Header extends Component {
           type="button"
           onClick={this.toggleHidden}
         >
-          {this.state.text ? "▼" : "▲"}
+          <span>{this.state.text ? "▼" : "▲"}</span>
         </button>
         <header
           className={
@@ -41,7 +41,7 @@ class Header extends Component {
                   direction="left"
                   cover
                   to="/"
-                  bg="linear-gradient(to left, #b3b9c5, #90939c, #6e6f74, #4c4c4f, #2d2d2d)"
+                  bg="linear-gradient(to left top, #9932cc, #6e39a4, #4d367a, #342d4e, #222222)"
                 >
                   Home
                 </AniLink>
@@ -50,7 +50,7 @@ class Header extends Component {
                 <AniLink
                   direction="right"
                   cover
-                  bg="linear-gradient(to right, #b3b9c5, #90939c, #6e6f74, #4c4c4f, #2d2d2d)"
+                  bg="linear-gradient(to right top, #9932cc, #6e39a4, #4d367a, #342d4e, #222222)"
                   to="/portfolio/"
                 >
                   Portfolio
@@ -60,7 +60,7 @@ class Header extends Component {
                 <AniLink
                   direction="right"
                   cover
-                  bg="linear-gradient(to right, #b3b9c5, #90939c, #6e6f74, #4c4c4f, #2d2d2d)"
+                  bg="linear-gradient(to right top, #9932cc, #6e39a4, #4d367a, #342d4e, #222222)"
                   to="/about/"
                 >
                   About
@@ -70,7 +70,7 @@ class Header extends Component {
                 <AniLink
                   direction="right"
                   cover
-                  bg="linear-gradient(to right, #b3b9c5, #90939c, #6e6f74, #4c4c4f, #2d2d2d)"
+                  bg="linear-gradient(to right top, #9932cc, #6e39a4, #4d367a, #342d4e, #222222)"
                   to="/blog/"
                 >
                   Blog

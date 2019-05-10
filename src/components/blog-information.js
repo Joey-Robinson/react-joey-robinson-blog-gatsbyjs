@@ -25,7 +25,7 @@ export default () => (
             <AniLink
               direction="right"
               cover
-              bg="linear-gradient(to right, #b3b9c5, #90939c, #6e6f74, #4c4c4f, #2d2d2d)"
+              bg="linear-gradient(to right top, #9932cc, #6e39a4, #4d367a, #342d4e, #222222)"
               to={`/${post.node.slug}`}
             >
               {post.node.title} &rarr; <br />

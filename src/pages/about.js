@@ -127,8 +127,12 @@ const About = () => (
         <p>
           I just want to make amazing things. I made this website to showcase
           some of my skills and I hope that someone will notice it. I love
-          everything about writing code. I love being able to control what
-          someone sees and when they see it.
+          everything about writing code.
+        </p>
+        <p>
+          As stated above, I've been writing code since 2017. I don't see myself
+          doing anything else. I enjoy what I do and have a deep passion and
+          desire to do it more.
         </p>
         <p>
           In the right column, I have a list of resources I use on almost a

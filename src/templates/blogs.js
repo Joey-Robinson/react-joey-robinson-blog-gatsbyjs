@@ -36,7 +36,7 @@ const BlogTemplate = ({ data }) => {
           <AniLink
             direction="left"
             cover
-            bg="linear-gradient(to left, #b3b9c5, #90939c, #6e6f74, #4c4c4f, #2d2d2d)"
+            bg="linear-gradient(to left top, #9932cc, #6e39a4, #4d367a, #342d4e, #222222)"
             to="/blog/"
           >
             &#8592; Go Back

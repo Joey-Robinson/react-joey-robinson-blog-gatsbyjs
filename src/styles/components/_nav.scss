@@ -37,14 +37,14 @@
       background: white;
       font-weight: 700;
       letter-spacing: 0.01em;
-      line-height: 1.333em;
+      line-height: 1em;
       clip-path: polygon(95% 0, 100% 50%, 95% 100%, 0% 100%, 5% 50%, 0% 0%);
-      padding: 1rem 1rem;
+      padding: 7.5px 5px;
 
       &::before {
-        border-bottom: 1.333em solid transparent;
+        border-bottom: 1em solid transparent;
         border-left: 0.667em solid yellow;
-        border-top: 1.333em solid transparent;
+        border-top: 1em solid transparent;
         bottom: 0;
         content: '';
         height: 0;
@@ -55,9 +55,9 @@
       }
 
       &::after {
-        border-bottom: 1.333em solid transparent;
+        border-bottom: 1em solid transparent;
         border-left: 0.667em solid;
-        border-top: 1.333em solid transparent;
+        border-top: 1em solid transparent;
         bottom: 0;
         content: '';
         height: 0;
