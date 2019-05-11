@@ -8,9 +8,15 @@
   outline: none;
   border: none;
   text-shadow: 2px 2px black;
-  color: yellow;
+  color: darkorchid;
   cursor: pointer;
   background: transparent;
+  transition: all .3s ease-in-out;
+
+  &:hover {
+    color: yellow;
+    transition: all .3s ease-in-out;
+  }
 
   span {
     font-size: 2.2rem;

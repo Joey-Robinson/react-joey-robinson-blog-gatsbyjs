@@ -24,8 +24,9 @@
 
       &:hover {
         color: darkorchid;
-        transform: scale(1.2);
         transition: all .3s ease-in-out;
+        padding: 0;
+        margin: 0;
       }
     }
 
@@ -34,7 +35,7 @@
       margin-left: auto;
       margin-right: auto;
       width: 100%;
-      background: white;
+      background: yellow;
       font-weight: 700;
       letter-spacing: 0.01em;
       line-height: 1em;

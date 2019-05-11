@@ -6,6 +6,7 @@ import { FaLinkedin } from "react-icons/fa/index.esm"
 import { FaGithub } from "react-icons/fa/index.esm"
 import { FaGoogle } from "react-icons/fa/index.esm"
 import { FaTwitterSquare } from "react-icons/fa/index.esm"
+import { FaBookOpen } from "react-icons/fa/index.esm"
 import Typed from "react-typed"
 
 const Home = () => (
@@ -77,6 +78,11 @@ const Home = () => (
         <li>
           <a href="mailto:joeyrobinsondev@gmail.com">
             <FaGoogle aria-label="Email" />
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <FaBookOpen aria-label="Resume" />
           </a>
         </li>
       </ul>
