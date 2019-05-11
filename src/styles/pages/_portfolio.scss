@@ -10,6 +10,12 @@
   color: white;
   margin-top: 5rem;
 
+  @include respond(phone) {
+    grid-template-columns: 100vw;
+    height: 525vh;
+    margin-top: 0;
+  }
+
   &__heading {
     display: block;
     position: fixed;
@@ -18,11 +24,19 @@
     grid-column: 1;
     font-size: 5rem;
     transform: rotate(90deg);
+
+    @include respond(phone) {
+      display: none;
+    }
   }
 }
 
 .projects:nth-last-child(1) {
   margin-bottom: 5rem;
+
+  @include respond(phone) {
+    margin-bottom: 0;
+  }
 }
 
 .projects {
@@ -32,9 +46,18 @@
   display: grid;
   grid-template-columns: 60vw;
 
+  @include respond(phone) {
+    padding: 0 1.2rem;
+    grid-column: 1;
+    grid-template-columns: 100vw;
+    justify-self: center;
+  }
+
   hr {
     color: black;
     height: 1.3px;
+    width: 75%;
+    margin: 0 auto;
   }
 
   &__heading {
@@ -65,10 +88,22 @@
   a {
     font-size: 3rem;
     justify-self: right;
+
+    @include respond(phone) {
+      font-size: 2rem;
+      justify-self: center;
+    }
   }
 
   p {
     font-size: 1.6rem;
     padding: 0 3rem 0 3rem;
+
+    @include respond(phone) {
+      padding: 0 1.5rem 0 1.5rem;
+      text-align: center;
+      justify-self: center;
+      word-wrap: break-word;
+    }
   }
 }

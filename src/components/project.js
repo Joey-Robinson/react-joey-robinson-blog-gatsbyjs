@@ -35,7 +35,7 @@ const Project = ({
         bg="linear-gradient(to left top, #9932cc, #6e39a4, #4d367a, #342d4e, #222222)"
         to="/portfolio/"
       >
-        &larr; Back to all projects
+        &larr; <span>Back to all projects</span>
       </AniLink>
     </p>
   </section>
