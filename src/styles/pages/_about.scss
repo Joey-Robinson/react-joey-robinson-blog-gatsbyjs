@@ -10,6 +10,13 @@
   color: #b3b9c5;
   background: #222222;
 
+  @include respond(phone) {
+    height: 280vh;
+    max-height: 280vh;
+    grid-template-columns: 3vw 97vw;
+    grid-template-rows: 10vh 15vh 5vh repeat(9, 1fr);
+  }
+
   &__resources {
     height: 100%;
     grid-row: 3 / -1;
@@ -21,8 +28,26 @@
     width: 69.84rem;
     font-size: 1.6rem;
 
+    @include respond(phone) {
+      grid-column: 2;
+      grid-row: 9 / -1;
+      align-self: start;
+      justify-self: center;
+      width: 100%;
+    }
+
     ul {
       line-height: 0.75;
+
+      @include respond(phone) {
+        padding: 1rem 0;
+        margin: 1rem 0 1rem 1.5rem;
+        line-height: 1.3;
+
+        li {
+          padding: 0 1rem;
+        }
+      }
     }
 
     a {
@@ -30,6 +55,13 @@
       color: yellow;
       display: inline-block;
       transition: all .3s ease-in-out;
+
+      @include respond(phone) {
+        // padding: 3px 5px 3px 0;
+        // margin: 1rem 0 1rem 3rem;
+        margin: 0;
+        padding: 1rem 0;
+      }
 
       &:hover {
         transition: all .3s ease-in-out;
@@ -41,6 +73,10 @@
       justify-self: left;
       padding: 6rem 0 1.5rem 6rem;
       font-size: 3.2rem;
+
+      @include respond(phone) {
+        padding: 6rem 0 1.5rem 3rem;
+      }
     }
   }
 
@@ -58,10 +94,18 @@
     align-self: start;
     background: #222;
 
+    @include respond(phone) {
+      grid-row: 3 / 6;
+    }
+
     h1 {
       justify-self: left;
       padding: 6rem 0 1.5rem 6rem;
       font-size: 3.2rem;
+
+      @include respond(phone) {
+        padding: 6rem 0 1.5rem 3rem;
+      }
     }
 
     p {
@@ -70,6 +114,10 @@
       hyphens: auto;
       font-size: 1.6rem;
       padding: 1rem 3rem 1rem 6rem;
+
+      @include respond(phone) {
+        padding: 1rem 1.5rem 1rem 3rem;
+      }
     }
   }
 }
