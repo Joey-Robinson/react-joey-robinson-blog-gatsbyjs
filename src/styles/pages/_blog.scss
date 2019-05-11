@@ -1,74 +1,3 @@
-// .blog {
-//   grid-column: 1;
-//   grid-row: 2;
-//   min-height: 150vh;
-//   max-height: 200vh;
-//   z-index: 10;
-//   display: flex;
-//   flex-direction: column;
-//   color: white;
-//   width: 100vw;
-//   background: #222222;
-
-//   &--top {
-//     position: absolute;
-//     top: 10vh;
-//     height: 20vh;
-//     width: 100vw;
-//     background: url("https://cdn.pixabay.com/photo/2016/06/02/02/31/background-1430103_1280.png")
-//       no-repeat center center / cover;
-//   }
-
-//   // Note: Try to make container ul inside of grid and the ul a flex.
-//   &--display {
-//     width: 97vw;
-//     background: #222;
-//     z-index: 20;
-//     margin: 12rem 0 0 4.3rem;
-//     display: grid;
-//     padding: 1rem 1rem;
-//     grid-template-columns: repeat(4, 1fr);
-
-//     a {
-//       display: block;
-//       color: yellow;
-//       text-shadow: 1px 1px black;
-//     }
-//   }
-
-//   &--display__title {
-//     grid-row: 1;
-//     grid-column: 1;
-//     justify-self: center;
-//     align-self: center;
-//     h1 {
-//       font-size: 3rem;
-//     }
-//   }
-
-//   &--display__date {
-//     align-self: center;
-//     justify-self: center;
-//     grid-row: 1;
-//     grid-column: 4 / -1;
-//     font-size: 2rem;
-//   }
-
-//   &--display__excerpt {
-//     justify-self: center;
-//     grid-row: 2;
-//     padding: 1rem 6rem;
-//     font-size: 1.6rem;
-//     grid-column: 1 / -1;
-//     a {
-//       color: white;
-//       font-weight: 700;
-//       // letter-spacing: 3px;
-//     }
-//   }
-// }
-
-
 .blog {
   grid-column: 1;
   grid-row: 1 / -1;
@@ -79,6 +8,12 @@
   grid-template-rows: 10vh 15vh repeat(4, 1fr);
   color: #b3b9c5;
   background: #222222;
+
+  @include respond(phone) {
+    height: 120vh;
+    grid-template-columns: 3vw 97vw;
+    grid-template-rows: 10vh 15vh repeat(6, 1fr);
+  }
 
   &--top {
     grid-row: 2 / 4;
@@ -95,13 +30,25 @@
     background: #222;
     align-self: end;
 
-    div {
-      display: block;
-      float: right;
+    @include respond(phone) {
+      grid-column: 2;
     }
+
+    // div {
+    //   display: block;
+    //   float: right;
+
+    //   @include respond(phone) {
+    //     float: left;
+    //   }
+    // }
 
     h1 {
       padding: 1rem 0;
+
+      @include respond(phone) {
+        padding: 1rem 5px;
+      }
     }
 
     h1,
@@ -112,6 +59,10 @@
     li {
       padding: 3rem 6rem;
       font-size: 1.8rem;
+
+      @include respond(phone) {
+        padding: 1rem 5px;
+      }
     }
   }
 }
@@ -120,14 +71,29 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
 
+  @include respond(phone) {
+    grid-template-columns: 1fr;
+  }
+
   &__display {
     grid-column: 1 / -1;
+
+    @include respond(phone) {
+      grid-column: 1;
+    }
   }
 
   &__title {
     padding: 0 1rem;
     color: yellow;
     transition: all .3s ease-in-out;
+
+    @include respond(phone) {
+      justify-self: left;
+      font-size: 1.6rem;
+      padding: 0;
+      margin: 0;
+    }
 
     &:hover {
       transition: all .3s ease-in-out;
@@ -137,10 +103,19 @@
 
   &__date {
     padding: 1.5rem 3rem;
+
+    @include respond(phone) {
+      padding: 0 5px;
+      justify-self: left;
+    }
   }
 
   &__excerpt {
     padding: 1rem 1rem;
+
+    @include respond(phone) {
+      padding: 0 5px;
+    }
 
     a {
       color: #b3b9c5;
