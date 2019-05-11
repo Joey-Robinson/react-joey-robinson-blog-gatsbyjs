@@ -7,6 +7,10 @@
   grid-template-rows: 1fr;
   margin: 0 0 2rem 0;
 
+  @include respond(phone) {
+    grid-column: 1;
+  }
+
   ul {
     grid-column: 1;
     grid-row: 1;
@@ -16,6 +20,11 @@
     grid-template-columns: repeat(4, 1fr);
     font-size: 1.8rem;
     margin: 0 3rem 0 0;
+
+    @include respond(phone) {
+      justify-self: center;
+      margin: 0;
+    }
 
     a {
       color: #222;
@@ -42,6 +51,12 @@
       clip-path: polygon(95% 0, 100% 50%, 95% 100%, 0% 100%, 5% 50%, 0% 0%);
       padding: 7.5px 5px;
 
+      @include respond(phone) {
+        // padding: 3.75px 2.5px;
+        letter-spacing: 0;
+        line-height: .5em;
+      }
+
       &::before {
         border-bottom: 1em solid transparent;
         border-left: 0.667em solid yellow;
@@ -53,6 +68,11 @@
         position: absolute;
         top: 0;
         width: 0;
+
+        @include respond(phone) {
+          border-bottom: .5em solid transparent;
+          border-top: .5em solid transparent;
+        }
       }
 
       &::after {

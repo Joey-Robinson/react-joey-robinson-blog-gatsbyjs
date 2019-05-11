@@ -80,11 +80,11 @@ const Home = () => (
             <FaGoogle aria-label="Email" />
           </a>
         </li>
-        <li>
+        {/* <li>
           <a href="">
             <FaBookOpen aria-label="Resume" />
           </a>
-        </li>
+        </li> */}
       </ul>
     </section>
   </Layout>

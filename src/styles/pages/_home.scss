@@ -9,6 +9,10 @@
   grid-template-rows: 10vh 20vh 1fr 1fr;
   background: #222;
 
+  @include respond(phone) {
+    grid-template-rows: 10vh 30vh 1fr 1fr;
+  }
+
   &--content__banner {
     grid-row: 2;
     grid-column: 1 / -1;
@@ -26,20 +30,33 @@
     margin: 25rem 0 0 0;
     justify-self: center;
 
+    @include respond(phone) {
+      grid-column: 1 / -1;
+    }
+
     h1 {
       font-size: 3rem;
+
+      @include respond(phone) {
+        font-size: 2rem;
+        padding: 0;
+        text-align: center;
+      }
     }
   }
 
   &--content__bottom {
     grid-column: 2;
     grid-row: 4;
-    // z-index: 20;
     font-size: 2.5rem;
     color: white;
     justify-self: center;
     align-self: end;
     columns: 5;
+
+    @include respond(phone) {
+      margin: 0 0 1.5rem 0;
+    }
 
     a {
       color: yellow;
