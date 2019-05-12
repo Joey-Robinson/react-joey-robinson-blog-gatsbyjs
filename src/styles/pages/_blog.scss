@@ -34,6 +34,7 @@
       grid-column: 2;
     }
 
+    // Date
     // div {
     //   display: block;
     //   float: right;
@@ -59,6 +60,7 @@
     li {
       padding: 3rem 6rem;
       font-size: 1.8rem;
+      width: 100%;
 
       @include respond(phone) {
         padding: 1rem 5px;
@@ -69,7 +71,7 @@
 
 .blog--list {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: 1fr;
 
   @include respond(phone) {
     grid-template-columns: 1fr;
@@ -103,6 +105,7 @@
 
   &__date {
     padding: 1.5rem 3rem;
+    float: right;
 
     @include respond(phone) {
       padding: 0 5px;

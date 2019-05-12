@@ -58,6 +58,13 @@
       display: block;
       color: yellow;
       font-size: 2rem;
+      transition: all .3s ease-in-out;
+
+      &:hover {
+        transition: all .3s ease-in-out;
+        color: darkorchid;
+        text-shadow: 1px 1px black;
+      }
     }
   }
 

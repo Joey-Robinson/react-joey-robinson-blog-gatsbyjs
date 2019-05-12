@@ -56,8 +56,12 @@
   hr {
     color: black;
     height: 1.3px;
-    width: 75%;
+    width: 100%;
     margin: 0 auto;
+
+    @include respond(phone) {
+      width: 75%;
+    }
   }
 
   &__heading {
