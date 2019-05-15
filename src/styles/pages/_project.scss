@@ -9,18 +9,18 @@
   color: #b3b9c5;
   background: #222;
 
-  @include respond(phone) {
-    height: 150vh;
-    max-height: 150vh;
-    grid-template-columns: 100vw;
-    grid-template-rows: repeat(5, 1fr);
-  }
-
   @include respond(phoneWide) {
     height: 200vh;
     max-height: 200vh;
     grid-template-columns: 100vw;
     grid-template-rows: repeat(5, 1fr);
+  }
+
+  @include respond(phone) {
+    height: 150vh;
+    max-height: 150vh;
+    grid-template-columns: 100vw;
+    grid-template-rows: 10vh repeat(5, 1fr);
   }
 
   &--left {
@@ -29,14 +29,14 @@
     height: 57.3rem;
     background: #2d2d2d;
 
-    @include respond(phone) {
-      grid-row: 1 / 5;
-    }
-
     @include respond(phoneWide) {
       // align-self: start;
       // height: 100%;
       grid-row: 2 / 7;
+    }
+
+    @include respond(phone) {
+      grid-row: 2 / 5;
     }
   }
 
@@ -58,14 +58,14 @@
     justify-self: right;
     display: block;
 
-    @include respond(phone) {
+    @include respond(phoneWide) {
       width: 100%;
       grid-column: 1;
       grid-row: -1;
       justify-self: center;
     }
 
-    @include respond(phoneWide) {
+    @include respond(phone) {
       width: 100%;
       grid-column: 1;
       grid-row: -1;
@@ -84,14 +84,14 @@
     align-self: start;
     margin: 0 3rem 0 0;
 
-    @include respond(phone) {
+    @include respond(phoneWide) {
       justify-self: center;
       align-self: center;
       margin: 0;
       grid-row: -1;
     }
 
-    @include respond(phoneWide) {
+    @include respond(phone) {
       justify-self: center;
       align-self: center;
       margin: 0;
@@ -109,17 +109,17 @@
     text-decoration: underline;
     z-index: 11;
 
-    @include respond(phone) {
-      grid-row: 1;
-      justify-self: center;
-      padding: 3rem 0 0 0;
-      font-size: 2rem;
-    }
-
     @include respond(phoneWide) {
       grid-row: 2;
       justify-self: left;
       padding: 1.5rem 0 0 3rem;
+      font-size: 2rem;
+    }
+
+    @include respond(phone) {
+      grid-row: 2;
+      justify-self: center;
+      padding: 3rem 0 0 0;
       font-size: 2rem;
     }
   }
@@ -132,16 +132,16 @@
     padding: 0 6rem 0 3rem;
     font-size: 1.8rem;
 
-    @include respond(phone) {
-      grid-row: 2;
-      padding: 0 1.5rem;
-      hyphens: auto;
-      justify-self: center;
-    }
-
     @include respond(phoneWide) {
       grid-row: 3;
       padding: 0 3rem;
+      justify-self: center;
+    }
+
+    @include respond(phone) {
+      grid-row: 3;
+      padding: 0 1.5rem;
+      hyphens: auto;
       justify-self: center;
     }
   }
@@ -153,14 +153,14 @@
     justify-self: left;
     padding: 0 3rem 0 3rem;
 
-    @include respond(phone) {
-      grid-row: 3;
+    @include respond(phoneWide) {
+      grid-row: 4;
       padding: 0;
       align-self: center;
       justify-self: center;
     }
 
-    @include respond(phoneWide) {
+    @include respond(phone) {
       grid-row: 4;
       padding: 0;
       align-self: center;
@@ -179,18 +179,18 @@
     justify-self: left;
     padding: 0 0 0 3rem;
 
-    @include respond(phone) {
-      grid-row: 4;
-      justify-self: center;
-      align-self: start;
-      padding: 0;
-    }
-
     @include respond(phoneWide) {
       grid-row: 5;
       justify-self: right;
       align-self: center;
       padding: 0 3rem 0 0;
+    }
+
+    @include respond(phone) {
+      grid-row: 5;
+      justify-self: center;
+      align-self: start;
+      padding: 0;
     }
   }
 
@@ -201,18 +201,18 @@
     justify-self: left;
     padding: 3rem 0 0 3rem;
 
-    @include respond(phone) {
-      grid-row: 4;
-      align-self: end;
-      justify-self: center;
-      padding: 0;
-    }
-
     @include respond(phoneWide) {
       grid-row: 5;
       align-self: center;
       justify-self: left;
       padding: 0 0 0 3rem;
+    }
+
+    @include respond(phone) {
+      grid-row: 5;
+      align-self: end;
+      justify-self: center;
+      padding: 0 0 3rem 0;
     }
   }
 
@@ -224,11 +224,18 @@
     padding: 3rem 0 0 3rem;
     z-index: 11;
 
-    @include respond(phone) {
-      grid-row: 1;
+    @include respond(phoneWide) {
+      grid-row: 2;
       align-self: center;
       justify-self: right;
-      padding: 0 3rem 3rem 0;
+      padding: 1.5rem 3rem 0 0;
+    }
+
+    @include respond(phone) {
+      grid-row: 2;
+      align-self: center;
+      justify-self: right;
+      padding: 6rem 3rem 3rem 0;
       font-size: 1.6rem;
 
       span {
@@ -236,12 +243,6 @@
       }
     }
 
-    @include respond(phoneWide) {
-      grid-row: 2;
-      align-self: center;
-      justify-self: right;
-      padding: 1.5rem 3rem 0 0;
-    }
   }
 }
 
@@ -252,22 +253,22 @@
   justify-self: right;
   display: flex;
 
-  @include respond(phone) {
-    grid-column: 1;
-    grid-row: -1;
-    align-self: end;
-    justify-self: center;
-    width: 100%;
-    height: 25rem;
-    margin-bottom: 2.5rem;
-  }
-
   @include respond(phoneWide) {
     grid-column: 1;
     grid-row: -1;
     align-self: end;
     width: 100%;
     height: 35rem;
+    margin-bottom: 2.5rem;
+  }
+
+  @include respond(phone) {
+    grid-column: 1;
+    grid-row: -1;
+    align-self: end;
+    justify-self: center;
+    width: 90%;
+    height: 30rem;
     margin-bottom: 2.5rem;
   }
 }

@@ -10,18 +10,18 @@
   color: #b3b9c5;
   background: #222222;
 
-  @include respond(phone) {
-    height: 290vh;
-    max-height: 290vh;
-    grid-template-columns: 3vw 97vw;
-    grid-template-rows: 10vh 15vh 5vh repeat(10, 1fr);
-  }
-
   @include respond(phoneWide) {
     grid-template-rows: 10vh 20vh 5vh repeat(10, 1fr);
     grid-template-columns: 100vw;
     height: 350vh;
     max-height: 350vh;
+  }
+
+  @include respond(phone) {
+    height: 290vh;
+    max-height: 290vh;
+    grid-template-columns: 3vw 97vw;
+    grid-template-rows: 10vh 15vh 5vh repeat(10, 1fr);
   }
 
   &__resources {
@@ -35,19 +35,19 @@
     width: 69.84rem;
     font-size: 1.6rem;
 
+    @include respond(phoneWide) {
+      width: 100vw;
+      grid-column: 1;
+      justify-self: center;
+      grid-row: 10 / -1;
+    }
+
     @include respond(phone) {
       grid-column: 2;
       grid-row: 10 / -1;
       align-self: center;
       justify-self: center;
       width: 100%;
-    }
-
-    @include respond(phoneWide) {
-      width: 100vw;
-      grid-column: 1;
-      justify-self: center;
-      grid-row: 10 / -1;
     }
 
     ul {
@@ -115,12 +115,12 @@
     align-self: start;
     background: #222;
 
-    @include respond(phone) {
-      grid-row: 3 / 6;
-    }
-
     @include respond(phoneWide) {
       grid-column: 1;
+    }
+
+    @include respond(phone) {
+      grid-row: 3 / 6;
     }
 
     h1 {
@@ -128,13 +128,14 @@
       padding: 6rem 0 1.5rem 6rem;
       font-size: 3.2rem;
 
+      @include respond(phoneWide) {
+        padding: 9rem 0 1.5rem 6rem;
+      }
+
       @include respond(phone) {
         padding: 6rem 0 1.5rem 3rem;
       }
 
-      @include respond(phoneWide) {
-        padding: 9rem 0 1.5rem 6rem;
-      }
     }
 
     p {

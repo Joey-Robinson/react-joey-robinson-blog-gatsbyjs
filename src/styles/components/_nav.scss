@@ -7,11 +7,11 @@
   grid-template-rows: 1fr;
   margin: 0 0 2rem 0;
 
-  @include respond(phone) {
+  @include respond(phoneWide) {
     grid-column: 1;
   }
 
-  @include respond(phoneWide) {
+  @include respond(phone) {
     grid-column: 1;
   }
 
@@ -25,15 +25,15 @@
     font-size: 1.8rem;
     margin: 0 3rem 0 0;
 
-    @include respond(phone) {
-      justify-self: center;
-      margin: 0;
-    }
-
     @include respond(phoneWide) {
       width: 90%;
       justify-self: center;
       margin: 1.5rem 0 0 0;
+    }
+
+    @include respond(phone) {
+      justify-self: center;
+      margin: 0;
     }
 
     a {
@@ -61,16 +61,18 @@
       clip-path: polygon(95% 0, 100% 50%, 95% 100%, 0% 100%, 5% 50%, 0% 0%);
       padding: 7.5px 5px;
 
-      @include respond(phone) {
-        // padding: 3.75px 2.5px;
-        letter-spacing: 0;
-        line-height: .5em;
-      }
-
       @include respond(phoneWide) {
         margin: 0;
         padding: 5px 0;
         // height: 80%;
+      }
+
+      @include respond(phone) {
+        padding: 1rem 1rem;
+        letter-spacing: 0;
+        line-height: .5em;
+        margin: 3rem 0 0 0;
+        width: 100%;
       }
 
       &::before {

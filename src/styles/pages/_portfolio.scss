@@ -31,11 +31,11 @@
     font-size: 5rem;
     transform: rotate(90deg);
 
-    @include respond(phone) {
+    @include respond(phoneWide) {
       display: none;
     }
 
-    @include respond(phoneWide) {
+    @include respond(phone) {
       display: none;
     }
   }

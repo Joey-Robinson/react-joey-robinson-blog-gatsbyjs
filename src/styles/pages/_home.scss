@@ -31,6 +31,10 @@
       height: 30vh;
       margin-top: 4rem;
     }
+
+    @include respond(phone) {
+      height: 20vh;
+    }
   }
 
   &--content__top {
