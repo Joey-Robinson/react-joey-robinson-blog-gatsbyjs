@@ -9,16 +9,16 @@
   color: #b3b9c5;
   background: #222222;
 
-  @include respond(phone) {
-    height: 120vh;
-    grid-template-columns: 3vw 97vw;
-    grid-template-rows: 10vh 15vh repeat(6, 1fr);
-  }
-
   @include respond(phoneWide) {
     height: 200vh;
     grid-template-columns: 100vw;
     grid-template-rows: 10vh 25vh repeat(5, 1fr);
+  }
+
+  @include respond(phone) {
+    height: 120vh;
+    grid-template-columns: 100vw;
+    grid-template-rows: 10vh 15vh repeat(6, 1fr);
   }
 
   &--top {
@@ -34,6 +34,11 @@
       height: 25vh;
       margin: 4rem 0 0 0;
     }
+
+    @include respond(phone) {
+      height: 20vh;
+      margin: 5rem 0 0 0;
+    }
   }
 
   ul {
@@ -43,26 +48,29 @@
     background: #222;
     align-self: end;
 
-    @include respond(phone) {
-      grid-column: 2;
-    }
-
     @include respond(phoneWide) {
       grid-column: 1;
       grid-row: 4;
     }
 
+    @include respond(phone) {
+      grid-column: 1;
+      width: 100vw;
+      margin-top: 5rem;
+    }
+
     h1 {
       padding: 1rem 0;
-
-      @include respond(phone) {
-        padding: 1rem 5px;
-      }
 
       @include respond(phoneWide) {
         padding: 0 0 0 3rem;
         margin: 0;
       }
+
+      @include respond(phone) {
+        padding: 1rem 5px;
+      }
+
     }
 
     h1,
@@ -75,14 +83,15 @@
       font-size: 1.8rem;
       width: 100%;
 
-      @include respond(phone) {
-        padding: 1rem 5px;
-      }
-
       @include respond(phoneWide) {
         padding: 0;
         margin: 0;
       }
+
+      @include respond(phone) {
+        padding: 1rem 5px;
+      }
+
     }
   }
 }
@@ -108,15 +117,15 @@
     color: yellow;
     transition: all .3s ease-in-out;
 
-    @include respond(phone) {
-      width: 100%;
-      float: left;
-      font-size: 1.6rem;
+    @include respond(phoneWide) {
       padding: 0;
       margin: 0;
     }
 
-    @include respond(phoneWide) {
+    @include respond(phone) {
+      width: 100%;
+      float: left;
+      font-size: 1.6rem;
       padding: 0;
       margin: 0;
     }
@@ -131,25 +140,23 @@
     padding: 1.5rem 3rem;
     float: right;
 
-    @include respond(phone) {
-      width: 100%;
-      padding: 5px 5px;
-      text-align: left;
-    }
 
     @include respond(phoneWide) {
       padding: 1.5rem 3rem;
       float: left;
       width: 100%;
     }
+
+    @include respond(phone) {
+      width: 100%;
+      padding: 5px 5px;
+      text-align: left;
+    }
+
   }
 
   &__excerpt {
     padding: 1rem 1rem;
-
-    @include respond(phone) {
-      padding: 0 5px;
-    }
 
     @include respond(phoneWide) {
       a {
@@ -161,6 +168,10 @@
       }
 
       padding: 2rem 3rem;
+    }
+
+    @include respond(phone) {
+      padding: 0 5px;
     }
 
     a {
