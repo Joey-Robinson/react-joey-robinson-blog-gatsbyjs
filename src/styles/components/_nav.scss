@@ -11,6 +11,10 @@
     grid-column: 1;
   }
 
+  @include respond(phoneWide) {
+    grid-column: 1;
+  }
+
   ul {
     grid-column: 1;
     grid-row: 1;
@@ -24,6 +28,12 @@
     @include respond(phone) {
       justify-self: center;
       margin: 0;
+    }
+
+    @include respond(phoneWide) {
+      width: 90%;
+      justify-self: center;
+      margin: 1.5rem 0 0 0;
     }
 
     a {
@@ -55,6 +65,12 @@
         // padding: 3.75px 2.5px;
         letter-spacing: 0;
         line-height: .5em;
+      }
+
+      @include respond(phoneWide) {
+        margin: 0;
+        padding: 5px 0;
+        // height: 80%;
       }
 
       &::before {

@@ -18,9 +18,9 @@
 
   &--left {
     grid-column: 1;
-    grid-row: 2 / 6;
-    height: 573.6px;
-    grid-row: 1;
+    grid-row: 2 / 7;
+    height: 57.3rem;
+    background: #2d2d2d;
 
     @include respond(phone) {
       grid-row: 1 / 5;

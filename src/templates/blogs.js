@@ -39,7 +39,7 @@ const BlogTemplate = ({ data }) => {
             bg="linear-gradient(to left top, #9932cc, #6e39a4, #4d367a, #342d4e, #222222)"
             to="/blog/"
           >
-            &#8592; Go Back
+            &#8592; <span>Go Back</span>
           </AniLink>
         </div>
         <div className="blogs--content__title">

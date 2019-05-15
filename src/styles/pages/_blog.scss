@@ -34,16 +34,6 @@
       grid-column: 2;
     }
 
-    // Date
-    // div {
-    //   display: block;
-    //   float: right;
-
-    //   @include respond(phone) {
-    //     float: left;
-    //   }
-    // }
-
     h1 {
       padding: 1rem 0;
 
@@ -91,7 +81,8 @@
     transition: all .3s ease-in-out;
 
     @include respond(phone) {
-      justify-self: left;
+      width: 100%;
+      float: left;
       font-size: 1.6rem;
       padding: 0;
       margin: 0;
@@ -108,8 +99,9 @@
     float: right;
 
     @include respond(phone) {
-      padding: 0 5px;
-      justify-self: left;
+      width: 100%;
+      padding: 5px 5px;
+      float: left;
     }
   }
 

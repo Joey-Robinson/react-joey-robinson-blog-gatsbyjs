@@ -13,6 +13,12 @@
   background: transparent;
   transition: all .3s ease-in-out;
 
+  @include respond(phoneWide) {
+    top: 4.5rem;
+    margin: 0;
+    padding: 0;
+  }
+
   &:hover {
     color: yellow;
     transition: all .3s ease-in-out;
@@ -39,6 +45,14 @@
   @if $breakpoint==phone {
     @media only screen and (max-width: 37.5em) {
       // 600px
+      @content
+    }
+
+    ;
+  }
+
+  @if $breakpoint==phoneWide {
+    @media only screen and (max-width: 40em) {
       @content
     }
 
@@ -101,6 +115,8 @@
 }
 
 @include respond(phone) {}
+
+@include respond(phoneWide) {}
 
 @include respond(customSmall) {}
 
