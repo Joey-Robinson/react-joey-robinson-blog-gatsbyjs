@@ -16,6 +16,12 @@
     margin-top: 0;
   }
 
+  @include respond(phoneWide) {
+    grid-template-columns: 100vw;
+    margin-top: 3rem;
+    height: 640vh;
+  }
+
   &__heading {
     display: block;
     position: fixed;
@@ -26,6 +32,10 @@
     transform: rotate(90deg);
 
     @include respond(phone) {
+      display: none;
+    }
+
+    @include respond(phoneWide) {
       display: none;
     }
   }
@@ -53,6 +63,13 @@
     justify-self: center;
   }
 
+  @include respond(phoneWide) {
+    padding: 1rem 1.2rem;
+    grid-column: 1;
+    grid-template-columns: 100vw;
+    justify-self: center;
+  }
+
   hr {
     color: black;
     height: 1.3px;
@@ -60,6 +77,10 @@
     margin: 0 auto;
 
     @include respond(phone) {
+      width: 75%;
+    }
+
+    @include respond(phoneWide) {
       width: 75%;
     }
   }
@@ -97,6 +118,11 @@
       font-size: 2rem;
       justify-self: center;
     }
+
+    @include respond(phoneWide) {
+      font-size: 2rem;
+      justify-self: center;
+    }
   }
 
   p {
@@ -108,6 +134,12 @@
       text-align: center;
       justify-self: center;
       word-wrap: break-word;
+    }
+
+    @include respond(phoneWide) {
+      padding: 0 1.5rem;
+      text-align: center;
+      justify-self: center;
     }
   }
 }

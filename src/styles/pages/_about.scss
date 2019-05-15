@@ -17,6 +17,13 @@
     grid-template-rows: 10vh 15vh 5vh repeat(10, 1fr);
   }
 
+  @include respond(phoneWide) {
+    grid-template-rows: 10vh 20vh 5vh repeat(10, 1fr);
+    grid-template-columns: 100vw;
+    height: 350vh;
+    max-height: 350vh;
+  }
+
   &__resources {
     height: 100%;
     grid-row: 3 / -1;
@@ -34,6 +41,13 @@
       align-self: center;
       justify-self: center;
       width: 100%;
+    }
+
+    @include respond(phoneWide) {
+      width: 100vw;
+      grid-column: 1;
+      justify-self: center;
+      grid-row: 10 / -1;
     }
 
     ul {
@@ -83,6 +97,15 @@
     grid-row: 2 / 4;
     width: 100vw;
     background: url("https://cdn.pixabay.com/photo/2016/06/02/02/38/mesh-1430108_1280.png") no-repeat center center / cover;
+
+    @include respond(phoneWide) {
+      // grid-row: 2 / 4;
+      z-index: 50;
+      margin: 4rem 0 0 0;
+      grid-column: 1;
+      height: 25vh;
+      width: 100vw;
+    }
   }
 
   &--left {
@@ -96,6 +119,10 @@
       grid-row: 3 / 6;
     }
 
+    @include respond(phoneWide) {
+      grid-column: 1;
+    }
+
     h1 {
       justify-self: left;
       padding: 6rem 0 1.5rem 6rem;
@@ -103,6 +130,10 @@
 
       @include respond(phone) {
         padding: 6rem 0 1.5rem 3rem;
+      }
+
+      @include respond(phoneWide) {
+        padding: 9rem 0 1.5rem 6rem;
       }
     }
 

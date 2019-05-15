@@ -64,6 +64,7 @@ const Blog = ({ data }) => (
               >
                 {post.node.excerpt}
               </AniLink>
+              <hr />
             </p>
           </li>
         ))}
