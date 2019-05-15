@@ -18,6 +18,12 @@
     max-height: 351rem;
   }
 
+  @include respond(phoneWide) {
+    grid-template-rows: 10vh 20vh 5vh repeat(10, 1fr);
+    grid-template-columns: 100vw;
+    height: 300rem;
+  }
+
   &--content__left {
     grid-column: 2;
     grid-row: 3 / -1;
@@ -28,6 +34,10 @@
     @include respond(phone) {
       display: none;
     }
+
+    @include respond(phoneWide) {
+      display: none;
+    }
   }
 
   &--content__top {
@@ -35,6 +45,14 @@
     grid-row: 2;
     grid-column: 1 / -1;
     height: 25vh;
+
+    @include respond(phoneWide) {
+      grid-row: 2;
+      height: 25vh;
+      z-index: 30;
+      grid-column: 1;
+      margin: 4rem 0 0 0;
+    }
   }
 
   &--content__back {
@@ -58,6 +76,15 @@
       span {
         display: none;
       }
+    }
+
+    @include respond(phoneWide) {
+      grid-column: 1;
+      grid-row: 5;
+      align-self: start;
+      justify-self: right;
+      z-index: 100;
+      padding: 0 9rem 0 0;
     }
 
     a {
@@ -87,6 +114,11 @@
       grid-row: 4 / -1;
     }
 
+    @include respond(phoneWide) {
+      grid-column: 1;
+      grid-row: 5 / -1;
+    }
+
     p {
       display: block;
       justify-self: right;
@@ -114,6 +146,15 @@
     @include respond(phone) {
       display: none;
     }
+
+    @include respond(phoneWide) {
+      grid-column: 1;
+      grid-row: 5;
+      align-self: start;
+      z-index: 100;
+      // margin: 3rem 0 0 0;
+      padding: 0 0 3rem 5.5rem;
+    }
   }
 
   &--content__title {
@@ -134,6 +175,16 @@
       word-wrap: wrap;
       hyphens: auto;
     }
+
+    @include respond(phoneWide) {
+      grid-column: 1;
+      justify-self: left;
+      grid-row: 4;
+      align-self: end;
+      margin: 6rem 0 0 4rem;
+      padding: 1.5rem 1.5rem;
+      z-index: 100;
+    }
   }
 }
 
@@ -144,6 +195,10 @@
   grid-template-columns: 1fr;
   position: fixed;
   margin: 5rem 0 0 3rem;
+
+  @include respond(phoneWide) {
+    display: none;
+  }
 
   li {
     padding: 5px 1.5rem;

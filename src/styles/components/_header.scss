@@ -41,6 +41,12 @@
       align-self: start;
       width: 100vw;
       height: 3rem;
+
+      @include respond(phoneWide) {
+        top: 0;
+        margin: 0;
+        padding: 0;
+      }
     }
 
     &__close {
@@ -49,6 +55,11 @@
       align-self: end;
       padding: 3px;
 
+      @include respond(phoneWide) {
+        top: 4.5rem;
+        margin: 0;
+        padding: 0;
+      }
     }
   }
 
