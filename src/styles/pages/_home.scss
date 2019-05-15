@@ -9,7 +9,6 @@
   grid-template-rows: 10vh 20vh 1fr 1fr;
   background: #222;
 
-
   @include respond(phone) {
     grid-template-rows: 10vh 30vh 1fr 1fr;
   }
@@ -17,6 +16,12 @@
   @include respond(phoneWide) {
     grid-template-columns: 1fr;
     grid-template-rows: 10vh 20vh 1fr 1fr;
+    overflow: hidden;
+  }
+
+  @include respond(phoneTab) {
+    grid-template-rows: 10vh 25vh 1fr 1fr;
+    grid-template-columns: 1fr;
     overflow: hidden;
   }
 
@@ -34,6 +39,13 @@
 
     @include respond(phone) {
       height: 20vh;
+    }
+
+    @include respond(phoneTab) {
+      grid-row: 2;
+      margin-top: 5rem;
+      grid-column: 1;
+      height: 25vh;
     }
   }
 
@@ -59,6 +71,11 @@
       padding: 0;
       align-self: end;
       margin: 0;
+    }
+
+    @include respond(phoneTab) {
+      grid-column: 1;
+      align-self: center;
     }
 
     h1 {
@@ -90,6 +107,10 @@
 
     @include respond(phone) {
       margin: 0 0 1.5rem 0;
+    }
+
+    @include respond(phoneTab) {
+      grid-column: 1;
     }
 
     a {

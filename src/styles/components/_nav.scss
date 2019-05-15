@@ -36,6 +36,12 @@
       margin: 0;
     }
 
+    @include respond(phoneTab) {
+      margin: 1.5rem 0 0 0;
+      grid-column: 1 / -1;
+      justify-self: center;
+    }
+
     a {
       color: #222;
       transition: all .3s ease-in-out;
@@ -73,6 +79,10 @@
         line-height: .5em;
         margin: 3rem 0 0 0;
         width: 100%;
+      }
+
+      @include respond(phoneTab) {
+        padding: 1rem 3rem;
       }
 
       &::before {

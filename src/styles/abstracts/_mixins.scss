@@ -53,6 +53,14 @@
     ;
   }
 
+  @if $breakpoint==phoneTab {
+    @media only screen and (max-width: 74em) {
+      @content
+    }
+
+    ;
+  }
+
   @if $breakpoint==customSmall {
     @media only screen and (max-width: 50em) {
       // 800px
@@ -111,6 +119,8 @@
 @include respond(phone) {}
 
 @include respond(phoneWide) {}
+
+@include respond(phoneTab) {}
 
 @include respond(customSmall) {}
 
