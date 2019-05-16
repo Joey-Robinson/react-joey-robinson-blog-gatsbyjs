@@ -21,6 +21,12 @@
     grid-template-rows: 10vh 15vh repeat(6, 1fr);
   }
 
+  @include respond(phoneTab) {
+    height: 180vh;
+    grid-template-columns: 100vw;
+    grid-template-rows: 10vh 25vh repeat(6, 1fr);
+  }
+
   &--top {
     grid-row: 2 / 4;
     grid-column: 1 / -1;
@@ -39,6 +45,13 @@
       height: 20vh;
       margin: 5rem 0 0 0;
     }
+
+    @include respond(phoneTab) {
+      margin: 5rem 0 0 0;
+      height: 25vh;
+      grid-row: 2;
+      grid-column: 1;
+    }
   }
 
   ul {
@@ -56,6 +69,12 @@
     @include respond(phone) {
       grid-column: 1;
       width: 100vw;
+      margin-top: 5rem;
+    }
+
+    @include respond(phoneTab) {
+      grid-column: 1;
+      grid-row: 3 / -1;
       margin-top: 5rem;
     }
 
@@ -130,6 +149,13 @@
       margin: 0;
     }
 
+    @include respond(phoneTab) {
+      width: 100%;
+      float: left;
+      padding: 0;
+      margin: 0;
+    }
+
     &:hover {
       transition: all .3s ease-in-out;
       color: #9932cc;
@@ -153,6 +179,11 @@
       text-align: left;
     }
 
+    @include respond(phoneTab) {
+      float: left;
+      width: 100%;
+      padding: 1rem 0;
+    }
   }
 
   &__excerpt {
@@ -172,6 +203,10 @@
 
     @include respond(phone) {
       padding: 0 5px;
+    }
+
+    @include respond(phoneTab) {
+      padding: 1rem 0;
     }
 
     a {

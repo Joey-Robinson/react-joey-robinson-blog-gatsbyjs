@@ -22,6 +22,11 @@
     height: 640vh;
   }
 
+  @include respond(phoneTab) {
+    grid-template-columns: 5vw 95vw;
+    height: 700vh;
+  }
+
   &__heading {
     display: block;
     position: fixed;
@@ -37,6 +42,14 @@
 
     @include respond(phone) {
       display: none;
+    }
+
+    @include respond(phoneTab) {
+      grid-column: 1;
+      left: 0;
+      float: left;
+      font-size: 2.5rem;
+      top: 15rem;
     }
   }
 }
@@ -70,6 +83,13 @@
     justify-self: center;
   }
 
+  @include respond(phoneTab) {
+    grid-template-columns: 95vw;
+    grid-column: 2 / -1;
+    justify-self: center;
+    // padding: 1rem 1.2rem;
+  }
+
   hr {
     color: black;
     height: 1.3px;
@@ -82,6 +102,13 @@
 
     @include respond(phoneWide) {
       width: 75%;
+    }
+
+    @include respond(phoneTab) {
+      width: 80%;
+      display: block;
+      float: right;
+      margin: 1rem 0 1rem 12rem;
     }
   }
 

@@ -24,6 +24,13 @@
     grid-template-rows: 10vh 15vh 5vh repeat(10, 1fr);
   }
 
+  @include respond(phoneTab) {
+    height: 320vh;
+    max-height: 320vh;
+    grid-template-columns: 100vw;
+    grid-template-rows: 10vh 20vh 5vh repeat(10, 1fr);
+  }
+
   &__resources {
     height: 100%;
     grid-row: 3 / -1;
@@ -48,6 +55,12 @@
       align-self: center;
       justify-self: center;
       width: 100%;
+    }
+
+    @include respond(phoneTab) {
+      grid-row: 9 / -1;
+      justify-self: center;
+      grid-column: 1;
     }
 
     ul {
@@ -106,6 +119,14 @@
       height: 25vh;
       width: 100vw;
     }
+
+    @include respond(phoneTab) {
+      grid-row: 2 / 5;
+      height: 25vh;
+      grid-column: 1;
+      margin: 5.5em 0 0 0;
+      z-index: 50;
+    }
   }
 
   &--left {
@@ -123,6 +144,14 @@
       grid-row: 3 / 6;
     }
 
+    @include respond(phoneTab) {
+      margin: 0;
+      padding: 0;
+      grid-row: 5 / 7;
+      grid-column: 1;
+      // align-self: center;
+    }
+
     h1 {
       justify-self: left;
       padding: 6rem 0 1.5rem 6rem;
@@ -136,6 +165,9 @@
         padding: 6rem 0 1.5rem 3rem;
       }
 
+      @include respond(phoneTab) {
+        padding: 1.5rem 0 1.5rem 6rem;
+      }
     }
 
     p {
