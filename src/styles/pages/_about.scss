@@ -31,6 +31,13 @@
     grid-template-rows: 10vh 20vh 5vh repeat(10, 1fr);
   }
 
+  @include respond(tabPort) {
+    height: 120vh;
+    max-height: 120vh;
+    grid-template-columns: 100vw;
+    grid-template-rows: 10vh 25vh repeat(10, 1fr);
+  }
+
   &__resources {
     height: 100%;
     grid-row: 3 / -1;
@@ -63,6 +70,12 @@
       grid-column: 1;
     }
 
+    @include respond(tabPort) {
+      grid-row: 6 / -1;
+      grid-column: 1;
+      align-self: start;
+    }
+
     ul {
       line-height: 0.75;
 
@@ -74,6 +87,11 @@
         li {
           padding: 0 1rem;
         }
+      }
+
+      @include respond(tabPort) {
+        padding: 0 0 0 0;
+        margin: 12rem 0 0 0rem;
       }
     }
 
@@ -127,6 +145,13 @@
       margin: 5.5em 0 0 0;
       z-index: 50;
     }
+
+    @include respond(tabPort) {
+      grid-row: 2;
+      grid-column: 1;
+      margin: 0;
+      height: 20vh;
+    }
   }
 
   &--left {
@@ -149,7 +174,10 @@
       padding: 0;
       grid-row: 5 / 7;
       grid-column: 1;
-      // align-self: center;
+    }
+
+    @include respond(tabPort) {
+      grid-row: 3 / 7;
     }
 
     h1 {

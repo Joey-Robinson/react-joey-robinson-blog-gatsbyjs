@@ -42,6 +42,10 @@
       justify-self: center;
     }
 
+    @include respond(tabPort) {
+      margin: 1.5rem 0 0 3rem;
+    }
+
     a {
       color: #222;
       transition: all .3s ease-in-out;
@@ -70,7 +74,6 @@
       @include respond(phoneWide) {
         margin: 0;
         padding: 5px 0;
-        // height: 80%;
       }
 
       @include respond(phone) {
@@ -82,6 +85,10 @@
       }
 
       @include respond(phoneTab) {
+        padding: 1rem 3rem;
+      }
+
+      @include respond(tabPort) {
         padding: 1rem 3rem;
       }
 

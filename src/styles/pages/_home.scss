@@ -25,6 +25,14 @@
     overflow: hidden;
   }
 
+  @include respond(tabPort) {
+    grid-template-columns: 100vw;
+    grid-template-rows: 10vh 20vh 1fr 1fr;
+    overflow: hidden;
+    height: 100vh;
+    max-height: 100vh;
+  }
+
   &--content__banner {
     margin-top: 3rem;
     grid-row: 2;
@@ -46,6 +54,12 @@
       margin-top: 5rem;
       grid-column: 1;
       height: 25vh;
+    }
+
+    @include respond(tabPort) {
+      grid-row: 2;
+      margin-top: 0;
+      height: 20vh;
     }
   }
 
@@ -76,6 +90,11 @@
     @include respond(phoneTab) {
       grid-column: 1;
       align-self: center;
+    }
+
+    @include respond(tabPort) {
+      grid-row: 3;
+      align-self: start;
     }
 
     h1 {

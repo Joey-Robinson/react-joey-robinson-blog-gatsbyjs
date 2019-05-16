@@ -79,6 +79,10 @@
       @include respond(phoneTab) {
         top: 5.5rem;
       }
+
+      @include respond(tabPort) {
+        top: 7rem;
+      }
     }
   }
 
