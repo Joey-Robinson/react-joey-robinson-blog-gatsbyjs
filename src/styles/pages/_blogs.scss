@@ -33,6 +33,13 @@
     overflow: hidden;
   }
 
+  @include respond(tabPort) {
+    height: 200vh;
+    max-height: 200vh;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 10vh 20vh repeat(10, 1fr);
+  }
+
   &--content__left {
     grid-column: 2;
     grid-row: 3 / -1;
@@ -53,6 +60,10 @@
       grid-row: 3 / -1;
       margin: 5.5rem 0 0 0;
       height: 100%;
+    }
+
+    @include respond(tabPort) {
+      margin: 0;
     }
   }
 
@@ -84,6 +95,13 @@
       grid-column: 1 / -1;
       width: 100vw;
       margin: 5.5rem 0 0 0;
+    }
+
+    @include respond(tabPort) {
+      grid-row: 2;
+      height: 20vh;
+      grid-column: 1 / -1;
+      margin: 0;
     }
   }
 
@@ -125,6 +143,11 @@
       align-self: start;
     }
 
+    @include respond(tabPort) {
+      grid-row: 2;
+      align-self: center;
+    }
+
     a {
       display: block;
       color: yellow;
@@ -164,6 +187,10 @@
       margin: 5.5rem 0 0 0;
     }
 
+    @include respond(tabPort) {
+      margin: .5rem 0 0 0;
+    }
+
     p {
       display: block;
       justify-self: right;
@@ -175,6 +202,11 @@
       @include respond(phone) {
         padding: 1.5rem 4.5rem 0 4.5rem;
         margin: 1.5rem 0 0 0;
+      }
+
+      @include respond(tabPort) {
+        padding: 1rem 4.5rem 1rem 4.5rem;
+        margin: 1rem 0 0 0;
       }
     }
   }
@@ -208,6 +240,12 @@
       justify-self: left;
       align-self: start;
       padding: 1.5rem 0 3rem 1rem;
+    }
+
+    @include respond(tabPort) {
+      grid-row: 2;
+      align-self: center;
+      padding: 9rem 0 3rem 1rem;
     }
   }
 

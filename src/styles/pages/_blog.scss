@@ -27,6 +27,12 @@
     grid-template-rows: 10vh 25vh repeat(6, 1fr);
   }
 
+  @include respond(tabPort) {
+    height: 100vh;
+    grid-template-columns: 100vw;
+    grid-template-rows: 10vh 20vh repeat(6, 1fr);
+  }
+
   &--top {
     grid-row: 2 / 4;
     grid-column: 1 / -1;
@@ -52,6 +58,13 @@
       grid-row: 2;
       grid-column: 1;
     }
+
+    @include respond(tabPort) {
+      height: 20vh;
+      grid-row: 2;
+      grid-column: 1;
+      margin: 0;
+    }
   }
 
   ul {
@@ -76,6 +89,11 @@
       grid-column: 1;
       grid-row: 3 / -1;
       margin-top: 5rem;
+    }
+
+    @include respond(tabPort) {
+      grid-row: 3;
+      margin: 0;
     }
 
     h1 {
@@ -156,6 +174,10 @@
       margin: 0;
     }
 
+    @include respond(tabPort) {
+      width: auto;
+    }
+
     &:hover {
       transition: all .3s ease-in-out;
       color: #9932cc;
@@ -184,6 +206,7 @@
       width: 100%;
       padding: 1rem 0;
     }
+
   }
 
   &__excerpt {
@@ -206,6 +229,11 @@
     }
 
     @include respond(phoneTab) {
+      padding: 1rem 0;
+    }
+
+    @include respond(tabPort) {
+      width: auto;
       padding: 1rem 0;
     }
 
