@@ -1,3 +1,5 @@
+# Disclaimer: I'm not a very good designer.
+
 # Portfolio - Version 4 (V4)
 
 ### Technologies used:
