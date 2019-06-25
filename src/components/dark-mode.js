@@ -6,12 +6,7 @@ const DarkModeToggle = () => {
 
   return (
     <div>
-      <button type="button" onClick={darkMode.disable}>
-        ☀
-      </button>
-      <button type="button" onClick={darkMode.enable}>
-        ☾
-      </button>
+      <button onClick={darkMode.toggle}>{darkMode.value ? "☀" : "☾"}</button>
     </div>
   )
 }

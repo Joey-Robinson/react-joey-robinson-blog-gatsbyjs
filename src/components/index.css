@@ -7,3 +7,12 @@ body.dark-mode {
   background-color: #1a1919;
   color: #999;
 }
+
+button {
+  color: orangered;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background: transparent;
+  font-size: 1.5rem;
+}
