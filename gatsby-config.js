@@ -1,25 +1,11 @@
-require("dotenv").config()
-
 module.exports = {
   siteMetadata: {
-    title: `Joey Robinson`,
-    description: `Portfolio for Joey Robinson`,
-    author: `@joeyrobinsondev`,
+    title: `Gatsby Default Starter`,
+    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
+    author: `@gatsbyjs`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
-    "gatsby-plugin-sharp",
-    "gatsby-transformer-sharp",
-    `gatsby-plugin-sass`,
-    `gatsby-plugin-transition-link`,
-    {
-      resolve: "gatsby-source-filesystem",
-      options: {
-        name: "project",
-        path: "./data",
-      },
-    },
-    "gatsby-transformer-json",
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -27,38 +13,22 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
-    {
-      resolve: "gatsby-source-filesystem",
-      options: {
-        path: `${__dirname}/src/pages`,
-        name: "pages",
-      },
-    },
-    {
-      resolve: `gatsby-transformer-remark`,
-      options: {
-        tableOfContents: {
-          heading: null,
-          maxDepth: 6,
-        },
-      },
-    },
-    {
-      resolve: `gatsby-source-contentful`,
-      options: {
-        spaceId: process.env.CONTENTFUL_SPACE_ID,
-        accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
-      },
-    },
+    `gatsby-transformer-sharp`,
+    `gatsby-plugin-sharp`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Joey Robinson Portfolio`,
-        short_name: `Portfolio`,
+        name: `gatsby-starter-default`,
+        short_name: `starter`,
         start_url: `/`,
+        background_color: `#663399`,
+        theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `src/images/favico.jpg`, // This path is relative to the root of the site.
+        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
       },
     },
+    // this (optional) plugin enables Progressive Web App + Offline functionality
+    // To learn more, visit: https://gatsby.dev/offline
+    // `gatsby-plugin-offline`,
   ],
 }

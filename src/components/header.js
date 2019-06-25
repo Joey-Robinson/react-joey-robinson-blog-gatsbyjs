@@ -1,87 +1,42 @@
-import React, { Component } from "react"
-import AniLink from "gatsby-plugin-transition-link/AniLink"
+import { Link } from "gatsby"
+import PropTypes from "prop-types"
+import React from "react"
 
-class Header extends Component {
-  state = {
-    showing: true,
-    text: "",
-  }
-
-  toggleHidden = () => {
-    this.setState({
-      showing: !this.state.showing,
-      text: !this.state.text,
-    })
-  }
-
-  render() {
-    return (
-      <div className="header">
-        <button
-          className={
-            this.state.text ? "header--button__open" : "header--button__close"
-          }
-          type="button"
-          onClick={this.toggleHidden}
+const Header = ({ siteTitle }) => (
+  <header
+    style={{
+      background: `rebeccapurple`,
+      marginBottom: `1.45rem`,
+    }}
+  >
+    <div
+      style={{
+        margin: `0 auto`,
+        maxWidth: 960,
+        padding: `1.45rem 1.0875rem`,
+      }}
+    >
+      <h1 style={{ margin: 0 }}>
+        <Link
+          to="/"
+          style={{
+            color: `white`,
+            textDecoration: `none`,
+          }}
         >
-          <span>{this.state.text ? "▼" : "▲"}</span>
-        </button>
-        <header
-          className={
-            this.state.showing ? "header__container" : "header__hidden"
-          }
-        >
-          <h1>
-            決<span>意</span>
-          </h1>
-          <nav className="header__container--nav">
-            <ul>
-              <li>
-                <AniLink
-                  direction="left"
-                  cover
-                  to="/"
-                  bg="linear-gradient(to left top, #9932cc, #6e39a4, #4d367a, #342d4e, #222222)"
-                >
-                  Home
-                </AniLink>
-              </li>
-              <li>
-                <AniLink
-                  direction="right"
-                  cover
-                  bg="linear-gradient(to right top, #9932cc, #6e39a4, #4d367a, #342d4e, #222222)"
-                  to="/portfolio/"
-                >
-                  Portfolio
-                </AniLink>
-              </li>
-              <li>
-                <AniLink
-                  direction="right"
-                  cover
-                  bg="linear-gradient(to right top, #9932cc, #6e39a4, #4d367a, #342d4e, #222222)"
-                  to="/about/"
-                >
-                  About
-                </AniLink>
-              </li>
-              <li>
-                <AniLink
-                  direction="right"
-                  cover
-                  bg="linear-gradient(to right top, #9932cc, #6e39a4, #4d367a, #342d4e, #222222)"
-                  to="/blog/"
-                >
-                  Blog
-                </AniLink>
-              </li>
-            </ul>
-          </nav>
-        </header>
-      </div>
-    )
-  }
+          {siteTitle}
+        </Link>
+      </h1>
+    </div>
+  </header>
+)
+
+Header.propTypes = {
+  siteTitle: PropTypes.string,
+}
+
+Header.defaultProps = {
+  siteTitle: ``,
 }
 
 export default Header
