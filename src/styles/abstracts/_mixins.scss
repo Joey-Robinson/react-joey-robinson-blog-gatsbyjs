@@ -1,0 +1,11 @@
+@mixin mode-buttons {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background: transparent;
+  img {
+    display: block;
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+}
