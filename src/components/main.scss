@@ -1,0 +1,23 @@
+body {
+  min-height: 100vh;
+}
+
+.light-mode {
+  transition: background-color 0.3s ease-in;
+  background-color: #e8e8e8;
+  color: #2d2d2d;
+}
+.dark-mode {
+  color: #e8e8e8;
+  background-color: #2d2d2d;
+  transition: background-color 0.3s ease-in;
+}
+
+button {
+  color: orangered;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background: transparent;
+  font-size: 1.5rem;
+}
