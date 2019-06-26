@@ -5,8 +5,10 @@ import "../styles/main.scss"
 const Layout = ({ children }) => {
   return (
     <>
-      <Header />
-      <main>{children}</main>
+      <main className="primary">
+        <Header />
+        {children}
+      </main>
     </>
   )
 }

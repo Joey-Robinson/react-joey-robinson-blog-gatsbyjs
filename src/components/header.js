@@ -1,8 +1,10 @@
 import React from "react"
+import DarkModeToggle from "./dark-mode"
 
 const Header = () => (
-  <header>
+  <header className="header">
     <h1>From header</h1>
+    <DarkModeToggle />
   </header>
 )
 

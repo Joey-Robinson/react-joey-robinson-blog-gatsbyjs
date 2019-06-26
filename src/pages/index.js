@@ -1,13 +1,13 @@
 import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import DarkModeToggle from "../components/dark-mode"
 
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
-    <h1>Currently updating this. Check back often</h1>
-    <DarkModeToggle />
+    <section className="home">
+      <h1>Hi</h1>
+    </section>
   </Layout>
 )
 
