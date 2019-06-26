@@ -1,5 +1,17 @@
 .home {
   grid-column: 2;
   grid-row: 2;
-  min-height: 100vh;
+  height: 300vh;
+}
+
+.nav__scroll {
+  display: block;
+  height: 300vh;
+  background: #000;
+}
+
+.nav {
+  display: block;
+  background: purple;
+  height: 150vh;
 }

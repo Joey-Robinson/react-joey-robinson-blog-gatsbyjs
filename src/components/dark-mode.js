@@ -10,9 +10,9 @@ const DarkModeToggle = () => {
     <div className="header--mode">
       <button onClick={darkMode.toggle}>
         {darkMode.value ? (
-          <img src={sun} alt="Sun" />
+          <img src={sun} alt="Light Mode" />
         ) : (
-          <img src={moon} alt="Moon" />
+          <img src={moon} alt="Dark Mode" />
         )}
       </button>
     </div>
