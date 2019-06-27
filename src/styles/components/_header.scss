@@ -1,13 +1,28 @@
 .header {
   display: grid;
-  grid-column: 2;
+  grid-column: 1 / -1;
   grid-row: 1;
-  grid-template-columns: 3fr repeat(4, 1fr);
-  outline: 1.5px solid red;
-  padding: 1.5rem 0;
+  grid-template-columns: 20vw repeat(5, 1fr) 20vw;
   position: sticky;
   top: 0;
-  &--mode {
-    grid-column: 5;
+  height: 10vh;
+  h1 {
+    align-self: center;
+    grid-column: 2;
+    padding: 1.5rem 0;
   }
+  &--mode {
+    grid-column: 6;
+    justify-self: right;
+    align-self: center;
+    padding: 1.5rem 0;
+  }
+}
+
+.scroll {
+  color: white;
+  background: #202020;
+  height: 7vh;
+  transition: background-color 200ms ease-in;
+  transition: height 200ms ease-in;
 }
