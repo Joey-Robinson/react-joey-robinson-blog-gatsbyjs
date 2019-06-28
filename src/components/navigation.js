@@ -17,7 +17,9 @@ const Navigation = () => {
 
   return (
     <header className={scroll ? "header scroll" : "header"}>
-      <h1>Joey Robinson</h1>
+      <h1>
+        <Link to="/">Joey Robinson</Link>
+      </h1>
       <nav className="header--nav">
         <div className="nav--coffee" target="_blank" rel="noopener noreferrer">
           <a href="https://ko-fi.com/joeyrobinson">
@@ -31,6 +33,9 @@ const Navigation = () => {
         </div>
         <div className="nav--portfolio">
           <Link to="/portfolio/">Portfolio</Link>
+        </div>
+        <div className="nav--contact">
+          <Link to="/contact/">Contact</Link>
         </div>
         <DarkModeToggle />
       </nav>

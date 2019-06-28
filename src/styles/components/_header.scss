@@ -14,11 +14,15 @@
     align-self: center;
     grid-column: 2;
     padding: 1.5rem 0;
+    a {
+      text-decoration: none;
+      border-bottom: none;
+    }
   }
   &--nav {
     display: grid;
     grid-column: 3;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(6, 1fr);
   }
 }
 
@@ -33,7 +37,8 @@
   transition: background-color 200ms ease-in;
   transition: height 200ms ease-in;
   &--blog,
-  &--portfolio {
+  &--portfolio,
+  &--contact {
     font-size: 2rem;
     justify-self: right;
     a {
@@ -49,8 +54,12 @@
     grid-column: 3;
     @include nav-defaults;
   }
-  &--coffee {
+  &--contact {
     grid-column: 4;
+    @include nav-defaults;
+  }
+  &--coffee {
+    grid-column: 5;
     margin: 0 0 3px 0;
     justify-self: center;
     font-size: 3rem;
@@ -62,7 +71,7 @@
     }
   }
   &--mode {
-    grid-column: 5;
+    grid-column: 6;
     justify-self: left;
     @include nav-defaults;
   }

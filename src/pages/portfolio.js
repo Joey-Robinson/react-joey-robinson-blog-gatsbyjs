@@ -2,11 +2,11 @@ import React from "react"
 import Layout from "../components/layout"
 
 const Portfolio = () => (
-  <section className="portfolio">
-    <Layout>
+  <Layout>
+    <section className="portfolio">
       <h1>From Portfolio</h1>
-    </Layout>
-  </section>
+    </section>
+  </Layout>
 )
 
 export default Portfolio
