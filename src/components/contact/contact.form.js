@@ -7,24 +7,18 @@ const ContactForm = () => (
     data-netlify="true"
     className="contact--form"
   >
-    <p>
-      <label>
-        Your Name: <input type="text" name="name" />
-      </label>
-    </p>
-    <p>
-      <label>
-        Your Email: <input type="email" name="email" />
-      </label>
-    </p>
-    <p>
-      <label>
-        Message: <textarea name="message"></textarea>
-      </label>
-    </p>
-    <p>
-      <button type="submit">Send</button>
-    </p>
+    <label className="contact--form__name">
+      <input type="text" name="name" placeholder="Your Name..." />
+    </label>
+    <label className="contact--form__email">
+      <input type="email" name="email" placeholder="Your Email..." />
+    </label>
+    <label className="contact--form__message">
+      <textarea name="message" placeholder="Your Message..." />
+    </label>
+    <button className="contact--form__submit" type="submit">
+      <p>Send</p>
+    </button>
   </form>
 )
 

@@ -5,8 +5,14 @@ import ContactForm from "../components/contact/contact.form"
 const Contact = () => (
   <Layout>
     <section className="contact">
-      <h1>Some ways you can get ahold of me:</h1>
-      <ContactForm />
+      <div className="contact--opening">
+        <h1>Some ways you can get ahold of me:</h1>
+        <p>
+          There's a few ways to get ahold of me. You can use the form below or
+          just contact me directly at one of the listed contact methods.
+        </p>
+        <ContactForm />
+      </div>
       <ul className="contact--list">
         <li>
           Email:{" "}

@@ -2,6 +2,17 @@
   @include page-defaults;
   display: grid;
   grid-template-columns: 1fr;
+  &--opening {
+    height: 50%;
+    h1 {
+      display: inline-block;
+      font-size: 2rem;
+    }
+    p {
+      padding: 1.5rem 0;
+      font-size: 1.8rem;
+    }
+  }
   &--list {
     font-size: 1.8rem;
     a {
@@ -10,6 +21,47 @@
     }
   }
   &--form {
+    align-self: start;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(3, 1fr) 7.5rem;
+    grid-column-gap: 1.6rem;
+    padding: 3rem 0;
+    &__email {
+      grid-column: 2;
+      grid-row: 1;
+      justify-self: left;
+      align-self: center;
+    }
+    &__name {
+      grid-column: 1;
+      grid-row: 1;
+      justify-self: right;
+      align-self: center;
+    }
+    &__message {
+      grid-column: 1 / -1;
+      grid-row: 2 / 4;
+      justify-self: center;
+      textarea {
+        width: 50rem;
+        height: 15rem;
+      }
+    }
+    &__submit {
+      grid-row: 4;
+      font-size: 1.8rem;
+      justify-self: center;
+      grid-column: 1 / -1;
+      position: absolute;
+      align-self: end;
+      p {
+        background: cornflowerblue;
+        color: white;
+        width: 50rem;
+        margin: 0 0 6rem 0;
+      }
+    }
     label,
     input {
       font-size: 2rem;
