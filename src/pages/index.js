@@ -1,19 +1,13 @@
 import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import TypingHome from "../components/home/typing.home"
 
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
     <section className="home">
-      <a
-        className="twitter-follow-button"
-        href="https://twitter.com/joeyrobinsondev"
-        data-size="large"
-        data-show-screen-name="false"
-      >
-        Follow @joeyrobinsondev
-      </a>
+      <TypingHome />
     </section>
   </Layout>
 )
