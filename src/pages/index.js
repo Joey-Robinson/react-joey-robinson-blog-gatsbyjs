@@ -6,7 +6,14 @@ const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
     <section className="home">
-      <h1>Hi</h1>
+      <a
+        className="twitter-follow-button"
+        href="https://twitter.com/joeyrobinsondev"
+        data-size="large"
+        data-show-screen-name="false"
+      >
+        Follow @joeyrobinsondev
+      </a>
     </section>
   </Layout>
 )
