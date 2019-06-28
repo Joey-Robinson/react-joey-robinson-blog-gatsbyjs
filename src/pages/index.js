@@ -8,6 +8,7 @@ const IndexPage = () => (
     <SEO title="Home" />
     <section className="home">
       <TypingHome />
+      <h1>I'm currently live-updating this. Keep checking back.</h1>
     </section>
   </Layout>
 )

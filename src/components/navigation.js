@@ -37,6 +37,9 @@ const Navigation = () => {
         <div className="nav--contact">
           <Link to="/contact/">Contact</Link>
         </div>
+        <div className="nav--about">
+          <Link to="/about/">About</Link>
+        </div>
         <DarkModeToggle />
       </nav>
     </header>

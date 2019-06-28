@@ -1,3 +1,18 @@
 .contact {
   @include page-defaults;
+  display: grid;
+  grid-template-columns: 1fr;
+  &--list {
+    font-size: 1.8rem;
+    a {
+      color: cornflowerblue;
+      text-decoration: none;
+    }
+  }
+  &--form {
+    label,
+    input {
+      font-size: 2rem;
+    }
+  }
 }

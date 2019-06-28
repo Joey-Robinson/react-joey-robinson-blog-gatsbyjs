@@ -23,7 +23,7 @@
   &--nav {
     display: grid;
     grid-column: 3;
-    grid-template-columns: repeat(6, 1fr);
+    grid-template-columns: repeat(6, auto);
   }
 }
 
@@ -39,20 +39,25 @@
   transition: height 200ms ease-in;
   &--blog,
   &--portfolio,
-  &--contact {
-    font-size: 2rem;
+  &--contact,
+  &--about {
+    font-size: 1.8rem;
     justify-self: right;
     a {
       display: block;
       text-decoration: none;
     }
   }
-  &--blog {
+  &--about {
     grid-column: 2;
     @include nav-defaults;
   }
-  &--portfolio {
+  &--blog {
     grid-column: 3;
+    @include nav-defaults;
+  }
+  &--portfolio {
+    grid-column: 1;
     @include nav-defaults;
   }
   &--contact {
@@ -61,9 +66,8 @@
   }
   &--coffee {
     grid-column: 5;
-    margin: 0 0 3px 0;
-    justify-self: center;
-    font-size: 3rem;
+    justify-self: right;
+    font-size: 2rem;
     @include nav-defaults;
     img {
       display: block;
@@ -73,7 +77,8 @@
   }
   &--mode {
     grid-column: 6;
-    justify-self: left;
+    margin: 3px 0 0 0;
+    justify-self: center;
     @include nav-defaults;
   }
 }
