@@ -6,7 +6,11 @@
   position: sticky;
   top: 0;
   height: 10vh;
+  a {
+    color: cornflowerblue;
+  }
   h1 {
+    color: cornflowerblue;
     align-self: center;
     grid-column: 2;
     padding: 1.5rem 0;
@@ -19,7 +23,6 @@
 }
 
 .scroll {
-  color: white;
   background: #202020;
   height: 8.5vh;
   transition: background-color 200ms ease-in;
@@ -29,22 +32,42 @@
 .nav {
   transition: background-color 200ms ease-in;
   transition: height 200ms ease-in;
+  &--blog,
+  &--portfolio {
+    font-size: 2rem;
+    justify-self: right;
+    a {
+      display: block;
+      text-decoration: none;
+    }
+  }
+  &--blog {
+    grid-column: 2;
+    @include nav-defaults;
+  }
+  &--portfolio {
+    grid-column: 3;
+    @include nav-defaults;
+  }
   &--coffee {
     grid-column: 4;
-    padding: 1.5rem 0;
     margin: 0 0 3px 0;
-    justify-self: right;
-    align-self: center;
+    justify-self: center;
     font-size: 3rem;
+    @include nav-defaults;
     img {
-      color: black;
+      display: block;
       width: 3.5rem;
       height: 2.5rem;
     }
   }
   &--mode {
     grid-column: 5;
-    @include alignment;
-    padding: 1.5rem 0;
+    justify-self: left;
+    @include nav-defaults;
   }
+}
+
+[aria-current="page"] {
+  border-bottom: 2px solid cornflowerblue;
 }

@@ -10,7 +10,8 @@
   }
 }
 
-@mixin alignment {
+@mixin nav-defaults {
+  grid-row: 1;
+  padding: 1.5rem 0;
   align-self: center;
-  justify-self: center;
 }
