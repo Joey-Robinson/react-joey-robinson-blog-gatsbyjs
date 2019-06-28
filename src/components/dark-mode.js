@@ -7,7 +7,7 @@ const DarkModeToggle = () => {
   const darkMode = useDarkMode(false)
 
   return (
-    <div className="header--mode">
+    <div className="nav--mode">
       <button onClick={darkMode.toggle}>
         {darkMode.value ? (
           <img src={sun} alt="Light Mode" />

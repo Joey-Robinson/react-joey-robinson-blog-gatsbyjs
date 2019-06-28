@@ -2,7 +2,7 @@
   display: grid;
   grid-column: 1 / -1;
   grid-row: 1;
-  grid-template-columns: 20vw repeat(5, 1fr) 20vw;
+  grid-template-columns: 20vw auto 1fr 20vw;
   position: sticky;
   top: 0;
   height: 10vh;
@@ -11,18 +11,40 @@
     grid-column: 2;
     padding: 1.5rem 0;
   }
-  &--mode {
-    grid-column: 6;
-    justify-self: right;
-    align-self: center;
-    padding: 1.5rem 0;
+  &--nav {
+    display: grid;
+    grid-column: 3;
+    grid-template-columns: repeat(5, 1fr);
   }
 }
 
 .scroll {
   color: white;
   background: #202020;
-  height: 7vh;
+  height: 8.5vh;
   transition: background-color 200ms ease-in;
   transition: height 200ms ease-in;
+}
+
+.nav {
+  transition: background-color 200ms ease-in;
+  transition: height 200ms ease-in;
+  &--coffee {
+    grid-column: 4;
+    padding: 1.5rem 0;
+    margin: 0 0 3px 0;
+    justify-self: right;
+    align-self: center;
+    font-size: 3rem;
+    img {
+      color: black;
+      width: 3.5rem;
+      height: 2.5rem;
+    }
+  }
+  &--mode {
+    grid-column: 5;
+    @include alignment;
+    padding: 1.5rem 0;
+  }
 }
