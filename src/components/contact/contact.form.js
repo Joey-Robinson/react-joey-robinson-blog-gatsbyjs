@@ -16,8 +16,9 @@ const ContactForm = () => (
     <label className="contact--form__message">
       <textarea name="message" placeholder="Your Message..." />
     </label>
-    <button className="contact--form__submit" type="submit">
-      <p>Send</p>
+    <br />
+    <button className="contact--form__submit button button--one" type="submit">
+      Send
     </button>
   </form>
 )
