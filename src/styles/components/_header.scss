@@ -31,12 +31,11 @@
   background: #202020;
   height: 8.5vh;
   transition: background-color 200ms ease-in;
-  transition: height 200ms ease-in;
+  transition: height 100ms ease-in;
 }
 
 .nav {
   transition: background-color 200ms ease-in;
-  transition: height 200ms ease-in;
   &--blog,
   &--portfolio,
   &--contact,

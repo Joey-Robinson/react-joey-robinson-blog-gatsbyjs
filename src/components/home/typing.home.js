@@ -9,8 +9,8 @@ const TypingHome = () => (
         strings={[
           "Develoepr",
           "Developer.",
-          "Reader.",
           "(Poor) Writer.",
+          "Reader.",
           "Person.",
           "Geek.",
           "Nerd.",

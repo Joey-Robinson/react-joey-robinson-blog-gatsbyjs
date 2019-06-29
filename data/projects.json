@@ -4,7 +4,7 @@
     "slug": "Private-Blog",
     "url": "https://sascha-bates.netlify.com/",
     "image": "./images/sb.png",
-    "short-description": "The recreation of a blog that had previously been made with Octopress. Using more modern technologies to implement a newer blog and updated informaion.",
+    "description": "The recreation of a blog that had previously been made with Octopress. Using more modern technologies to implement a newer blog and updated informaion.",
     "technology": "GatsbyJS, CSS Grid, SCSS",
     "github": "https://www.google.com/"
   },
@@ -13,7 +13,7 @@
     "slug": "Sweetest-Southern-Creations",
     "url": "http://sweetestsoutherncreations.com/",
     "image": "./images/ssc.jpg",
-    "short-description": "Website created for business owner to showcase crafted goods. I was able to increase traffic to business' Facebook page and now their website.",
+    "description": "Website created for business owner to showcase crafted goods. I was able to increase traffic to business' Facebook page and now their website.",
     "technology": "CSS Grid, SCSS, JS, HTML",
     "github": "https://github.com/Joey-Robinson/SweetestSouthernCreations"
   },
@@ -22,7 +22,7 @@
     "slug": "Gamer-Vanity-Site",
     "url": "https://meowkats.netlify.com/",
     "image": "./images/gamervanity.png",
-    "short-description": "Website creted as a tribute page for a friend. I wanted to have a showcase of sorts to highlight the players accomplishments in an easy to digest manner.",
+    "description": "Website creted as a tribute page for a friend. I wanted to have a showcase of sorts to highlight the players accomplishments in an easy to digest manner.",
     "technology": "Webpack, Babel, SCSS, JS, CSS Grid, HTML, Parallel API Calls",
     "github": "https://github.com/Joey-Robinson/secondTribute"
   },
@@ -31,7 +31,7 @@
     "slug": "Shell-Game",
     "url": "https://joey-robinson.github.io/shellgame/",
     "image": "./images/vjsshellgame.png",
-    "short-description": "Web app create to help improve memory. The app is based off of the World Of Warcraft world quest of the same name",
+    "description": "Web app create to help improve memory. The app is based off of the World Of Warcraft world quest of the same name",
     "technology": "JS, CSS",
     "github": "https://github.com/Joey-Robinson/shellgame"
   },
@@ -40,7 +40,7 @@
     "slug": "Joey-Robinson",
     "url": "https://github.com/Joey-Robinson/JoeyRobinson",
     "image": "./images/personalsite.jpg",
-    "short-description": "Personal portfolio website. Third iteration. This was originally ",
+    "description": "Personal portfolio website. Third iteration. This was originally ",
     "technology": "React, GatsbyJS, CSS Grid, SCSS",
     "github": "https://github.com/Joey-Robinson/JoeyRobinson"
   },
@@ -49,7 +49,7 @@
     "slug": "Vjs-todo",
     "url": "https://joey-robinson.github.io/todo/",
     "image": "./images/vjstodo.png",
-    "short-description": "A simple to do list. I created this to text my ability using  technologies and feel comfortable with what I made.",
+    "description": "A simple to do list. I created this to text my ability using  technologies and feel comfortable with what I made.",
     "technology": "JS, CSS, Font Awesome, Materialize CSS, Local Storage",
     "github": "https://github.com/Joey-Robinson/todo"
   },
@@ -58,7 +58,7 @@
     "slug": "Vjs-quote-generator",
     "url": "https://vjs-quote-generator.netlify.com/",
     "image": "./images/vjsrandomquote.png",
-    "short-description": "Web app that generates random quotes. The quotes are pre-written and randomlly selected.",
+    "description": "Web app that generates random quotes. The quotes are pre-written and randomlly selected.",
     "technology": "JS, HTML, CSS",
     "github": "https://github.com/Joey-Robinson/vjs-quote-generator"
   },
@@ -67,7 +67,7 @@
     "slug": "Vjs-calculator",
     "url": "https://vjs-calculator.netlify.com/",
     "image": "./images/vjscalculator.png",
-    "short-description": "Web app that was created to again showcase skills in  technology usage.",
+    "description": "Web app that was created to again showcase skills in  technology usage.",
     "technology": "JS, HTML, CSS",
     "github": "https://github.com/Joey-Robinson/vjs-calculator"
   },
@@ -76,7 +76,7 @@
     "slug": "Vjs-markdown-previewer",
     "url": "https://vjs-markdown-previewer.netlify.com/",
     "image": "./images/vjsmarkdownpreviewer.png",
-    "short-description": "Web app to preview basic text into markdown using markdown syntax.",
+    "description": "Web app to preview basic text into markdown using markdown syntax.",
     "technology": "JS, marked, HTML, CSS",
     "github": "https://github.com/Joey-Robinson/vjs-markdown-previewer"
   },
@@ -85,7 +85,7 @@
     "slug": "TF-soundboard",
     "url": "https://tf-soundboard.netlify.com/",
     "image": "./images/tfsoundboard.jpg",
-    "short-description": "Web app that was made for the guild <TF> on Hyjal. Again using  technologies, I was able to use sound files from twitch.tv clips to make this.",
+    "description": "Web app that was made for the guild <TF> on Hyjal. Again using  technologies, I was able to use sound files from twitch.tv clips to make this.",
     "technology": "JS, CSS, CSS Grid, HTML",
     "github": "https://github.com/Joey-Robinson/tf-soundboard"
   },
@@ -94,7 +94,7 @@
     "slug": "Vjs-periodic-table",
     "url": "https://js-periodic-table.netlify.com/",
     "image": "./images/vjsperiodictable.png",
-    "short-description": "An in browser periodic table. This was made just the sake of making it. ",
+    "description": "An in browser periodic table. This was made just the sake of making it. ",
     "technology": "JS, HTML, CSS",
     "github": "https://github.com/Joey-Robinson/vJS-Periodic-Table"
   },
@@ -103,7 +103,7 @@
     "slug": "React-todo",
     "url": "https://react-todo-no-hooks.netlify.com/",
     "image": "./images/reacttodo.png",
-    "short-description": "Web app using different technologies than the other version.",
+    "description": "Web app using different technologies than the other version.",
     "technology": "React, CSS",
     "github": "https://github.com/Joey-Robinson/react-todo-list-no-hooks"
   },
@@ -112,7 +112,7 @@
     "slug": "Vjs-calorie-counter",
     "url": "https://vjs-calorie-counter.netlify.com/",
     "image": "./images/caloriecounter.png",
-    "short-description": "Web app to keep track of calorie intake. Useful for monitoring personal intake, as it makes use of Local Storage.",
+    "description": "Web app to keep track of calorie intake. Useful for monitoring personal intake, as it makes use of Local Storage.",
     "technology": "JS, localStorage, CSS, Font Awesome, Materialize CSS",
     "github": "https://github.com/Joey-Robinson/CalorieCounter"
   },
@@ -121,7 +121,7 @@
     "slug": "React-pixabay",
     "url": "https://react-pixabay-image-search.netlify.com/",
     "image": "./images/reactpixabayimagesearch.jpg",
-    "short-description": "Web app to search for images on Pixabay.",
+    "description": "Web app to search for images on Pixabay.",
     "technology": "React, Material UI, Pixabay API, axios",
     "github": "https://github.com/Joey-Robinson/react-pixabay-image-search"
   },
@@ -130,7 +130,7 @@
     "slug": "React-lyric-search",
     "url": "https://react-lyric-searches.netlify.com/",
     "image": "./images/reactlyricsearch.png",
-    "short-description": "Web app to search for lyrics from songs.",
+    "description": "Web app to search for lyrics from songs.",
     "technology": "React, CSS, momentJS, axios, React Fragment, React Context",
     "github": "https://github.com/Joey-Robinson/react-lyric-search"
   },
@@ -139,7 +139,7 @@
     "slug": "React-ghibli",
     "url": "https://react-studio-ghibli-api.netlify.com/",
     "image": "./images/reactstudioghibli.png",
-    "short-description": "Web app to view Studio Ghibli movies and their information.",
+    "description": "Web app to view Studio Ghibli movies and their information.",
     "technology": "React, CSS, Flexbox",
     "github": "https://github.com/Joey-Robinson/react-studio-ghibli-api"
   },
@@ -148,7 +148,7 @@
     "slug": "Vjs-time-tracker",
     "url": "https://vjs-time-tracker.netlify.com/",
     "image": "./images/vjstimer.png",
-    "short-description": "Web app to keep track of multiple timers.",
+    "description": "Web app to keep track of multiple timers.",
     "technology": "JS, Babel, Webpack, SCSS, Font Awesome",
     "github": "https://github.com/Joey-Robinson/vJS-time-tracker"
   },
@@ -157,7 +157,7 @@
     "slug": "Find-your-hoard",
     "url": "https://joey-robinson.github.io/muhhoard/",
     "image": "./images/vjshoard.png",
-    "short-description": "Web app to keep track of Accursed Hoard locations in Heaven on High in Final Fantasy 14.",
+    "description": "Web app to keep track of Accursed Hoard locations in Heaven on High in Final Fantasy 14.",
     "technology": "JS, SCSS, CSS Grid, HTML",
     "github": "https://github.com/Joey-Robinson/muhhoard"
   },
@@ -166,7 +166,7 @@
     "slug": "React-mysidia-fc",
     "url": "https://mysidiafc.netlify.com/#/",
     "image": "./images/reactmysidia.jpg",
-    "short-description": "Website for the Free Company Mysidia in Final Fantasy 14.",
+    "description": "Website for the Free Company Mysidia in Final Fantasy 14.",
     "technology": "React",
     "github": "https://github.com/Joey-Robinson/MysidiaSite"
   },
@@ -175,7 +175,7 @@
     "slug": "Vjs-chuck-jokes",
     "url": "https://joey-robinson.github.io/ChuckNorrisJokes/",
     "image": "./images/vjschucknorris.png",
-    "short-description": "Web app that returns a variety of jokes pertaining to Chuck Norris",
+    "description": "Web app that returns a variety of jokes pertaining to Chuck Norris",
     "technology": "JS, CSS, HTML",
     "github": "https://github.com/Joey-Robinson/ChuckNorrisJokes"
   },
@@ -184,7 +184,7 @@
     "slug": "Vjs-number-guesser",
     "url": "https://joey-robinson.github.io/numberguess/",
     "image": "./images/vjsnumberguesser.png",
-    "short-description": "Web app that allows user to guess a number between 1 and 100.",
+    "description": "Web app that allows user to guess a number between 1 and 100.",
     "technology": "JS, HTML",
     "github": "https://github.com/Joey-Robinson/numberguess"
   }
