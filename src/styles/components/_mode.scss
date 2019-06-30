@@ -5,6 +5,10 @@
   button {
     @include mode-buttons;
   }
+  & .projects__span,
+  .projects--hr {
+    color: black;
+  }
 }
 .dark-mode {
   color: #e8e8e8;
@@ -12,5 +16,9 @@
   transition: background-color 0.3s ease-in;
   button {
     @include mode-buttons;
+  }
+  & .projects__span,
+  .projects--hr {
+    color: salmon;
   }
 }
