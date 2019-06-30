@@ -13,7 +13,7 @@ const Portfolio = () => {
             title
             id
             slug
-            description
+            short_description
             url
             technology
             github
@@ -47,10 +47,10 @@ const Portfolio = () => {
         ]}
       />
       <section className="portfolio">
-        <h1 className="portfolio__heading">Some of the projects I've made</h1>
+        <h1 className="portfolio__heading">Projects</h1>
         {projects.map(({ node: project }) => {
           const title = project.title
-          const description = project.description
+          const short_description = project.short_description
           const slug = project.slug
           const imageData = project.image.childImageSharp.fluid
           const url = project.url
@@ -61,7 +61,7 @@ const Portfolio = () => {
           return (
             <ProjectPreview
               title={title}
-              description={description}
+              short_description={short_description}
               slug={slug}
               imageData={imageData}
               url={url}

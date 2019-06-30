@@ -1,0 +1,23 @@
+.projects {
+  grid-column: 1;
+  padding: 7.5px 0;
+  span {
+    color: salmon;
+    font-weight: 700;
+    font-size: 1.7rem;
+    // border: 1px solid green;
+  }
+  h1 {
+    font-size: 1.9rem;
+  }
+  p {
+    padding: 7.5px 0;
+    font-size: 1.6rem;
+    width: 75%;
+  }
+  hr {
+    margin: 3.75px 0;
+    color: salmon;
+    width: 75%;
+  }
+}

@@ -7,7 +7,7 @@ export const query = graphql`
   query($slug: String!) {
     projectsJson(slug: { eq: $slug }) {
       title
-      description
+      short_description
       url
       technology
       github
@@ -25,7 +25,7 @@ export const query = graphql`
 const ProjectTemplate = ({ data }) => {
   const project = data.projectsJson
   const title = project.title
-  const description = project.description
+  const short_description = project.short_description
   const url = project.url
   const technology = project.technology
   const imageData = project.image.childImageSharp.fluid
@@ -35,7 +35,7 @@ const ProjectTemplate = ({ data }) => {
     <Layout>
       <Project
         title={title}
-        description={description}
+        short_description={short_description}
         imageData={imageData}
         url={url}
         technology={technology}

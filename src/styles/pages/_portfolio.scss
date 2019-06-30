@@ -1,3 +1,14 @@
 .portfolio {
   @include page-defaults;
+  margin-bottom: 6rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  &__heading {
+    padding: 7.5px 0;
+    font-size: 2rem;
+    position: fixed;
+    right: 25%;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+  }
 }

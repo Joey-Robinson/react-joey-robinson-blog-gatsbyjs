@@ -4,7 +4,7 @@ import Image from "gatsby-image"
 
 const Project = ({
   title,
-  description,
+  short_description,
   technology,
   url,
   github,
@@ -14,7 +14,7 @@ const Project = ({
     <div className="project--left" />
     <h1 className="project--title">{title}</h1>
     <Image className="project--image image" fluid={imageData} alt={title} />
-    <p className="project--description">{description}</p>
+    <p className="project__short__description">{short_description}</p>
     <p className="project--technology">
       <span>Tech:</span> {technology}
     </p>
