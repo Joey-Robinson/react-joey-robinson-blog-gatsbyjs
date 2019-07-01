@@ -1,7 +1,7 @@
 import React from "react"
 import Layout from "../components/layout"
 
-const About = () => (
+const Me = () => (
   <Layout>
     <section className="about">
       <h1>From About</h1>
@@ -9,4 +9,4 @@ const About = () => (
   </Layout>
 )
 
-export default About
+export default Me

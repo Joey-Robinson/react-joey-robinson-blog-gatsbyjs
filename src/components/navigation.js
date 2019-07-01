@@ -38,7 +38,7 @@ const Navigation = () => {
           <Link to="/contact/">Contact</Link>
         </div>
         <div className="nav--about">
-          <Link to="/about/">About</Link>
+          <Link to="/me/">About</Link>
         </div>
         <DarkModeToggle />
       </nav>

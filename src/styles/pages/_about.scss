@@ -1,3 +1,6 @@
 .about {
   @include page-defaults;
+  h1 {
+    @include heading-defaults;
+  }
 }
