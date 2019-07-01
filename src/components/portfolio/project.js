@@ -4,19 +4,26 @@ import Image from "gatsby-image"
 
 const Project = ({
   title,
-  short_description,
+  long_description,
   technology,
   url,
   github,
   imageData,
+  image,
 }) => (
   <section className="project">
-    <div className="project--left" />
     <h1 className="project--title">{title}</h1>
-    <Image className="project--image image" fluid={imageData} alt={title} />
-    <p className="project__short__description">{short_description}</p>
+    <a
+      href={image}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="project--container"
+    >
+      <Image className="project--image image" fluid={imageData} alt={title} />
+    </a>
+    <p className="project__long__description">{long_description}</p>
     <p className="project--technology">
-      <span>Tech:</span> {technology}
+      <span className="projects__span">Tech:</span> {technology}
     </p>
     <p className="project--github">
       <a href={github} target="_blank" rel="noopener noreferrer">

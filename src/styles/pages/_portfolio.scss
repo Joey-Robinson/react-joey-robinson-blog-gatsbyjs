@@ -4,11 +4,6 @@
   display: grid;
   grid-template-columns: 1fr;
   &__heading {
-    padding: 7.5px 0;
-    font-size: 2rem;
-    position: fixed;
-    right: 22.5%;
-    writing-mode: vertical-rl;
-    text-orientation: mixed;
+    @include heading-defaults;
   }
 }

@@ -22,3 +22,12 @@
   margin-top: 5rem;
   min-height: 100vh;
 }
+
+@mixin heading-defaults {
+  padding: 7.5px 0;
+  font-size: 2rem;
+  position: fixed;
+  right: 22.5%;
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+}
