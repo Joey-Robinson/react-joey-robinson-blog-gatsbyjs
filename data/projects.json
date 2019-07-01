@@ -1,83 +1,91 @@
 [
   {
-    "title": "Private Blog",
-    "slug": "Private-Blog",
+    "title": "Private Blog v1",
+    "slug": "private-blog-v1",
     "url": "https://sascha-bates.netlify.com/",
     "image": "./images/sb.png",
     "short-description": "The recreation of a blog that had previously been made with Octopress. Using more modern technologies to implement a newer blog and updated informaion.",
-    "long-description": "",
+    "long-description": "This was a recreation of an Octopress blog. I used GatsbyJS as the SSG and update the entire site to be more performant. I also upgraded the layout to use CSS Grid. Additionally, since I'm using Gatsby over another SSG, the speed and load time(s) of the site are incredibly fast compared to the older version. Since I'm using Gatsby, I can also make use of GraphQL to fetch data interally (blog posts and archives) to render the content on screen.",
     "technology": "GatsbyJS, CSS Grid, SCSS",
-    "github": "https://www.google.com/"
+    "github": "Private Repo"
   },
   {
-    "title": "Sweetest Southern Creations",
-    "slug": "Sweetest-Southern-Creations",
+    "title": "Sweetest Southern Creations (Plain)",
+    "slug": "sweetest-southern-creations-plain",
     "url": "http://sweetestsoutherncreations.com/",
     "image": "./images/ssc.jpg",
     "short-description": "Website created for business owner to showcase crafted goods. I was able to increase traffic to business' Facebook page and now their website.",
+    "long-description": "This was a vanilla (plain) everything website created for a business owner. I had originally set out to make a complex website, but upon taking a step back and understanding the demographic that would be viewing the websites, I went with something more basic.",
     "technology": "CSS Grid, SCSS, JS, HTML",
     "github": "https://github.com/Joey-Robinson/SweetestSouthernCreations"
   },
   {
-    "title": "Gamer Vanity Site",
-    "slug": "Gamer-Vanity-Site",
-    "url": "https://meowkats.netlify.com/",
+    "title": "Gamer Vanity Site v1",
+    "slug": "gamer-vanity-site-v1",
+    "url": "https://meowkatsv1.netlify.com/",
     "image": "./images/gamervanity.png",
     "short-description": "Website creted as a tribute page for a friend. I wanted to have a showcase of sorts to highlight the players accomplishments in an easy to digest manner.",
+    "long-description": "This was a website created for a friend who wanted to showcase their characters in two different games. I setout originally making one long page with vanilla HTML, JS, and CSS. While I accomplished exactly what I wanted, I didn't feel comfortable with it and later made another version that focused more on the usage of CSS to make graphical changes. I later made another version of this using different technologies.",
     "technology": "Webpack, Babel, SCSS, JS, CSS Grid, HTML, Parallel API Calls",
     "github": "https://github.com/Joey-Robinson/secondTribute"
   },
   {
     "title": "Shell Game",
-    "slug": "Shell-Game",
+    "slug": "shell-game",
     "url": "https://joey-robinson.github.io/shellgame/",
     "image": "./images/vjsshellgame.png",
     "short-description": "Web app create to help improve memory. The app is based off of the World Of Warcraft world quest of the same name",
+    "long-description": "This was a very small web app using Vanilla JavaScript and CSS + CSS Grid. I wanted to memory improvement game and something I knew very well. So, I made a game from the daily quest in World Of Warcraft by the same name.",
     "technology": "JS, CSS",
     "github": "https://github.com/Joey-Robinson/shellgame"
   },
   {
     "title": "Personal Site",
-    "slug": "Joey-Robinson",
+    "slug": "joey-robinson",
     "url": "https://github.com/Joey-Robinson/JoeyRobinson",
     "image": "./images/personalsite.jpg",
     "short-description": "Personal portfolio website. Third iteration. This was originally ",
+    "long-description": "This is an outdated version of my personal website. It was originally created using React. I then moved on to use Gatsby for several iterations. This (my personal websites) have gone through several iterations until what you're seeing now.",
     "technology": "React, GatsbyJS, CSS Grid, SCSS",
     "github": "https://github.com/Joey-Robinson/JoeyRobinson"
   },
   {
     "title": "JS Todo List",
-    "slug": "Vjs-todo",
+    "slug": "vjs-todo",
     "url": "https://joey-robinson.github.io/todo/",
     "image": "./images/vjstodo.png",
     "short-description": "A simple to do list. I created this to text my ability using  technologies and feel comfortable with what I made.",
+    "long-description": "This is just a dressed up Vanilla JavaScript todo-list. I used some external libraries to make it look and feel fancy, while also using local storage. The local storage is there in case someone wanted to use it for themselves locally and to learn how to implement it on a Vanilla JavaScript project.",
     "technology": "JS, CSS, Font Awesome, Materialize CSS, Local Storage",
     "github": "https://github.com/Joey-Robinson/todo"
   },
   {
     "title": "JS Quote Generator",
-    "slug": "Vjs-quote-generator",
+    "slug": "vjs-quote-generator",
     "url": "https://vjs-quote-generator.netlify.com/",
     "image": "./images/vjsrandomquote.png",
     "short-description": "Web app that generates random quotes. The quotes are pre-written and randomlly selected.",
+    "long-description": "This is another small web app. I created it just to see how it would work. In the repo you can see I have a large array of quotes, then a function that displays a random quote on button click.",
     "technology": "JS, HTML, CSS",
     "github": "https://github.com/Joey-Robinson/vjs-quote-generator"
   },
   {
     "title": "JS Calculator",
-    "slug": "Vjs-calculator",
+    "slug": "vjs-calculator",
     "url": "https://vjs-calculator.netlify.com/",
     "image": "./images/vjscalculator.png",
     "short-description": "Web app that was created to again showcase skills in  technology usage.",
+    "long-description": "Yet again, another small web app. This is simply a calculator. When I first started web development, a calculator was one of the first things that I was challenged to make (FCC) and I later revisited the idea with more knowledge to make this.",
     "technology": "JS, HTML, CSS",
     "github": "https://github.com/Joey-Robinson/vjs-calculator"
   },
   {
     "title": "JS Markdown Previewer",
-    "slug": "Vjs-markdown-previewer",
+    "slug": "vjs-markdown-previewer",
     "url": "https://vjs-markdown-previewer.netlify.com/",
     "image": "./images/vjsmarkdownpreviewer.png",
     "short-description": "Web app to preview basic text into markdown using markdown syntax.",
+    "long-description": "Here I'm making a markdown previewer using the marked.js library. I did this as yet another challenge (FCC) when I revisited some more basic project ideas. This particular project I would find very useful.",
     "technology": "JS, marked, HTML, CSS",
     "github": "https://github.com/Joey-Robinson/vjs-markdown-previewer"
   },
@@ -87,106 +95,168 @@
     "url": "https://tf-soundboard.netlify.com/",
     "image": "./images/tfsoundboard.jpg",
     "short-description": "Web app that was made for the guild <TF> on Hyjal. Again using  technologies, I was able to use sound files from twitch.tv clips to make this.",
+    "long-description": "This was a web app created to showcase some of the funny things said and or done by my previous World Of Warcraft guild, <TF>. To do this I had to crawl clips from twitch and manually download and edit and extract audio from each one. By nature this is NSFW.",
     "technology": "JS, CSS, CSS Grid, HTML",
     "github": "https://github.com/Joey-Robinson/tf-soundboard"
   },
   {
     "title": "JS Periodic Table",
-    "slug": "Vjs-periodic-table",
+    "slug": "vjs-periodic-table",
     "url": "https://js-periodic-table.netlify.com/",
     "image": "./images/vjsperiodictable.png",
-    "short-description": "An in browser periodic table. This was made just the sake of making it. ",
+    "short-description": "An in browser periodic table. This was made just the sake of making it.",
+    "long-description": "This was an in browser periodic table I made. I had the idea from someone who made it in react. I wanted to be better at understanding Vanilla JavaScript, so I took the data from a JSON file and use that information to make this small web app.",
     "technology": "JS, HTML, CSS",
     "github": "https://github.com/Joey-Robinson/vJS-Periodic-Table"
   },
   {
     "title": "React Todo List",
-    "slug": "React-todo",
+    "slug": "react-todo",
     "url": "https://react-todo-no-hooks.netlify.com/",
     "image": "./images/reacttodo.png",
     "short-description": "Web app using different technologies than the other version.",
+    "long-description": "This was my take at a very basic todo list using react and basic css. I made this just to have a better understand of the basics of react and how to dynamically add and remove data on demand. This is also using older version of state, instead of using Hooks.",
     "technology": "React, CSS",
     "github": "https://github.com/Joey-Robinson/react-todo-list-no-hooks"
   },
   {
     "title": "JS Calorie Counter",
-    "slug": "Vjs-calorie-counter",
+    "slug": "vjs-calorie-counter",
     "url": "https://vjs-calorie-counter.netlify.com/",
     "image": "./images/caloriecounter.png",
     "short-description": "Web app to keep track of calorie intake. Useful for monitoring personal intake, as it makes use of Local Storage.",
+    "long-description": "This is a Vanilla JavaScript calorie counter. This was created using some extra external libraries to give a pit of a flash look, compared to vanilla css. This particular project was fun to make, as it can be used in real world situations. Especially for someone who wants to strictly monitor their calorie intake without any extra informaiton.",
     "technology": "JS, localStorage, CSS, Font Awesome, Materialize CSS",
     "github": "https://github.com/Joey-Robinson/CalorieCounter"
   },
   {
     "title": "Pixabay Search",
-    "slug": "React-pixabay",
+    "slug": "react-pixabay-search",
     "url": "https://react-pixabay-image-search.netlify.com/",
     "image": "./images/reactpixabayimagesearch.jpg",
     "short-description": "Web app to search for images on Pixabay.",
+    "long-description": "A web app made with react to search pixabay for images. This was created because I have troubles understanding how state interacts with search functionality and search boxes. I also wanted more react experience under my belt and this felt like a good way to accomplish both with a nice looking web app.",
     "technology": "React, Material UI, Pixabay API, axios",
     "github": "https://github.com/Joey-Robinson/react-pixabay-image-search"
   },
   {
     "title": "Lyric Search",
-    "slug": "React-lyric-search",
+    "slug": "react-lyric-search",
     "url": "https://react-lyric-searches.netlify.com/",
     "image": "./images/reactlyricsearch.png",
     "short-description": "Web app to search for lyrics from songs.",
+    "long-description": "Similar to my pixabay search, I wanted another search functionality that I could use to learn more about how search and state are used together. I also made use of React Context and a few other smaller libraries to finish making this project.",
     "technology": "React, CSS, momentJS, axios, React Fragment, React Context",
     "github": "https://github.com/Joey-Robinson/react-lyric-search"
   },
   {
     "title": "Studio Ghibli",
-    "slug": "React-ghibli",
+    "slug": "react-ghibli",
     "url": "https://react-studio-ghibli-api.netlify.com/",
     "image": "./images/reactstudioghibli.png",
     "short-description": "Web app to view Studio Ghibli movies and their information.",
+    "long-description": "This was just a super small, super simple web app to fetch some external data and display it onscreen. I picked studio ghibli because they make excellent movies.",
     "technology": "React, CSS, Flexbox",
     "github": "https://github.com/Joey-Robinson/react-studio-ghibli-api"
   },
   {
     "title": "JS Time Tracker",
-    "slug": "Vjs-time-tracker",
+    "slug": "vjs-time-tracker",
     "url": "https://vjs-time-tracker.netlify.com/",
     "image": "./images/vjstimer.png",
     "short-description": "Web app to keep track of multiple timers.",
+    "long-description": "This is a small app to keep track of time. You can start and stop multiple timers and even name them accordingly. You can see how much time you've spent on each task/event/item and stop the timer when you see fit.",
     "technology": "JS, Babel, Webpack, SCSS, Font Awesome",
     "github": "https://github.com/Joey-Robinson/vJS-time-tracker"
   },
   {
     "title": "Find Your Hoard",
-    "slug": "Find-your-hoard",
+    "slug": "find-your-hoard",
     "url": "https://joey-robinson.github.io/muhhoard/",
     "image": "./images/vjshoard.png",
     "short-description": "Web app to keep track of Accursed Hoard locations in Heaven on High in Final Fantasy 14.",
+    "long-description": "This particular app allows a user to find the location of Accursed Hoards in the Final Fantasy 14 dungeon, Heaven On High. I had this idea after seeing a previous version that was made for an older 'deep dungeon' in the same game. I wanted a local place to allow people to have easy access from all the work I did in game to be able to find their treasures easily, and this is the result.",
     "technology": "JS, SCSS, CSS Grid, HTML",
     "github": "https://github.com/Joey-Robinson/muhhoard"
   },
   {
     "title": "Mysidia FC",
-    "slug": "React-mysidia-fc",
+    "slug": "react-mysidia-fc",
     "url": "https://mysidiafc.netlify.com/#/",
     "image": "./images/reactmysidia.jpg",
     "short-description": "Website for the Free Company Mysidia in Final Fantasy 14.",
-    "technology": "React",
+    "long-description": "This was a website created for a Free Company (FC) I was a part of in Final Fantasy 14. I wanted a place where FC members could go to and gather information both before joining and while they were in the FC. This was also my first introduction to using React Router and was generally a fun project to work on.",
+    "technology": "React, React Router",
     "github": "https://github.com/Joey-Robinson/MysidiaSite"
   },
   {
     "title": "JS Joke Generator",
-    "slug": "Vjs-chuck-jokes",
+    "slug": "vjs-chuck-jokes",
     "url": "https://joey-robinson.github.io/ChuckNorrisJokes/",
     "image": "./images/vjschucknorris.png",
     "short-description": "Web app that returns a variety of jokes pertaining to Chuck Norris",
+    "long-description": "This is a very small web app that uses GET to fetch information from an API endpoint and return jokes on demand. This was one of my first exposures to using external API's for any type of project. Using a small function I was able to make the API call and render the information on demand.",
     "technology": "JS, CSS, HTML",
     "github": "https://github.com/Joey-Robinson/ChuckNorrisJokes"
   },
   {
     "title": "JS Number Guesser",
-    "slug": "Vjs-number-guesser",
+    "slug": "vjs-number-guesser",
     "url": "https://joey-robinson.github.io/numberguess/",
     "image": "./images/vjsnumberguesser.png",
     "short-description": "Web app that allows user to guess a number between 1 and 100.",
+    "long-description": "Here I'm using Vanilla JavaScript and HTML to have an input field where a user guesses a number between 1 and a given value (In the demo it's 100, but it could be 5). The user has 3 attemps to guess the number correctly or they 'fail' the game. This was one of the first times I would take user input and have it do something. Very fun project.",
     "technology": "JS, HTML",
     "github": "https://github.com/Joey-Robinson/numberguess"
+  },
+  {
+    "title": "Jason's Birthday Beard",
+    "slug": "jasons-birthday-beard",
+    "url": "https://jasons-birthday-beard.netlify.com/",
+    "image": "./images/beard.png",
+    "short-description": "A quick site I made for @jlengstorf's birthday.",
+    "long-description": "A site using Gatsby made for @jlengstorf's birthday. I took random images of his beard and used Gatsby's createPages function to programmatically create pages for each link/beard. This was pretty fun, as I tried to do it as quickly as I could.",
+    "technology": "CSS, CSS Grid, Gatsby",
+    "github": "https://github.com/Joey-Robinson/gatsby-jasons-birthday"
+  },
+  {
+    "title": "Gamer Vanity Site v2",
+    "slug": "gamer-vanity-site-v2",
+    "url": "https://meowkats.netlify.com/",
+    "image": "./images/meow.png",
+    "short-description": "The latest iteration of a tribute/vanity site.",
+    "long-description": "This is the latest iteraiton of a tribute/vanity site for a friend. I recreated this using Gatsby with some new functionality. While the previous iteraiton was acceptable, I wanted to try something else using different technologies and different approaches. Overall I used less code to get the same results I did before. This was also the first time I used Styled-Components, which are incredibly fun to use, but I think I'll stick with regular SCSS in the future.",
+    "technology": "Gatsby, CSS Grid, Styled Components, React-Typed, React-Modal, React-Burger-Menu, React-Flippy, React-Image-Gallery.",
+    "github": "https://github.com/Joey-Robinson/react-second-tribute"
+  },
+  {
+    "title": "React Sweetest Southern Creations",
+    "slug": "react-sweetest-southern-creations",
+    "url": "https://react-sweetest-southern-creations.netlify.com/",
+    "image": "./images/reactssc.png",
+    "short-description": "A new iteration of an old website I made using newer technologies.",
+    "long-description": "This was created for the sole purpose of redoing older projects with new(er) technologies. I feel as if I made the site better and more performant from what I've learned from the original version to this.",
+    "technology": "Gatsby, CSS, CSS Grid, React-Burger-Menu, React-Icons",
+    "github": "https://github.com/Joey-Robinson/react-sweetest-southern-creations"
+  },
+  {
+    "title": "Bratty Redhead",
+    "slug": "bratty-redhead",
+    "url": "https://brattyredhead.netlify.com/",
+    "image": "./images/brattyredhead.png",
+    "short-description": "The final version of Bratty Redhead, rebuilt from the ground up",
+    "long-description": "The final updated version for Bratty Redhead. Built from the group up in the span of just a few days, I took what I had done in previous iterations and use it here to be more inline with the original. I made the aside more inline with the original with better functionality, removed the contact page in favor of icons on the nav, and used Gatsby's createPages function to make new pages for archives and blog posts.",
+    "technology": "Gatsby, CSS, CSS Grid",
+    "github": "Private Repo"
+  },
+  {
+    "title": "Joey Robinson Portfolio",
+    "slug": "joey-robinson-portfolio",
+    "url": "https://joeyrobinson.netlify.com/",
+    "image": "./images/me.png",
+    "short-description": "The final version of my blog/portfolio/personal site.",
+    "long-description": "This is the final version my personal site. This site has gone through many iteraitons and I've finally found something I'm comfortable with. I searched around for inspiration for design and layout ideas and came across something I really liked and started to make something based off of it. I'm also making use of Gatsby's createPages function to create pages for blog posts and portfolio items.",
+    "technology": "Gatsby, CSS, CSS Grid, React-Hooks, React-Typed, use-dark-mode, contentful cms.",
+    "github": "https://github.com/Joey-Robinson/react-joey-robinson-blog-gatsbyjs"
   }
 ]
