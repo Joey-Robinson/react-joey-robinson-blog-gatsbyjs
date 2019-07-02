@@ -1,0 +1,39 @@
+.professional {
+  @include page-defaults;
+  display: grid;
+  grid-template-rows: 5rem;
+  grid-template-columns: 1fr 1fr;
+  &--heading {
+    @include heading-defaults;
+  }
+  &--back {
+    grid-row: 1;
+    grid-column: 2;
+    justify-self: center;
+    align-self: start;
+    font-size: 1.8rem;
+    margin: 0 0 0 6rem;
+    a {
+      display: block;
+    }
+  }
+  &--hg {
+    grid-row: 1;
+    justify-self: left;
+    grid-column: 1;
+    h1 {
+      font-size: 2.3rem;
+    }
+    h3 {
+      font-size: 1.6rem;
+    }
+  }
+  &--opener {
+    width: 87%;
+    word-wrap: break-word;
+    padding: 3rem 0;
+    font-size: 1.6rem;
+    grid-row: 2;
+    grid-column: 1 / -1;
+  }
+}

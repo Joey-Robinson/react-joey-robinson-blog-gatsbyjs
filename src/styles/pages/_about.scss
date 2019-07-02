@@ -1,5 +1,12 @@
 .about {
   @include page-defaults;
+  display: grid;
+  grid-template-columns: 1fr 2rem;
+  img {
+    grid-column: 1;
+    width: 100%;
+    display: block;
+  }
   h1 {
     @include heading-defaults;
   }
