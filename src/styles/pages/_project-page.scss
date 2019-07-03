@@ -4,6 +4,7 @@
   grid-template-columns: repeat(3, 1fr);
   &--container {
     grid-column: 1 / -1;
+    border: 0.5px solid red;
   }
   &--technology {
     align-self: center;

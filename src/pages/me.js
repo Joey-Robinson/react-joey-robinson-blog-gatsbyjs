@@ -34,7 +34,6 @@ const Me = () => (
           myself and my upbrining.
           <br />
           <br />
-          You can find me on the web below:
           <ContactList />
         </p>
         <ResumeDownload />

@@ -2,6 +2,7 @@ import React from "react"
 
 const ContactList = () => (
   <ul className="contact--list">
+    <p>You can find me on the web below:</p>
     <li>
       Email:{" "}
       <a href="mailto:joeyrobinsondev@gmail.com">joeyrobinsondev@gmail.com</a>
