@@ -6,7 +6,7 @@ export const AboutImage = () => (
   <StaticQuery
     query={graphql`
       query {
-        image: file(relativePath: { eq: "profbg.png" }) {
+        image: file(relativePath: { eq: "about.image.png" }) {
           childImageSharp {
             fluid {
               base64
@@ -30,7 +30,10 @@ export const AboutImage = () => (
         target="_blank"
         rel="noopener noreferrer"
       >
-        <Img fluid={data.image.childImageSharp.fluid} />
+        <Img
+          fluid={data.image.childImageSharp.fluid}
+          alt="An example of my development environment"
+        />
       </a>
     )}
   />

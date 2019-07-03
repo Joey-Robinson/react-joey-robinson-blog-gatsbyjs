@@ -50,13 +50,12 @@
   &--bottom {
     grid-column: 1 / -1;
     font-size: 1.6rem;
-    // padding: 3rem 4.5rem 3rem 0;
     h1 {
       padding: 3rem 0;
     }
     ul {
       padding: 1rem 0 3rem 0;
-      columns: 2;
+      columns: 3;
     }
   }
 }
