@@ -28,9 +28,6 @@ const AboutProfessional = () => (
     <div className="professional--image">
       <AboutImage />
     </div>
-    {/* <div className="professional--resume">
-      <ResumeDownload />
-    </div> */}
   </section>
 )
 

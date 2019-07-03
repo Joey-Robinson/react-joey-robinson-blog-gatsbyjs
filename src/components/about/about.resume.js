@@ -16,7 +16,7 @@ const ResumeDownload = () => {
   `)
   return (
     <>
-      <ul>
+      <ul style={{ listStyle: "none" }}>
         {data.allFile.edges.map((file, index) => {
           return (
             <li key={`pdf-${index}`}>

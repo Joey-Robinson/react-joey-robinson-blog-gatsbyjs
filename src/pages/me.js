@@ -2,6 +2,7 @@ import React from "react"
 import Layout from "../components/layout"
 import { Link } from "gatsby"
 import ResumeDownload from "../components/about/about.resume"
+import ContactList from "../components/contact/contact.list"
 
 const Me = () => (
   <Layout>
@@ -27,10 +28,14 @@ const Me = () => (
           <br />
           <br />
           Alternatively, you can visit{" "}
-          <Link to="/me/personal">the Personal side of things</Link> to get a
+          <Link to="/me/personal/">the Personal side of things</Link> to get a
           view into my personal life. I'll have links not directly related to
           Web Development. I'll also have some interesting life facts about
           myself and my upbrining.
+          <br />
+          <br />
+          You can find me on the web below:
+          <ContactList />
         </p>
         <ResumeDownload />
       </div>
