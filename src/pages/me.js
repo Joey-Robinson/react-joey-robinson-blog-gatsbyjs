@@ -34,8 +34,8 @@ const Me = () => (
           myself and my upbrining.
           <br />
           <br />
-          <ContactList />
         </p>
+        <ContactList />
         <ResumeDownload />
       </div>
     </section>

@@ -11,7 +11,7 @@ const Navigation = () => {
       window.scrollY > 20 ? setScroll(true) : setScroll(false)
     })
     return () => {
-      setScroll()
+      setScroll(false)
     }
   }, [])
 

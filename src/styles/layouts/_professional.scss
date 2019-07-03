@@ -9,18 +9,19 @@
   &--back {
     grid-row: 1;
     grid-column: 2;
-    justify-self: center;
+    justify-self: right;
     align-self: start;
     font-size: 1.8rem;
+    margin: 0 5rem 0 0;
     a {
       display: block;
     }
   }
   &--image {
     display: block;
-    width: 100%;
+    width: 95%;
     grid-column: 1 / -1;
-    justify-self: center;
+    justify-self: left;
     align-self: start;
     img,
     a {
@@ -40,16 +41,22 @@
       font-size: 1.6rem;
     }
   }
-  &--opener {
+  p {
     word-wrap: break-word;
-    padding: 3rem 4.5rem 3rem 0;
+    padding: 1.5rem 4.5rem 1.5rem 0;
     font-size: 1.6rem;
-    grid-row: 2;
     grid-column: 1 / -1;
   }
   &--bottom {
     grid-column: 1 / -1;
     font-size: 1.6rem;
-    padding: 3rem 4.5rem 3rem 0;
+    // padding: 3rem 4.5rem 3rem 0;
+    h1 {
+      padding: 3rem 0;
+    }
+    ul {
+      padding: 1rem 0 3rem 0;
+      columns: 2;
+    }
   }
 }
