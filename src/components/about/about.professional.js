@@ -1,5 +1,7 @@
 import React from "react"
 import { Link } from "gatsby"
+import AboutImage from "./about.image"
+import ResumeDownload from "./about.resume"
 
 const AboutProfessional = () => (
   <section className="professional">
@@ -8,7 +10,7 @@ const AboutProfessional = () => (
       &larr; Go Back
     </Link>
     <hgroup className="professional--hg">
-      <h1>My Semi-Charmed Professional Life</h1>
+      <h1>My Semi-Charmed Kind Of Professional Life</h1>
       <h3>Where all my professional goings-on happen</h3>
     </hgroup>
     <p className="professional--opener">
@@ -23,6 +25,12 @@ const AboutProfessional = () => (
       <Link to="/blog/">Share my Blog Posts</Link>, as well as talk about my{" "}
       <Link to="/me/personal/">Personal Life</Link> a bit.
     </p>
+    <div className="professional--image">
+      <AboutImage />
+    </div>
+    {/* <div className="professional--resume">
+      <ResumeDownload />
+    </div> */}
   </section>
 )
 

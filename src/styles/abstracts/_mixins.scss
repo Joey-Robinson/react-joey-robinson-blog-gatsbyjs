@@ -24,6 +24,7 @@
 }
 
 @mixin heading-defaults {
+  z-index: 5;
   padding: 7.5px 0;
   font-size: 2rem;
   position: fixed;
