@@ -34,28 +34,17 @@ const Blog = ({ data }) => (
       ]}
     />
     <section className="blog">
-      <ul className="blog--list">
+      <>
         {data.allContentfulBlogPost.edges.map(post => (
-          <li
-            className="blog--display blog--list__display"
-            key={post.node.title}
-          >
-            <Link
-              className="blog--display__title blog--list__title"
-              to={`/${post.node.slug}`}
-            >
-              <h1>{post.node.title} &rarr;</h1>
-            </Link>
-            <div className="blog--display__date blog--list__date">
-              {post.node.publishedDate}
-            </div>
-            <br />
-            <p className="blog--display__excerpt blog--list__excerpt">
-              <Link to={`/${post.node.slug}`}>{post.node.excerpt}</Link>
-            </p>
-          </li>
+          <div key={post.node.title} className="container">
+            <h1 className="container--title">
+              <Link to={`/${post.node.slug}/`}>{post.node.title} &rarr;</Link>
+            </h1>
+            <p className="container--date">{post.node.publishedDate}</p>
+            <p className="container--excerpt">{post.node.excerpt}</p>
+          </div>
         ))}
-      </ul>
+      </>
     </section>
   </Layout>
 )

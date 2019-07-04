@@ -28,21 +28,20 @@ const BlogTemplate = ({ data }) => {
   }
   return (
     <Layout>
-      <div className="blogs">
-        <div className="blogs--content__top" />
-        <div className="blogs--content__back">
+      <section className="content">
+        <div className="content__back">
           <Link to="/blog/">
             &#8592; <span>Go Back</span>
           </Link>
         </div>
-        <div className="blogs--content__title">
+        <hgroup className="content__title">
           <h1>{post.title}</h1>
-        </div>
-        <div className="blogs--content__main">
+          <h4>{post.publishedDate}</h4>
+        </hgroup>
+        <div className="content__main">
           {documentToReactComponents(post.body.json, options)}
         </div>
-        <h4 className="blogs--content__maker">{post.publishedDate}</h4>
-      </div>
+      </section>
     </Layout>
   )
 }
