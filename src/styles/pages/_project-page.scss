@@ -6,6 +6,9 @@
     grid-column: 1 / -1;
     border: 0.5px solid red;
   }
+  &--image {
+    height: 100%;
+  }
   &--technology {
     align-self: center;
     grid-column: 2;
