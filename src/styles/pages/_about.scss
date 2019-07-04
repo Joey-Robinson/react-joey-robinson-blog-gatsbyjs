@@ -1,26 +1,63 @@
 .about {
   @include page-defaults;
   display: grid;
+  grid-template-rows: 5rem;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 2rem;
-  span {
-    grid-row: 1;
-    font-size: 1.8rem;
-    display: block;
-    align-self: start;
+  &--heading {
+    @include heading-defaults;
   }
-  &__prof {
+  &--back {
+    grid-row: 1;
     grid-column: 2;
     justify-self: right;
-    margin: 0 9rem 0 0;
+    align-self: start;
+    font-size: 1.8rem;
+    margin: 0 5rem 0 0;
+    a {
+      display: block;
+    }
   }
-  &__pers {
-    grid-column: 2;
+  &--image {
+    display: block;
+    width: 95%;
+    grid-column: 1 / -1;
     justify-self: left;
+    align-self: start;
+    padding: 1.5rem 0;
+    img,
+    a {
+      display: block;
+      height: auto;
+      width: 100%;
+    }
+  }
+  &--hg {
+    grid-row: 1;
+    justify-self: left;
+    grid-column: 1 / -1;
+    h1 {
+      font-size: 2.3rem;
+    }
+    h3 {
+      font-size: 1.6rem;
+    }
   }
   p {
-    padding: 1.5rem 6rem 1.5rem 0;
-    font-size: 1.8rem;
+    word-wrap: break-word;
+    padding: 1.5rem 4.5rem 1.5rem 0;
+    font-size: 1.6rem;
+    grid-column: 1 / -1;
+  }
+  &--bottom {
+    grid-column: 1 / -1;
+    font-size: 1.6rem;
+    h1 {
+      padding: 3rem 0;
+    }
+    ul {
+      padding: 1rem 0 3rem 0;
+      columns: 3;
+    }
   }
   button {
     background: cornflowerblue;
@@ -29,23 +66,9 @@
     width: 50rem;
     font-size: 1.6rem;
     padding: 1.5rem 0;
-    margin: 6rem 0 0 0;
     z-index: 1;
     position: relative;
-  }
-  &--resume {
-    grid-column: 1;
-    a {
-      color: white;
-    }
-  }
-  &--opening {
-    margin: 1.5rem 0 0 0;
-    grid-row: 2;
-    grid-column: 1 / -1;
-  }
-  &--heading {
-    @include heading-defaults;
+    margin: 3rem 0;
   }
 }
 

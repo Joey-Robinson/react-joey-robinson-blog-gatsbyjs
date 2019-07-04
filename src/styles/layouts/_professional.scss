@@ -1,4 +1,4 @@
-.professional {
+.about {
   @include page-defaults;
   display: grid;
   grid-template-rows: 5rem;
@@ -23,6 +23,7 @@
     grid-column: 1 / -1;
     justify-self: left;
     align-self: start;
+    padding: 1.5rem 0;
     img,
     a {
       display: block;
