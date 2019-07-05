@@ -67,6 +67,7 @@ const Me = () => (
           <li>Windows Development Environment</li>
           <li>MacOS Development Environment</li>
           <li>Cross Browser Testing</li>
+          <li>Terminal</li>
         </ul>
       </div>
       <div className="about--contact">
