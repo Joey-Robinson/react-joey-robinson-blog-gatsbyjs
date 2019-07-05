@@ -35,6 +35,7 @@ const Blog = ({ data }) => (
     />
     <section className="blog">
       <>
+        <h1 className="blog--heading">Blog</h1>
         {data.allContentfulBlogPost.edges.map(post => (
           <div key={post.node.title} className="container">
             <h1 className="container--title">

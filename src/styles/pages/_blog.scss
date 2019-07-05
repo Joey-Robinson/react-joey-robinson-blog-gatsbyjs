@@ -1,7 +1,7 @@
 .blog {
   @include page-defaults;
-  &--date {
-    padding: 1.5rem 0;
+  &--heading {
+    @include heading-defaults;
   }
 }
 
@@ -10,7 +10,6 @@
   grid-template-columns: 3fr 1fr;
   grid-template-rows: repeat(3, 1fr);
   grid-auto-flow: column;
-  margin: 3rem 0;
   &--title {
     align-self: center;
     display: inline-block;
@@ -20,7 +19,7 @@
     grid-column: 2;
     grid-row: 1;
     font-size: 1.6rem;
-    padding: 1.5rem;
+    padding: 1.5rem 6rem 1.5rem 0;
     align-self: center;
     justify-self: right;
   }
@@ -29,6 +28,6 @@
     grid-row: 2 / -1;
     align-self: center;
     font-size: 1.7rem;
-    padding: 1.5rem 0;
+    padding: 1.5rem 6rem 1.5rem 0;
   }
 }

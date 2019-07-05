@@ -7,6 +7,7 @@ import ResumeDownload from "../components/about/about.resume"
 const Contact = () => (
   <Layout>
     <section className="contact">
+      <h1 className="contact--heading">Contact</h1>
       <div className="contact--opening">
         <h1>Some ways you can get ahold of me:</h1>
         <p>
