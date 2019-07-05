@@ -2,6 +2,7 @@ import React from "react"
 import Layout from "../components/layout"
 import ContactForm from "../components/contact/contact.form"
 import ContactList from "../components/contact/contact.list"
+import ResumeDownload from "../components/about/about.resume"
 
 const Contact = () => (
   <Layout>
@@ -15,6 +16,10 @@ const Contact = () => (
         <ContactForm />
       </div>
       <ContactList />
+      <div className="contact--resume">
+        <h1>Resume Download:</h1>
+        <ResumeDownload />
+      </div>
     </section>
   </Layout>
 )

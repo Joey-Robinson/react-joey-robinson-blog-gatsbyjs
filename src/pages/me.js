@@ -2,6 +2,7 @@ import React from "react"
 import AboutImage from "../components/about/about.image"
 import Layout from "../components/layout"
 import ResumeDownload from "../components/about/about.resume"
+import ContactList from "../components/contact/contact.list"
 
 const Me = () => (
   <Layout>
@@ -68,7 +69,12 @@ const Me = () => (
           <li>Cross Browser Testing</li>
         </ul>
       </div>
+      <div className="about--contact">
+        <h1>Contact:</h1>
+        <ContactList />
+      </div>
       <div className="about--resume">
+        <h1>Resume Download:</h1>
         <ResumeDownload />
       </div>
     </section>
