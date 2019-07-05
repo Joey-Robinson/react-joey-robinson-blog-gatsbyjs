@@ -21,8 +21,12 @@ const Navigation = () => {
         <Link to="/">Joey Robinson</Link>
       </h1>
       <nav className="header--nav">
-        <div className="nav--coffee" target="_blank" rel="noopener noreferrer">
-          <a href="https://ko-fi.com/joeyrobinson">
+        <div className="nav--coffee">
+          <a
+            href="https://ko-fi.com/joeyrobinson"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <img src={coffee} alt="Coffee" aria-label="Coffee" />
           </a>
         </div>

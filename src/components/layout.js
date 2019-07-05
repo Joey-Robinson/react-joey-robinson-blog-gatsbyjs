@@ -1,5 +1,6 @@
 import React from "react"
 import Navigation from "./navigation"
+import Footer from "./footer"
 import "../styles/main.scss"
 
 const Layout = ({ children }) => {
@@ -8,6 +9,7 @@ const Layout = ({ children }) => {
       <main className="primary">
         <Navigation />
         {children}
+        <Footer />
       </main>
     </>
   )

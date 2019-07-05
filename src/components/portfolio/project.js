@@ -12,7 +12,10 @@ const Project = ({
   image,
 }) => (
   <section className="project">
-    <h1 className="project--title">{title}</h1>
+    <h1 className="project--title">
+      <span className="projects__span">Name:</span>&nbsp;
+      {title}
+    </h1>
     <a
       href={image}
       target="_blank"

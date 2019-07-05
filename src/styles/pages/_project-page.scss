@@ -2,6 +2,11 @@
   @include page-defaults;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  &--back {
+    grid-column: 3;
+    grid-row: 1;
+    justify-self: right;
+  }
   &--container {
     grid-column: 1 / -1;
     border: 0.5px solid red;
@@ -10,11 +15,23 @@
     height: 100%;
   }
   &--technology {
+    justify-self: center;
     align-self: center;
     grid-column: 2;
     grid-row: 1;
   }
+  &--live {
+    grid-column: 3;
+    justify-self: right;
+    align-self: center;
+  }
+  &--github {
+    grid-column: 1;
+    justify-items: left;
+    align-self: center;
+  }
   &--title {
+    justify-self: left;
     align-self: center;
     padding: 1.5rem 0;
     font-size: 2.1rem;

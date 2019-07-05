@@ -1,0 +1,13 @@
+.footer {
+  grid-column: 2;
+  grid-row: 3;
+  height: 8vh;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  &--date {
+    grid-column: 2 / 5;
+    justify-self: center;
+    align-self: end;
+    grid-row: 1;
+  }
+}
