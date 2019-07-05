@@ -25,16 +25,26 @@ export const AboutImage = () => (
       }
     `}
     render={data => (
-      <a
-        href={data.image.childImageSharp.fluid.src}
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <Img
-          fluid={data.image.childImageSharp.fluid}
-          alt="An example of my development environment"
-        />
-      </a>
+      <>
+        <a
+          href={data.image.childImageSharp.fluid.src}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <Img
+            fluid={data.image.childImageSharp.fluid}
+            alt="An example of my development environment"
+          />
+        </a>
+        <br />
+        <span
+          style={{
+            fontSize: "1.4rem",
+          }}
+        >
+          An exmaple of my development environment
+        </span>
+      </>
     )}
   />
 )

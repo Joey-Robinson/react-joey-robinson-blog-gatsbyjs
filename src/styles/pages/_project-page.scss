@@ -6,12 +6,13 @@
   &--back {
     grid-column: 1;
     grid-row: 2;
-    // justify-self: right;
   }
   &--container {
     grid-column: 1 / -1;
     grid-row: 3;
     border: 0.5px solid red;
+    margin: 1.5rem 0;
+    height: 100%;
   }
   &--image {
     height: 100%;
@@ -21,6 +22,8 @@
     align-self: center;
     grid-column: 2 / -1;
     grid-row: 1;
+    padding: 1.5rem 0;
+    font-size: 2.1rem;
   }
   &--live {
     grid-column: 3;
@@ -49,6 +52,7 @@
     padding: 1.5rem 0;
   }
   &__long__description {
+    margin: 3rem 0 0 0;
     grid-column: 1 / -1;
     &::first-letter {
       font-size: 140%;
