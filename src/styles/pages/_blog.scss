@@ -1,8 +1,5 @@
 .blog {
   @include page-defaults;
-  ul {
-    list-style: none;
-  }
   &--date {
     padding: 1.5rem 0;
   }
