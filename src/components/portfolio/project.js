@@ -29,9 +29,13 @@ const Project = ({
       <span className="projects__span">Tech:</span> {technology}
     </p>
     <p className="project--github">
-      <a href={github} target="_blank" rel="noopener noreferrer">
-        Visit the GitHub &rarr;
-      </a>
+      {!github ? (
+        "Private Repo"
+      ) : (
+        <a href={github} target="_blank" rel="noopener noreferrer">
+          View The GitHub
+        </a>
+      )}
     </p>
     <p className="project--live">
       <a href={url} target="_blank" rel="noopener noreferrer">

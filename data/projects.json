@@ -7,7 +7,7 @@
     "short-description": "The recreation of a blog that had previously been made with Octopress. Using more modern technologies to implement a newer blog and updated informaion.",
     "long-description": "This was a recreation of an Octopress blog. I used GatsbyJS as the SSG and update the entire site to be more performant. I also upgraded the layout to use CSS Grid. Additionally, since I'm using Gatsby over another SSG, the speed and load time(s) of the site are incredibly fast compared to the older version. Since I'm using Gatsby, I can also make use of GraphQL to fetch data interally (blog posts and archives) to render the content on screen.",
     "technology": "GatsbyJS, CSS Grid, SCSS",
-    "github": "Private Repo"
+    "github": ""
   },
   {
     "title": "Sweetest Southern Creations (Plain)",
@@ -247,7 +247,7 @@
     "short-description": "The final version of Bratty Redhead, rebuilt from the ground up",
     "long-description": "The final updated version for Bratty Redhead. Built from the group up in the span of just a few days, I took what I had done in previous iterations and use it here to be more inline with the original. I made the aside more inline with the original with better functionality, removed the contact page in favor of icons on the nav, and used Gatsby's createPages function to make new pages for archives and blog posts.",
     "technology": "Gatsby, CSS, CSS Grid",
-    "github": "Private Repo"
+    "github": ""
   },
   {
     "title": "Joey Robinson Portfolio",

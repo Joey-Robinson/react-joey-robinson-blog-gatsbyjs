@@ -4,12 +4,13 @@
   height: 8vh;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
+  font-size: 1.2rem;
+  margin: 3rem 0;
   &--date {
-    font-size: 1.4rem;
     grid-column: 2 / 5;
     justify-self: center;
     align-self: end;
     grid-row: 1;
-    margin: 0 0 1.5rem 0;
+    // margin: 0 0 1.5rem 0;
   }
 }
