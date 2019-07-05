@@ -35,7 +35,7 @@ const Portfolio = () => {
     <Layout>
       <SEO
         title="Portfolio"
-        description="Portfolio for Joey Robinson"
+        description="Portfolio Page for Joey Robinson's Website"
         keywords={[
           `Joey Robinson`,
           `Portfolio`,

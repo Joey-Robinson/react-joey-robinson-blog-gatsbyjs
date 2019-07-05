@@ -22,7 +22,7 @@ const Blog = ({ data }) => (
   <Layout>
     <SEO
       title="Blog"
-      description="Blog for Joey Robinson"
+      description="Blog Page for Joey Robinson's Website"
       keywords={[
         `Joey Robinson`,
         `Blog`,

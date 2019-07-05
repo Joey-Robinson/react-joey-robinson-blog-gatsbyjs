@@ -3,9 +3,23 @@ import Layout from "../components/layout"
 import ContactForm from "../components/contact/contact.form"
 import ContactList from "../components/contact/contact.list"
 import ResumeDownload from "../components/about/about.resume"
+import SEO from "../components/seo"
 
 const Contact = () => (
   <Layout>
+    <SEO
+      title="Contact"
+      description="Contact Page for Joey Robinson's Website"
+      keywords={[
+        `Joey Robinson`,
+        `Portfolio`,
+        `Front-End`,
+        `Front-End Development`,
+        `React`,
+        `GatsbyJS`,
+        `Joey Robinson Portfolio`,
+      ]}
+    />
     <section className="contact">
       <h1 className="contact--heading">Contact</h1>
       <div className="contact--opening">

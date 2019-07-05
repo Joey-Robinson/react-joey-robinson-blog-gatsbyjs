@@ -3,9 +3,23 @@ import AboutImage from "../components/about/about.image"
 import Layout from "../components/layout"
 import ResumeDownload from "../components/about/about.resume"
 import ContactList from "../components/contact/contact.list"
+import SEO from "../components/seo"
 
 const Me = () => (
   <Layout>
+    <SEO
+      title="About"
+      description="About Page for Joey Robinson's Website."
+      keywords={[
+        `Joey Robinson`,
+        `Portfolio`,
+        `Front-End`,
+        `Front-End Development`,
+        `React`,
+        `GatsbyJS`,
+        `Joey Robinson Portfolio`,
+      ]}
+    />
     <section className="about">
       <h1 className="about--heading">About</h1>
       <hgroup className="about--hg">

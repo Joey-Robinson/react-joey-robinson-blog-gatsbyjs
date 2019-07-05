@@ -2,6 +2,7 @@ import React from "react"
 import { graphql, Link } from "gatsby"
 import Layout from "../components/layout"
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer"
+import SEO from "../components/seo"
 
 export const postQuery = graphql`
   query BlogPostByPath($slug: String) {
@@ -28,6 +29,19 @@ const BlogTemplate = ({ data }) => {
   }
   return (
     <Layout>
+      <SEO
+        title={post.title}
+        description={post.title}
+        keywords={[
+          `Joey Robinson`,
+          `Portfolio`,
+          `Front-End`,
+          `Front-End Development`,
+          `React`,
+          `GatsbyJS`,
+          `Joey Robinson Portfolio`,
+        ]}
+      />
       <section className="content">
         <div className="content__back">
           <Link to="/blog/">
