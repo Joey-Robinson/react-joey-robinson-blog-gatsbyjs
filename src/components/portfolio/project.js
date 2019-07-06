@@ -25,9 +25,9 @@ const Project = ({
       <Image className="project--image image" fluid={imageData} alt={title} />
     </a>
     <p className="project__long__description">{long_description}</p>
-    <h1 className="project--technology">
+    <h4 className="project--technology">
       <span className="projects__span">Tech:</span> {technology}
-    </h1>
+    </h4>
     <p className="project--github">
       {!github ? (
         "Private Repo"

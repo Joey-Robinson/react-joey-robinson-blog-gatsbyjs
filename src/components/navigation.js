@@ -27,7 +27,7 @@ const Navigation = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img src={coffee} alt="Coffee" aria-label="Coffee" />
+            <img src={coffee} alt="Buy Me A Coffee" aria-label="Coffee" />
           </a>
         </div>
         <div className="nav--blog">
