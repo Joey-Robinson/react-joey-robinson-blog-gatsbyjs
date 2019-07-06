@@ -5,7 +5,7 @@
     "url": "https://sascha-bates.netlify.com/",
     "image": "./images/sb.png",
     "short-description": "The recreation of a blog that had previously been made with Octopress. Using more modern technologies to implement a newer blog and updated informaion.",
-    "long-description": "This was a recreation of an Octopress blog. I used GatsbyJS as the SSG and update the entire site to be more performant. I also upgraded the layout to use CSS Grid. Additionally, since I'm using Gatsby over another SSG, the speed and load time(s) of the site are incredibly fast compared to the older version. Since I'm using Gatsby, I can also make use of GraphQL to fetch data interally (blog posts and archives) to render the content on screen.",
+    "long-description": "This was a recreation of an Octopress blog. I used GatsbyJS as the SSG and update the entire site to be more performant. I also upgraded the layout to use CSS Grid. Additionally, since I'm using Gatsby over another SSG, the speed and load time(s) of the site are incredibly fast compared to the older version. Since I'm using Gatsby, I also make use of GraphQL to fetch data interally (blog posts and archives) to render the content on screen.",
     "technology": "GatsbyJS, CSS Grid, SCSS",
     "github": ""
   },
@@ -15,7 +15,7 @@
     "url": "http://sweetestsoutherncreations.com/",
     "image": "./images/ssc.jpg",
     "short-description": "Website created for business owner to showcase crafted goods. I was able to increase traffic to business' Facebook page and now their website.",
-    "long-description": "This was a vanilla (plain) everything website created for a business owner. I had originally set out to make a complex website, but upon taking a step back and understanding the demographic that would be viewing the websites, I went with something more basic.",
+    "long-description": "This was a vanilla (plain) everything website created for a business owner. I had originally set out to make a complex website, but upon taking a step back and understanding the demographic that would be viewing the websites, I went with something more basic. This also helped establish an identity for the company outside of just FB and allowed the business owner to have more content to share online.",
     "technology": "CSS Grid, SCSS, Vanilla JavaScript, HTML",
     "github": "https://github.com/Joey-Robinson/SweetestSouthernCreations"
   },
@@ -35,7 +35,7 @@
     "url": "https://joey-robinson.github.io/shellgame/",
     "image": "./images/vjsshellgame.png",
     "short-description": "Web app create to help improve memory. The app is based off of the World Of Warcraft world quest of the same name",
-    "long-description": "This was a very small web app using Vanilla JavaScript and CSS + CSS Grid. I wanted to memory improvement game and something I knew very well. So, I made a game from the daily quest in World Of Warcraft by the same name.",
+    "long-description": "This was a very small web app using Vanilla JavaScript and CSS + CSS Grid. I wanted to memory improvement game and something I knew very well. So, I made a game from the daily quest in World Of Warcraft by the same name. I also wanted to make something solely from JavaScript (minimal HTML) and I feel as if I accomplished that here.",
     "technology": "Vanilla JavaScript, SCSS, CSS Grid",
     "github": "https://github.com/Joey-Robinson/shellgame"
   },
@@ -45,7 +45,7 @@
     "url": "https://github.com/Joey-Robinson/JoeyRobinson",
     "image": "./images/personalsite.jpg",
     "short-description": "Personal portfolio website. Third iteration. This was originally ",
-    "long-description": "This is an outdated version of my personal website. It was originally created using React. I then moved on to use Gatsby for several iterations. This (my personal websites) have gone through several iterations until what you're seeing now.",
+    "long-description": "This is an outdated version of my personal website. It was originally created using React. I then moved on to use Gatsby for several iterations. This (my personal websites) have gone through several iterations until what you're seeing now. The reason I went through so many iterations is because as I learned more and more, I understood what looked better. I also learned new technologies and wanted to use them inside of my own personal project.",
     "technology": "React, GatsbyJS, CSS Grid, SCSS",
     "github": "https://github.com/Joey-Robinson/JoeyRobinson"
   },
@@ -55,7 +55,7 @@
     "url": "https://joey-robinson.github.io/todo/",
     "image": "./images/vjstodo.png",
     "short-description": "A simple to do list. I created this to text my ability using  technologies and feel comfortable with what I made.",
-    "long-description": "This is just a dressed up Vanilla JavaScript todo-list. I used some external libraries to make it look and feel fancy, while also using local storage. The local storage is there in case someone wanted to use it for themselves locally and to learn how to implement it on a Vanilla JavaScript project.",
+    "long-description": "This is just a dressed up Vanilla JavaScript todo-list. I used some external libraries to make it look and feel fancy, while also using local storage. The local storage is there in case someone wanted to use it for themselves locally and to learn how to implement it on a Vanilla JavaScript project. I also wanted to focus on my fundamentals and this was a good starting point.",
     "technology": "Vanilla JavaScript, CSS, Font Awesome, Materialize CSS, Local Storage",
     "github": "https://github.com/Joey-Robinson/todo"
   },
@@ -65,7 +65,7 @@
     "url": "https://vjs-quote-generator.netlify.com/",
     "image": "./images/vjsrandomquote.png",
     "short-description": "Web app that generates random quotes. The quotes are pre-written and randomlly selected.",
-    "long-description": "This is another small web app. I created it just to see how it would work. In the repo you can see I have a large array of quotes, then a function that displays a random quote on button click.",
+    "long-description": "This is another small web app. I created it just to see how it would work. In the repo you can see I have a large array of quotes, then a function that displays a random quote on button click. Similar to other Vanilla JavaScript projects, I wanted to focus more on fundamentals and give myself a small refresher.",
     "technology": "Vanilla JavaScript, HTML, CSS",
     "github": "https://github.com/Joey-Robinson/vjs-quote-generator"
   },
@@ -75,7 +75,7 @@
     "url": "https://vjs-calculator.netlify.com/",
     "image": "./images/vjscalculator.png",
     "short-description": "Web app that was created to again showcase skills in  technology usage.",
-    "long-description": "Yet again, another small web app. This is simply a calculator. When I first started web development, a calculator was one of the first things that I was challenged to make (FCC) and I later revisited the idea with more knowledge to make this.",
+    "long-description": "Yet again, another small web app. This is simply a calculator. When I first started web development, a calculator was one of the first things that I was challenged to make (FCC) and I later revisited the idea with more knowledge to make this. This also focuses on fundamentals, but takes a slightly different approach. I use a large Class component to reach my desired goals here.",
     "technology": "Vanilla JavaScript, HTML, CSS",
     "github": "https://github.com/Joey-Robinson/vjs-calculator"
   },
@@ -85,7 +85,7 @@
     "url": "https://vjs-markdown-previewer.netlify.com/",
     "image": "./images/vjsmarkdownpreviewer.png",
     "short-description": "Web app to preview basic text into markdown using markdown syntax.",
-    "long-description": "Here I'm making a markdown previewer using the marked.js library. I did this as yet another challenge (FCC) when I revisited some more basic project ideas. This particular project I would find very useful.",
+    "long-description": "Here I'm making a markdown previewer using the marked.js library. I did this as yet another challenge (FCC) when I revisited some more basic project ideas. While the idea seems very straightforward, being able to have a small app to preview markdown can often be easier than either going to a site or using an extension in your editor.",
     "technology": "Vanilla JavaScript, marked, HTML, CSS",
     "github": "https://github.com/Joey-Robinson/vjs-markdown-previewer"
   },
@@ -105,7 +105,7 @@
     "url": "https://js-periodic-table.netlify.com/",
     "image": "./images/vjsperiodictable.png",
     "short-description": "An in browser periodic table. This was made just the sake of making it.",
-    "long-description": "This was an in browser periodic table I made. I had the idea from someone who made it in react. I wanted to be better at understanding Vanilla JavaScript, so I took the data from a JSON file and use that information to make this small web app.",
+    "long-description": "This was an in browser periodic table I made. I had the idea from someone who made it in react. I wanted to be better at understanding Vanilla JavaScript, so I took the data from a JSON file and use that information to make this small web app. This is also an amazing use case for CSS Grid, which is used here, as I can create columns and rows implicitly or explicitly.",
     "technology": "Vanilla JavaScript, HTML, CSS, CSS Grid",
     "github": "https://github.com/Joey-Robinson/vJS-Periodic-Table"
   },
@@ -155,7 +155,7 @@
     "url": "https://react-studio-ghibli-api.netlify.com/",
     "image": "./images/reactstudioghibli.png",
     "short-description": "Web app to view Studio Ghibli movies and their information.",
-    "long-description": "This was just a super small, super simple web app to fetch some external data and display it onscreen. I picked studio ghibli because they make excellent movies.",
+    "long-description": "This was just a super small, super simple web app to fetch some external data and display it onscreen. I picked studio ghibli because they make excellent movies. I also picked to do this to work with small amounts of state in react, which is offered here.",
     "technology": "React, CSS, Flexbox",
     "github": "https://github.com/Joey-Robinson/react-studio-ghibli-api"
   },
