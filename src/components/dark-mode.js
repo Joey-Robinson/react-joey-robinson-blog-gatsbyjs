@@ -9,10 +9,10 @@ const DarkModeToggle = () => {
   return (
     <div className="nav--mode">
       <button onClick={darkMode.toggle}>
-        {darkMode.value ? (
-          <img src={sun} alt="Light Mode" />
-        ) : (
+        {!darkMode.value ? (
           <img src={moon} alt="Dark Mode" />
+        ) : (
+          <img src={sun} alt="Light Mode" />
         )}
       </button>
     </div>
