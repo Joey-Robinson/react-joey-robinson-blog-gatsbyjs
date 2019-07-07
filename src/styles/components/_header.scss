@@ -7,14 +7,16 @@
   top: 0;
   height: 10vh;
   z-index: 2;
-  a {
-    color: cornflowerblue;
+  @include respond(phone) {
+    grid-template-columns: 5vw auto 1fr 5vw;
   }
   h1 {
-    color: cornflowerblue;
     align-self: center;
     grid-column: 2;
     padding: 1.5rem 0;
+    @include respond(phone) {
+      display: none;
+    }
     a {
       text-decoration: none;
       border-bottom: none;
@@ -24,6 +26,9 @@
     display: grid;
     grid-column: 3;
     grid-template-columns: repeat(6, auto);
+    @include respond(phone) {
+      grid-column: 1 / -1;
+    }
   }
 }
 
@@ -32,6 +37,9 @@
   height: 8.5vh;
   transition: background-color 200ms ease-in;
   transition: height 100ms ease-in;
+  @include respond(phone) {
+    height: 14vh;
+  }
 }
 
 .nav {
@@ -43,6 +51,10 @@
     font-weight: 700;
     font-size: 1.6rem;
     justify-self: right;
+    @include respond(phone) {
+      justify-self: center;
+      font-size: 1.3rem;
+    }
     a {
       display: block;
       text-decoration: none;
@@ -67,12 +79,18 @@
   &--coffee {
     grid-column: 5;
     justify-self: right;
-    font-size: 2rem;
     @include nav-defaults;
+    @include respond(phone) {
+      justify-self: center;
+    }
     img {
       display: block;
       width: 3.5rem;
       height: 2.5rem;
+      @include respond(phone) {
+        width: 2rem;
+        height: 1.5rem;
+      }
     }
   }
   &--mode {
@@ -80,6 +98,9 @@
     margin: 3px 0 0 0;
     justify-self: right;
     @include nav-defaults;
+    @include respond(phone) {
+      justify-self: center;
+    }
   }
 }
 
