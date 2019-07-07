@@ -1,12 +1,21 @@
 .projects {
   grid-column: 1;
   padding: 7.5px 0;
+  @include respond(phone) {
+    grid-column: 1 / -1;
+  }
   span {
     font-weight: 700;
     font-size: 1.9rem;
+    @include respond(phone) {
+      font-size: 1.6rem;
+    }
   }
   h1 {
     font-size: 1.9rem;
+    @include respond(phone) {
+      font-size: 1.8rem;
+    }
   }
   p {
     padding: 7.5px 0;
