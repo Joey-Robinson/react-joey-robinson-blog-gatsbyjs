@@ -4,6 +4,7 @@ import ContactForm from "../components/contact/contact.form"
 import ContactList from "../components/contact/contact.list"
 import ResumeDownload from "../components/about/about.resume"
 import SEO from "../components/seo"
+import ContactTyping from "../components/contact/contact.typing"
 
 const Contact = () => (
   <Layout>
@@ -31,8 +32,13 @@ const Contact = () => (
           for any reason it doesn't work, just contact me another way and I can
           share a copy of it with you.
         </p>
-        <ContactForm />
       </div>
+      <div className="contact--right">
+        <ContactTyping />
+      </div>
+      <>
+        <ContactForm />
+      </>
       <ContactList />
       <div className="contact--resume">
         <h1>Resume Download:</h1>
