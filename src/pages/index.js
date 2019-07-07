@@ -21,6 +21,7 @@ const IndexPage = () => (
     <section className="home">
       <h1 className="home--heading">Home</h1>
       <TypingHome />
+      <h1>Live updating this (still), for anyone who's chcking it.</h1>
       <div className="home--greeting">
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus
