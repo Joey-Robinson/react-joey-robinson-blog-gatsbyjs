@@ -21,10 +21,19 @@
     padding: 7.5px 0;
     font-size: 1.6rem;
     width: 75%;
+    @include respond(phone) {
+      padding: 1.5rem 1.5rem 1.5rem 0;
+      width: 100%;
+      word-wrap: break-word;
+      hyphens: auto;
+    }
   }
   hr {
     margin: 3.75px 0;
     color: salmon;
     width: 75%;
+    @include respond(phone) {
+      width: 85%;
+    }
   }
 }
