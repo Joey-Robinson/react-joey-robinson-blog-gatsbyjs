@@ -3,11 +3,20 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, 5rem);
+  @include respond(phone) {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 5rem);
+  }
   &--back {
     grid-column: 3;
     grid-row: 1;
     justify-self: right;
     align-self: start;
+    @include respond(phone) {
+      grid-column: 1;
+      grid-row: 3;
+      justify-self: center;
+    }
   }
   &--container {
     grid-column: 1 / -1;
@@ -15,6 +24,10 @@
     border: 0.5px solid red;
     margin: 1.5rem 0;
     height: 100%;
+    @include respond(phone) {
+      grid-column: 1;
+      grid-row: 6 / 9;
+    }
   }
   &--image {
     height: 100%;
@@ -27,18 +40,34 @@
     grid-row: 2;
     padding: 1.5rem 0;
     font-size: 1.6rem;
+    @include respond(phone) {
+      grid-column: 1;
+      grid-row: 2;
+      text-align: center;
+      padding: 1.5rem;
+    }
   }
   &--live {
     grid-column: 3;
     grid-row: 2;
     justify-self: right;
     align-self: center;
+    @include respond(phone) {
+      justify-self: center;
+      grid-column: 1;
+      grid-row: 5;
+    }
   }
   &--github {
     grid-column: 3;
     grid-row: 3;
     justify-self: right;
     align-self: center;
+    @include respond(phone) {
+      justify-self: center;
+      grid-column: 1;
+      grid-row: 4;
+    }
   }
   &--title {
     justify-self: left;
@@ -46,6 +75,12 @@
     align-self: center;
     padding: 1.5rem 0;
     font-size: 2.1rem;
+    @include respond(phone) {
+      grid-column: 1;
+      text-align: center;
+      padding: 1.5rem;
+      font-size: 1.8rem;
+    }
   }
   a {
     font-size: 1.6rem;
@@ -53,12 +88,18 @@
   p {
     font-size: 1.6rem;
     padding: 1.5rem 0;
+    @include respond(phone) {
+      padding: 1.5rem 1.5rem;
+    }
   }
   &__long__description {
     margin: 3rem 0 0 0;
     grid-column: 1 / -1;
     &::first-letter {
       font-size: 140%;
+      @include respond(phone) {
+        font-size: 120%;
+      }
     }
   }
 }
