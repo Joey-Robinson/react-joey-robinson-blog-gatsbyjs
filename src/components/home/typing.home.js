@@ -7,7 +7,6 @@ const TypingHome = () => (
       Hi! I'm Joey, I'm a&nbsp;
       <Typed
         strings={[
-          `dwdqw <br />`,
           "Develoepr",
           "Developer.",
           "(Poor) Writer.",

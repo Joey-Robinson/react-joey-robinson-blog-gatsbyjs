@@ -1,5 +1,8 @@
 .home {
   @include page-defaults;
+  &--heading {
+    @include heading-defaults;
+  }
   &__typing {
     font-size: 2.5rem;
   }
