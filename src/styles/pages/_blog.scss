@@ -10,10 +10,21 @@
   grid-template-columns: 3fr 1fr;
   grid-template-rows: repeat(3, 1fr);
   grid-auto-flow: column;
+  @include respond(phone) {
+    grid-template-columns: 1fr;
+    grid-template-rows: 5rem 2.5rem 1fr;
+  }
   &--title {
     align-self: center;
     display: inline-block;
     font-size: 2.3rem;
+    @include respond(phone) {
+      grid-column: 1;
+      grid-row: 1;
+      font-size: 2rem;
+      padding: 1.5rem;
+      justify-self: left;
+    }
   }
   &--date {
     grid-column: 2;
@@ -22,6 +33,12 @@
     padding: 1.5rem 6rem 1.5rem 0;
     align-self: center;
     justify-self: right;
+    @include respond(phone) {
+      grid-column: 1;
+      grid-row: 2;
+      padding: 1.5rem;
+      justify-self: left;
+    }
   }
   &--excerpt {
     grid-column: 1 / -1;
@@ -29,5 +46,12 @@
     align-self: center;
     font-size: 1.7rem;
     padding: 1.5rem 6rem 1.5rem 0;
+    @include respond(phone) {
+      grid-column: 1;
+      grid-row: 3;
+      justify-self: left;
+      font-size: 1.6rem;
+      padding: 1.5rem;
+    }
   }
 }
