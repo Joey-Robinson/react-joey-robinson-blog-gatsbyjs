@@ -3,19 +3,11 @@
   display: grid;
   grid-template-rows: 5rem;
   grid-template-columns: 1fr 1fr;
+  @include respond(phone) {
+    grid-template-columns: 1fr;
+  }
   &--heading {
     @include heading-defaults;
-  }
-  &--back {
-    grid-row: 1;
-    grid-column: 2;
-    justify-self: right;
-    align-self: start;
-    font-size: 1.8rem;
-    margin: 0 5rem 0 0;
-    a {
-      display: block;
-    }
   }
   &--image {
     display: block;
@@ -24,6 +16,11 @@
     justify-self: left;
     align-self: start;
     padding: 1.5rem 0;
+    @include respond(phone) {
+      grid-row: 3;
+      width: 100%;
+      grid-column: 1;
+    }
     img,
     a {
       display: block;
@@ -35,42 +32,93 @@
     grid-row: 1;
     justify-self: left;
     grid-column: 1 / -1;
+    @include respond(phone) {
+      grid-column: 1;
+      padding: 1.5rem;
+    }
     h1 {
       font-size: 2.3rem;
+      @include respond(phone) {
+        font-size: 1.6rem;
+      }
     }
     h3 {
       font-size: 1.6rem;
+      @include respond(phone) {
+        font-size: 1.4rem;
+      }
     }
   }
-  p {
+  &--main {
     word-wrap: break-word;
     padding: 1.5rem 4.5rem 1.5rem 0;
     font-size: 1.6rem;
     grid-column: 1 / -1;
+    @include respond(phone) {
+      grid-row: 2;
+      grid-column: 1;
+      padding: 0;
+      margin: 3.5rem 0 0 0;
+      p {
+        padding: 1.5rem;
+        justify-self: center;
+      }
+    }
   }
   &--contact {
     grid-column: 1 / -1;
+    @include respond(phone) {
+      grid-row: 5;
+      grid-column: 1;
+      ul {
+        padding: 0 3rem;
+      }
+    }
     h1 {
       padding: 1.5rem 0;
       font-size: 2.3rem;
+      @include respond(phone) {
+        padding: 0 3rem;
+        font-size: 2rem;
+      }
     }
   }
   &--resume {
     margin: 1.5rem 0;
+    @include respond(phone) {
+      grid-row: 6;
+      margin: 0;
+    }
     h1 {
       padding: 3rem 0 0 0;
       font-size: 2.3rem;
+      @include respond(phone) {
+        padding: 1.5rem;
+        font-size: 2rem;
+      }
     }
   }
   &--bottom {
     grid-column: 1 / -1;
     font-size: 1.6rem;
+    @include respond(phone) {
+      grid-row: 4;
+      grid-column: 1;
+    }
     h1 {
       padding: 3rem 0;
+      @include respond(phone) {
+        padding: 1rem 2.5rem;
+        font-size: 2rem;
+      }
     }
     ul {
       padding: 1rem 0 3rem 0;
       columns: 3;
+      @include respond(phone) {
+        columns: 1;
+        padding: 1.5rem 3rem;
+      }
     }
   }
   button {
@@ -83,6 +131,11 @@
     z-index: 1;
     position: relative;
     margin: 3rem 0;
+    @include respond(phone) {
+      margin: 0;
+      padding: 1.5rem 3rem;
+      width: 100%;
+    }
   }
 }
 

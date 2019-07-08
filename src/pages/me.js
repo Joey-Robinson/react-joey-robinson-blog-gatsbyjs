@@ -26,28 +26,31 @@ const Me = () => (
         <h1>My Semi-Charmed Kind Of Professional Life</h1>
         <h3>Where all my professional goings-on happen</h3>
       </hgroup>
-      <p>
-        Hi, I'm Joey Robinson. I'm a self-taught Front-End Developer. I've been
-        writing code since the middle of 2017, and I couldn't imagine myself
-        doing anything else. I love getting lost in writing code and figuring
-        out how something works, or how to make something work. I'm currently
-        looking for my very first Development job that will help me grow as a
-        developer.
-      </p>
-      <p>
-        While I patiently wait on my first opportunity, I like to make things
-        with Gatsby (Like this website you're on right now) and React. I also
-        enjoy Vanilla JavaScript, though not as much as React, but it's all JS
-        in the end. One of the biggest reasons I enjoy Gatsby so much is because
-        of GraphQL. I enjoy the structure and general idea of GraphQL and I look
-        forward to seeing it really take over the development world, more than
-        it already has.
-      </p>
-      <p>
-        While I do enjoy JavaScript, I also enjoy CSS and CSS Grid. I know Grid
-        is the future of web layout and web design. I absolutely love working
-        with Grid and thinking of the complex layouts I can make with it.
-      </p>
+      <div className="about--main">
+        <p>
+          Hi, I'm Joey Robinson. I'm a self-taught Front-End Developer. I've
+          been writing code since the middle of 2017, and I couldn't imagine
+          myself doing anything else. I love getting lost in writing code and
+          figuring out how something works, or how to make something work. I'm
+          currently looking for my very first Development job that will help me
+          grow as a developer.
+        </p>
+        <p>
+          While I patiently wait on my first opportunity, I like to make things
+          with Gatsby (Like this website you're on right now) and React. I also
+          enjoy Vanilla JavaScript, though not as much as React, but it's all JS
+          in the end. One of the biggest reasons I enjoy Gatsby so much is
+          because of GraphQL. I enjoy the structure and general idea of GraphQL
+          and I look forward to seeing it really take over the development
+          world, more than it already has.
+        </p>
+        <p>
+          While I do enjoy JavaScript, I also enjoy CSS and CSS Grid. I know
+          Grid is the future of web layout and web design. I absolutely love
+          working with Grid and thinking of the complex layouts I can make with
+          it.
+        </p>
+      </div>
       <div className="about--image">
         <AboutImage />
       </div>
