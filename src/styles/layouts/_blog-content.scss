@@ -3,33 +3,59 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 7rem;
+  @include respond(phone) {
+    grid-template-columns: 1fr;
+  }
   &__back {
     grid-column: 2;
     grid-row: 1;
     justify-self: right;
     align-self: center;
     font-size: 1.6rem;
+    @include respond(phone) {
+      grid-column: 1;
+      justify-self: left;
+      grid-row: 2;
+      padding: 1.5rem;
+    }
   }
   &__title {
     grid-column: 1;
     grid-row: 1;
     justify-self: left;
     align-self: center;
+    @include respond(phone) {
+    }
     h1 {
       font-size: 2.6rem;
+      @include respond(phone) {
+        padding: 0 1.5rem;
+        font-size: 2rem;
+      }
     }
     h4 {
       font-size: 1.6rem;
+      @include respond(phone) {
+        padding: 0 1.5rem;
+      }
     }
   }
   &__main {
     grid-column: 1 / -1;
     grid-row: 2;
+    @include respond(phone) {
+      grid-column: 1;
+      // justify-self: center;
+      grid-row: 3;
+    }
     p {
       font-size: 1.6rem;
       padding: 1.5rem 0;
       margin: 1.5rem 0;
       hyphens: auto;
+      @include respond(phone) {
+        padding: 1.5rem;
+      }
     }
   }
 }
