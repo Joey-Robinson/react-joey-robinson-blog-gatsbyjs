@@ -21,7 +21,7 @@ const Me = () => (
       ]}
     />
     <section className="about">
-      <h1 className="about--heading">About</h1>
+      <h1 className="about--heading projects__span">About</h1>
       <hgroup className="about--hg">
         <h1>My Semi-Charmed Kind Of Professional Life</h1>
         <h3>Where all my professional goings-on happen</h3>

@@ -15,7 +15,6 @@
     text-align: center;
     font-size: 1.6rem;
     @include respond(phone) {
-      display: none;
       grid-column: 1;
     }
   }

@@ -47,7 +47,7 @@ const Portfolio = () => {
         ]}
       />
       <section className="portfolio">
-        <h1 className="portfolio__heading">Projects</h1>
+        <h1 className="portfolio__heading projects__span">Projects</h1>
         {projects.map(({ node: project }) => {
           const title = project.title
           const short_description = project.short_description
