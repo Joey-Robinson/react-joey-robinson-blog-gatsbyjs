@@ -79,7 +79,6 @@ module.exports = {
           {
             name: "feed", // This determines the name of your feed file => feed.json & feed.xml
             query: `
-          {
             allContentfulBlogPost(sort: { fields: publishedDate, order: DESC }) {
               edges {
                 node {
@@ -90,14 +89,13 @@ module.exports = {
                 }
               }
             }
-                  }
           `,
             normalize: ({ query: { site, allContentfulBlogPost } }) => {
               return allContentfulBlogPost.edges.map(edge => {
                 return {
-                  title: edge.node.frontmatter.title,
-                  date: edge.node.frontmatter.date,
-                  url: site.siteMetadata.siteUrl + edge.node.frontmatter.path,
+                  title: edge.node.title,
+                  date: edge.node.date,
+                  url: site.siteMetadata.siteUrl + edge.node.path,
                   html: edge.node.html,
                 }
               })
