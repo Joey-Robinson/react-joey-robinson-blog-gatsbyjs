@@ -5,7 +5,7 @@ module.exports = {
     title: `Joey Robinson`,
     description: `Portfolio for Joey Robinson`,
     author: `@joeyrobinsondev`,
-    siteUrl: `https://joeyrobinson.netlify.com/`,
+    siteUrl: "https://joeyrobinson.netlify.com/",
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -57,53 +57,7 @@ module.exports = {
         accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
       },
     },
-    {
-      resolve: "gatsby-plugin-feed-generator",
-      options: {
-        generator: `GatsbyJS`,
-        rss: true, // Set to false to stop rss generation
-        json: true, // Set to false to stop json feed generation
-        siteQuery: `
-        {
-          site {
-            siteMetadata {
-              title
-              description
-              siteUrl
-              author
-            }
-          }
-        }
-      `,
-        feeds: [
-          {
-            name: "feed", // This determines the name of your feed file => feed.json & feed.xml
-            query: `
-            allContentfulBlogPost(sort: { fields: publishedDate, order: DESC }) {
-              edges {
-                node {
-                  title
-                  slug
-                  excerpt
-                  publishedDate(formatString: "MMMM Do, YYYY")
-                }
-              }
-            }
-          `,
-            normalize: ({ query: { site, allContentfulBlogPost } }) => {
-              return allContentfulBlogPost.edges.map(edge => {
-                return {
-                  title: edge.node.title,
-                  date: edge.node.date,
-                  url: site.siteMetadata.siteUrl + edge.node.path,
-                  html: edge.node.html,
-                }
-              })
-            },
-          },
-        ],
-      },
-    },
+
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
