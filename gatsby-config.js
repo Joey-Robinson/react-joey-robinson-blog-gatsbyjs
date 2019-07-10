@@ -1,5 +1,4 @@
 require("dotenv").config()
-import { documentToReactComponents } from "@contentful/rich-text-react-renderer"
 
 module.exports = {
   siteMetadata: {
