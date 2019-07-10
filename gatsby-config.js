@@ -5,6 +5,7 @@ module.exports = {
     title: `Joey Robinson`,
     description: `Portfolio for Joey Robinson`,
     author: `@joeyrobinsondev`,
+    siteUrl: `https://joeyrobinson.netlify.com/`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -57,47 +58,50 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-plugin-feed`,
+      resolve: "gatsby-plugin-feed-generator",
       options: {
-        query: `
-          {
-            site {
-              siteMetadata {
-                title
-                description
-                siteUrl
-                site_url: siteUrl
-              }
+        generator: `GatsbyJS`,
+        rss: true, // Set to false to stop rss generation
+        json: true, // Set to false to stop json feed generation
+        siteQuery: `
+        {
+          site {
+            siteMetadata {
+              title
+              description
+              siteUrl
+              author
             }
           }
-        `,
+        }
+      `,
         feeds: [
           {
-            serialize: ({ query: { site, allContentfulBlogPost } }) => {
+            name: "feed", // This determines the name of your feed file => feed.json & feed.xml
+            query: `
+          {
+            allContentfulBlogPost(sort: { fields: publishedDate, order: DESC }) {
+              edges {
+                node {
+                  title
+                  slug
+                  excerpt
+                  publishedDate(formatString: "MMMM Do, YYYY")
+                }
+              }
+            }
+                  }
+          `,
+            normalize: ({ query: { site, allContentfulBlogPost } }) => {
               return allContentfulBlogPost.edges.map(edge => {
-                return Object.assign({}, edge.node.frontmatter, {
-                  description: edge.node.excerpt,
+                return {
+                  title: edge.node.frontmatter.title,
                   date: edge.node.frontmatter.date,
-                  url: site.siteMetadata.siteUrl + edge.node.fields.slug,
-                  guid: site.siteMetadata.siteUrl + edge.node.fields.slug,
-                  custom_elements: [{ "content:encoded": edge.node.html }],
-                })
+                  url: site.siteMetadata.siteUrl + edge.node.frontmatter.path,
+                  html: edge.node.html,
+                }
               })
             },
-            query: `
-                allContentfulBlogPost(sort: { fields: publishedDate, order: DESC }) {
-                  edges {
-                    node {
-                      title
-                      slug
-                      excerpt
-                      publishedDate(formatString: "MMMM Do, YYYY")
-                    }
-                  }
-                }
-            `,
-            output: "/rss.xml",
-            title: "Your Site's RSS Feed",
           },
         ],
       },
