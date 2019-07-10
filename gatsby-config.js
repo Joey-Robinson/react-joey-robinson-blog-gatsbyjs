@@ -79,7 +79,7 @@ module.exports = {
                 return Object.assign({}, edge.node.frontmatter, {
                   description: edge.node.excerpt,
                   date: edge.node.publishedDate.date,
-                  url: site.siteMetadata.siteUrl + edge.node.title,
+                  url: site.siteMetadata.siteUrl + edge.node.slug,
                   guid: site.siteMetadata.siteUrl + edge.node.slug,
                   custom_elements: [
                     {
@@ -98,7 +98,6 @@ module.exports = {
                       childContentfulBlogPostBodyRichTextNode {
                         body
                       }
-                      title
                       slug
                       excerpt
                       publishedDate(formatString: "MMMM Do, YYYY")
