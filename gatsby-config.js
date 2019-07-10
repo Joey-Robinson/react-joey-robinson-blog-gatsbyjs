@@ -87,17 +87,12 @@ module.exports = {
             },
             query: `
               {
-                allMarkdownRemark(sort: { order: DESC, fields: [frontmatter___date] },
-                ) {
+                allContentfulBlogPost(sort: { fields: publishedDate, order: DESC }) {
                   edges {
                     node {
+                      title
+                      slug
                       excerpt
-                      html
-                      fields { slug }
-                      frontmatter {
-                        title
-                        date
-                      }
                     }
                   }
                 }
