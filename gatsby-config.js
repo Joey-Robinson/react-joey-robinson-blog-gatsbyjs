@@ -5,7 +5,6 @@ module.exports = {
     title: `Joey Robinson`,
     description: `Portfolio for Joey Robinson`,
     author: `@joeyrobinsondev`,
-    site: "https://joeyrobinson.netlify.com/",
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -57,35 +56,52 @@ module.exports = {
         accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
       },
     },
-    feeds: [
-      {
-        serialize: ({ query: { site, allContentfulBlogPost } }) => {
-          return allContentfulBlogPost.edges.map(edge => {
-            return Object.assign({}, edge.node.frontmatter, {
-              description: edge.node.excerpt,
-              date: edge.node.frontmatter.date,
-              url: site.siteMetadata.siteUrl + edge.node.fields.slug,
-              guid: site.siteMetadata.siteUrl + edge.node.fields.slug,
-              custom_elements: [{ "content:encoded": edge.node.html }],
-            })
-          })
-        },
+    {
+      resolve: `gatsby-plugin-feed`,
+      options: {
         query: `
-        allContentfulBlogPost(sort: { fields: publishedDate, order: DESC }) {
-          edges {
-            node {
-              title
-              slug
-              excerpt
-              publishedDate(formatString: "MMMM Do, YYYY")
+          {
+            site {
+              siteMetadata {
+                title
+                description
+                siteUrl
+                site_url: siteUrl
+              }
             }
           }
-        }
+        `,
+        feeds: [
+          {
+            serialize: ({ query: { site, allContentfulBlogPost } }) => {
+              return allContentfulBlogPost.edges.map(edge => {
+                return Object.assign({}, edge.node.frontmatter, {
+                  description: edge.node.excerpt,
+                  date: edge.node.frontmatter.date,
+                  url: site.siteMetadata.siteUrl + edge.node.fields.slug,
+                  guid: site.siteMetadata.siteUrl + edge.node.fields.slug,
+                  custom_elements: [{ "content:encoded": edge.node.html }],
+                })
+              })
+            },
+            query: `
+                allContentfulBlogPost(sort: { fields: publishedDate, order: DESC }) {
+                  edges {
+                    node {
+                      title
+                      slug
+                      excerpt
+                      publishedDate(formatString: "MMMM Do, YYYY")
+                    }
+                  }
+                }
             `,
-        output: "/rss.xml",
-        title: "Your Site's RSS Feed",
+            output: "/rss.xml",
+            title: "Your Site's RSS Feed",
+          },
+        ],
       },
-    ],
+    },
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
