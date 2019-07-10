@@ -1,4 +1,5 @@
 require("dotenv").config()
+import { documentToReactComponents } from "@contentful/rich-text-react-renderer"
 
 module.exports = {
   siteMetadata: {
@@ -79,9 +80,9 @@ module.exports = {
                 return Object.assign({}, edge.node.frontmatter, {
                   description: edge.node.excerpt,
                   // date: edge.node.frontmatter.date,
-                  url: site.siteMetadata.siteUrl + edge.node.fields.slug,
-                  guid: site.siteMetadata.siteUrl + edge.node.fields.slug,
-                  custom_elements: [{ "content:encoded": edge.node.html }],
+                  url: site.siteMetadata.siteUrl + edge.node.title,
+                  guid: site.siteMetadata.siteUrl + edge.node.slug,
+                  custom_elements: [{ "content:encoded": edge.node.excerpt }],
                 })
               })
             },
