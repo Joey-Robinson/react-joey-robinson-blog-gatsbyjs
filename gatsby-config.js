@@ -57,8 +57,7 @@ module.exports = {
         accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
       },
     },
-    feeds,
-    [
+    feeds: [
       {
         serialize: ({ query: { site, allContentfulBlogPost } }) => {
           return allContentfulBlogPost.edges.map(edge => {
