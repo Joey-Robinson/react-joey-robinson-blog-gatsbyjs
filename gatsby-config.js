@@ -78,21 +78,30 @@ module.exports = {
               return allContentfulBlogPost.edges.map(edge => {
                 return Object.assign({}, edge.node.frontmatter, {
                   description: edge.node.excerpt,
-                  // date: edge.node.frontmatter.date,
+                  date: edge.node.publishedDate.date,
                   url: site.siteMetadata.siteUrl + edge.node.title,
                   guid: site.siteMetadata.siteUrl + edge.node.slug,
-                  custom_elements: [{ "content:encoded": edge.node.excerpt }],
+                  custom_elements: [
+                    {
+                      "content:encoded":
+                        edge.node.childContentfulBlogPostBodyRichTextNode.body,
+                    },
+                  ],
                 })
               })
             },
             query: `
               {
-                allContentfulBlogPost(sort: { fields: publishedDate, order: DESC }) {
+                allContentfulBlogPost {
                   edges {
                     node {
+                      childContentfulBlogPostBodyRichTextNode {
+                        body
+                      }
                       title
                       slug
                       excerpt
+                      publishedDate(formatString: "MMMM Do, YYYY")
                     }
                   }
                 }
