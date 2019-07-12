@@ -21,12 +21,19 @@ const IndexPage = () => (
     <section className="home">
       <h1 className="home--heading projects__span">Home</h1>
       <TypingHome />
-      <h1>Live updating this (still), for anyone who's chcking it.</h1>
+      <div className="home--test"></div>
       <div className="home--greeting">
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus
-          inventore iure molestiae reiciendis saepe beatae sunt autem
-          necessitatibus mollitia ipsum!
+          Hello everyone, 👋. Welcome to my personal site. I'm, as stated above,
+          a Front End Developer. I don't know what to write here. I'm not great
+          at talking about myself. So, here's me. I'm a 33 year old developer. I
+          want success in my life and I'm making strides towards that. I work
+          incredibly hard and try to learn as much as I can.
+        </p>
+        <p>
+          I want to be the best me I can be. I want to be an amazing developer
+          that people recognize for making amazing content and products that
+          people enjoy using.
         </p>
       </div>
     </section>
