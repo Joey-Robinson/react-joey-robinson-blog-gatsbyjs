@@ -2,6 +2,9 @@
   display: grid;
   grid-template-columns: 20vw 60vw 20vw;
   grid-template-rows: 10vh;
+  @include respond(tabPort) {
+    grid-template-columns: 10vw 80vw 10vw;
+  }
   @include respond(phone) {
     grid-template-columns: 5vw 90vw 5vw;
   }

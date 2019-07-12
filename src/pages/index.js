@@ -35,6 +35,7 @@ const IndexPage = () => (
           that people recognize for making amazing content and products that
           people enjoy using.
         </p>
+        <p></p>
       </div>
     </section>
   </Layout>

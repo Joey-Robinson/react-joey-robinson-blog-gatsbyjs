@@ -21,7 +21,11 @@
   grid-row: 2;
   margin-top: 5rem;
   min-height: 100vh;
+  @include respond(tabPort) {
+    min-height: 75vh;
+  }
   @include respond(phone) {
+    min-height: 75vh;
     margin-top: 2.5rem;
     grid-column: 1 / -1;
   }
@@ -35,6 +39,9 @@
   right: 19.5%;
   writing-mode: vertical-rl;
   text-orientation: mixed;
+  @include respond(tabPort) {
+    right: 10%;
+  }
   @include respond(phone) {
     padding: 0;
     margin-top: 1.5rem;

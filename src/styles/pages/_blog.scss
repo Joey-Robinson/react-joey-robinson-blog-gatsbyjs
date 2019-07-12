@@ -10,6 +10,10 @@
   grid-template-columns: 3fr 1fr;
   grid-template-rows: repeat(3, 1fr);
   grid-auto-flow: column;
+  @include respond(tabPort) {
+    grid-template-columns: 1fr auto;
+    grid-template-rows: 10rem 5rem 1fr;
+  }
   @include respond(phone) {
     grid-template-columns: 1fr;
     grid-template-rows: 5rem 2.5rem 1fr;
@@ -33,6 +37,9 @@
     padding: 1.5rem 6rem 1.5rem 0;
     align-self: center;
     justify-self: right;
+    @include respond(tabPort) {
+      padding: 1.5rem 6rem 1.5rem 0;
+    }
     @include respond(phone) {
       grid-column: 1;
       grid-row: 2;
@@ -46,6 +53,10 @@
     align-self: center;
     font-size: 1.7rem;
     padding: 1.5rem 6rem 1.5rem 0;
+    @include respond(tabPort) {
+      font-size: 1.8rem;
+      padding: 1.5rem 6rem 1.5rem 0;
+    }
     @include respond(phone) {
       grid-column: 1;
       grid-row: 3;

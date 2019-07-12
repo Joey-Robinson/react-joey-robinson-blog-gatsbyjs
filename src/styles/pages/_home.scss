@@ -5,12 +5,19 @@
   grid-template-rows: 5rem;
   &--greeting {
     grid-row: 2;
+    @include respond(tabPort) {
+      margin: 4.5rem 0;
+    }
     @include respond(phone) {
       margin: 6rem 0;
     }
     p {
       font-size: 1.6rem;
       padding: 3rem 0;
+      @include respond(tabPort) {
+        font-size: 1.9rem;
+        padding: 3rem 3rem 3rem 0;
+      }
       @include respond(phone) {
         // margin: 3rem 0;
         padding: 1.5rem;
@@ -23,6 +30,10 @@
   &__typing {
     grid-row: 1;
     font-size: 2.5rem;
+    @include respond(tabPort) {
+      font-size: 2.3rem;
+      padding: 1.5rem 0;
+    }
     @include respond(phone) {
       padding: 1.5rem;
       font-size: 2rem;

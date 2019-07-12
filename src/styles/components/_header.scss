@@ -7,6 +7,9 @@
   top: 0;
   height: 10vh;
   z-index: 2;
+  @include respond(tabPort) {
+    grid-template-columns: 10vw auto 1fr 10vw;
+  }
   @include respond(phone) {
     grid-template-columns: 5vw auto 1fr 5vw;
   }
