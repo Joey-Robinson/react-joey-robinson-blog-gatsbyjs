@@ -3,6 +3,7 @@
   grid-template-columns: 20vw 60vw 20vw;
   grid-template-rows: 10vh;
   @include respond(tabLand) {
+    min-height: 1vh;
     grid-template-rows: 8vh;
     grid-template-columns: 10vw 80vw 10vw;
   }

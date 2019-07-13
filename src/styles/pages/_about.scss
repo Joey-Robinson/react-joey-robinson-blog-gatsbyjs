@@ -3,9 +3,7 @@
   display: grid;
   grid-template-rows: 5rem;
   grid-template-columns: 1fr 1fr;
-  @include respond(tabLand) {
-    min-height: 50vh;
-  }
+
   @include respond(phone) {
     grid-template-columns: 1fr;
   }

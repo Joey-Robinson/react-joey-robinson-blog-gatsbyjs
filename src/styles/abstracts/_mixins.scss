@@ -28,7 +28,6 @@
     margin-top: 2rem;
   }
   @include respond(phone) {
-    min-height: 75vh;
     margin-top: 2.5rem;
     grid-column: 1 / -1;
   }

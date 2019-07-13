@@ -1,8 +1,5 @@
 .blog {
   @include page-defaults;
-  &--heading {
-    @include heading-defaults;
-  }
 }
 
 .container {

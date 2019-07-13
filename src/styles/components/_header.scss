@@ -43,7 +43,7 @@
   transition: background-color 200ms ease-in;
   transition: height 250ms ease-in;
   @include respond(tabLand) {
-    height: 5vh;
+    height: 7vh;
   }
   @include respond(phone) {
     height: 14vh;
