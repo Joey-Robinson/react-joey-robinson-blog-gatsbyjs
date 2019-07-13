@@ -6,9 +6,10 @@
   grid-template-columns: repeat(5, 1fr);
   font-size: 1.2rem;
   margin: 3rem 0;
-  @include respond(tabPort) {
+  @include respond(tabLand) {
+    padding: 1.5rem 0;
+    margin: 0;
     height: 3vh;
-    margin: 1.5rem 0;
   }
   @include respond(phone) {
     grid-template-columns: 1fr;

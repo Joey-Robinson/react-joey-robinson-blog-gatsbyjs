@@ -5,6 +5,7 @@ import ContactList from "../components/contact/contact.list"
 import ResumeDownload from "../components/about/about.resume"
 import SEO from "../components/seo"
 import ContactTyping from "../components/contact/contact.typing"
+import PageHeading from "../components/page.heading"
 
 const Contact = () => (
   <Layout>
@@ -22,7 +23,7 @@ const Contact = () => (
       ]}
     />
     <section className="contact">
-      <h1 className="contact--heading projects__span">Contact</h1>
+      <PageHeading content="Contact" />
       <div className="contact--opening">
         <h1>Some ways you can get ahold of me:</h1>
         <p>

@@ -4,6 +4,7 @@ import Layout from "../components/layout"
 import ResumeDownload from "../components/about/about.resume"
 import ContactList from "../components/contact/contact.list"
 import SEO from "../components/seo"
+import PageHeading from "../components/page.heading"
 
 const Me = () => (
   <Layout>
@@ -21,7 +22,7 @@ const Me = () => (
       ]}
     />
     <section className="about">
-      <h1 className="about--heading projects__span">About</h1>
+      <PageHeading content="About" />
       <hgroup className="about--hg">
         <h1>My Semi-Charmed Kind Of Professional Life</h1>
         <h3>Where all my professional goings-on happen</h3>

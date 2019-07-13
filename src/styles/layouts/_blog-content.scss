@@ -12,6 +12,9 @@
     justify-self: right;
     align-self: center;
     font-size: 1.6rem;
+    @include respond(tabPort) {
+      align-self: start;
+    }
     @include respond(phone) {
       grid-column: 1;
       justify-self: left;
@@ -24,10 +27,12 @@
     grid-row: 1;
     justify-self: left;
     align-self: center;
-    @include respond(phone) {
-    }
     h1 {
       font-size: 2.6rem;
+      @include respond(tabPort) {
+        font-size: 2.3rem;
+        padding: 1.5rem 0;
+      }
       @include respond(phone) {
         padding: 0 1.5rem;
         font-size: 2rem;
@@ -35,6 +40,9 @@
     }
     h4 {
       font-size: 1.6rem;
+      @include respond(tabPort) {
+        padding: 0;
+      }
       @include respond(phone) {
         padding: 0 1.5rem;
       }
@@ -45,7 +53,6 @@
     grid-row: 2;
     @include respond(phone) {
       grid-column: 1;
-      // justify-self: center;
       grid-row: 3;
     }
     p {
@@ -53,6 +60,11 @@
       padding: 1.5rem 0;
       margin: 1.5rem 0;
       hyphens: auto;
+      @include respond(tabPort) {
+        font-size: 1.8rem;
+        margin: 1.5rem 0;
+        padding: 1.5rem 0;
+      }
       @include respond(phone) {
         padding: 1.5rem;
       }

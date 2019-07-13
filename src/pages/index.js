@@ -2,6 +2,7 @@ import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import TypingHome from "../components/home/typing.home"
+import PageHeading from "../components/page.heading"
 
 const IndexPage = () => (
   <Layout>
@@ -19,9 +20,8 @@ const IndexPage = () => (
       ]}
     />
     <section className="home">
-      <h1 className="home--heading projects__span">Home</h1>
+      <PageHeading content="Home" />
       <TypingHome />
-      <div className="home--test"></div>
       <div className="home--greeting">
         <p>
           Hello everyone, 👋. Welcome to my personal site. I'm, as stated above,

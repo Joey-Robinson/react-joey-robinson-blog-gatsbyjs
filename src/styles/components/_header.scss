@@ -7,7 +7,9 @@
   top: 0;
   height: 10vh;
   z-index: 2;
-  @include respond(tabPort) {
+  transition: height 100ms ease-in;
+  @include respond(tabLand) {
+    height: 8vh;
     grid-template-columns: 10vw auto 1fr 10vw;
   }
   @include respond(phone) {
@@ -39,7 +41,10 @@
   background: #202020;
   height: 8.5vh;
   transition: background-color 200ms ease-in;
-  transition: height 100ms ease-in;
+  transition: height 250ms ease-in;
+  @include respond(tabLand) {
+    height: 5vh;
+  }
   @include respond(phone) {
     height: 14vh;
   }

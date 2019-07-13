@@ -2,6 +2,7 @@ import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { graphql, Link } from "gatsby"
+import PageHeading from "../components/page.heading"
 
 export const pageQuery = graphql`
   query BlogIndexQuery {
@@ -35,7 +36,7 @@ const Blog = ({ data }) => (
     />
     <section className="blog">
       <>
-        <h1 className="blog--heading projects__span">Blog</h1>
+        <PageHeading content="Blog" />
         {data.allContentfulBlogPost.edges.map(post => (
           <div key={post.node.title} className="container">
             <h1 className="container--title">
