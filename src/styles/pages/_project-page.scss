@@ -3,6 +3,10 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, 5rem);
+  @include respond(tabLand) {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5, 5rem);
+  }
   @include respond(phone) {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(6, 5rem);
@@ -12,6 +16,11 @@
     grid-row: 1;
     justify-self: right;
     align-self: start;
+    @include respond(tabLand) {
+      justify-self: center;
+      grid-column: 1;
+      grid-row: 3;
+    }
     @include respond(phone) {
       grid-column: 1;
       grid-row: 3;
@@ -24,6 +33,10 @@
     border: 0.5px solid red;
     margin: 1.5rem 0;
     height: 100%;
+    @include respond(tabLand) {
+      grid-column: 1;
+      grid-row: 6;
+    }
     @include respond(phone) {
       grid-column: 1;
       grid-row: 6 / 9;
@@ -40,6 +53,11 @@
     grid-row: 2;
     padding: 1.5rem 0;
     font-size: 1.6rem;
+    @include respond(tabLand) {
+      justify-self: center;
+      grid-column: 1;
+      grid-row: 2;
+    }
     @include respond(phone) {
       grid-column: 1;
       grid-row: 2;
@@ -52,6 +70,11 @@
     grid-row: 2;
     justify-self: right;
     align-self: center;
+    @include respond(tabLand) {
+      text-align: center;
+      grid-column: 1;
+      grid-row: 4;
+    }
     @include respond(phone) {
       justify-self: center;
       grid-column: 1;
@@ -63,6 +86,11 @@
     grid-row: 3;
     justify-self: right;
     align-self: center;
+    @include respond(tabLand) {
+      justify-self: center;
+      grid-column: 1;
+      grid-row: 5;
+    }
     @include respond(phone) {
       justify-self: center;
       grid-column: 1;
@@ -75,6 +103,11 @@
     align-self: center;
     padding: 1.5rem 0;
     font-size: 2.1rem;
+    @include respond(tabLand) {
+      justify-self: center;
+      grid-column: 1;
+      grid-row: 1;
+    }
     @include respond(phone) {
       grid-column: 1;
       text-align: center;
@@ -95,6 +128,10 @@
   &__long__description {
     margin: 3rem 0 0 0;
     grid-column: 1 / -1;
+    @include respond(tabLand) {
+      font-size: 1.8rem;
+      grid-column: 1;
+    }
     &::first-letter {
       font-size: 140%;
       @include respond(phone) {

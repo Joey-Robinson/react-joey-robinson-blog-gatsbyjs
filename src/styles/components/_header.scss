@@ -7,7 +7,6 @@
   top: 0;
   height: 10vh;
   z-index: 2;
-  transition: height 100ms ease-in;
   @include respond(tabLand) {
     height: 8vh;
     grid-template-columns: 10vw auto 1fr 10vw;
@@ -40,8 +39,8 @@
 .scroll {
   background: #202020;
   height: 8.5vh;
-  transition: background-color 200ms ease-in;
-  transition: height 250ms ease-in;
+  // transition: background-color 25ms ease-in;
+  // transition: height 200ms ease-in;
   @include respond(tabLand) {
     height: 7vh;
   }
@@ -51,7 +50,7 @@
 }
 
 .nav {
-  transition: background-color 200ms ease-in;
+  // transition: background-color 25ms ease-in;
   &--blog,
   &--portfolio,
   &--contact,

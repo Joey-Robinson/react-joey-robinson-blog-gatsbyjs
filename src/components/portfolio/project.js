@@ -38,9 +38,13 @@ const Project = ({
       )}
     </p>
     <p className="project--live">
-      <a href={url} target="_blank" rel="noopener noreferrer">
-        View this project online &rarr;
-      </a>
+      {!url ? (
+        "Due to recent events coming to light with GoDaddy, I'm no longer using their serivces. I'll either rehost this or remove it completely."
+      ) : (
+        <a href={url} target="_blank" rel="noopener noreferrer">
+          View this project online &rarr;
+        </a>
+      )}
     </p>
     <p className="project--back">
       <Link to="/portfolio/">
