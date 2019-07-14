@@ -3,6 +3,7 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import TypingHome from "../components/home/typing.home"
 import PageHeading from "../components/page.heading"
+import HomeImage from "../components/home/home.image"
 
 const IndexPage = () => (
   <Layout>
@@ -39,7 +40,7 @@ const IndexPage = () => (
           that people recognize for making amazing content and products that
           people enjoy using.
         </p>
-        <p></p>
+        <HomeImage />
       </div>
     </section>
   </Layout>
