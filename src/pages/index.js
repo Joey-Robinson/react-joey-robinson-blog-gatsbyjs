@@ -34,13 +34,29 @@ const IndexPage = () => (
           about myself. So, here's me. I'm a 33 year old developer. I want
           success in my life and I'm making strides towards that. I work
           incredibly hard and try to learn as much as I can.
+          <br />
+          <br />
+          Here's a picture of my cute dog:
         </p>
-        <p>
-          I want to be the best me I can be. I want to be an amazing developer
-          that people recognize for making amazing content and products that
-          people enjoy using.
-        </p>
-        <HomeImage />
+        <div className="home--image">
+          <HomeImage />
+        </div>
+        <div className="home--bottom">
+          <p>
+            I don't have much else to say. I love Hamilton, The Musical. I like
+            a lot of heavy rock. I'm self-conscious but like to put on a front.
+            I often take criticism very personal and try to not show it. I've
+            overcome many obstacles to be where I am now, but I'm nowhere near
+            where I want to be. Until I get there, I'll continue to keep moving
+            forward towards my own personal goals.
+          </p>
+          <p>
+            I like thought provoking questions and discussions. Some people will
+            say I'm overly optimistic but I see that as a strength. I can come
+            off as cold or rude at times, but that's not anyones fault but my
+            own.
+          </p>
+        </div>
       </div>
     </section>
   </Layout>

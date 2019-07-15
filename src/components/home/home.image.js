@@ -36,14 +36,6 @@ export const HomeImage = () => (
             alt="A cute dog in a sweater in the snow."
           />
         </a>
-        <br />
-        <span
-          style={{
-            fontSize: "1.4rem",
-          }}
-        >
-          My Dog
-        </span>
       </>
     )}
   />

@@ -16,7 +16,7 @@
       padding: 3rem 0;
       @include respond(tabPort) {
         font-size: 1.9rem;
-        padding: 3rem 3rem 3rem 0;
+        padding: 1.5rem 3rem 1.5rem 0;
       }
       @include respond(phone) {
         // margin: 3rem 0;
@@ -37,6 +37,11 @@
     @include respond(phone) {
       padding: 1.5rem;
       font-size: 2rem;
+    }
+  }
+  &--image {
+    @include respond(tabLand) {
+      margin: 1.5rem 0;
     }
   }
 }
