@@ -4,6 +4,8 @@ import SEO from "../components/seo"
 import TypingHome from "../components/home/typing.home"
 import PageHeading from "../components/page.heading"
 import HomeImage from "../components/home/home.image"
+import hero from "../images/home.hero.gif"
+import LazyLoad from "react-lazyload"
 
 const IndexPage = () => (
   <Layout>
@@ -41,21 +43,16 @@ const IndexPage = () => (
         <div className="home--image">
           <HomeImage />
         </div>
+        <br />
         <div className="home--bottom">
-          <p>
-            I don't have much else to say. I love Hamilton, The Musical. I like
-            a lot of heavy rock. I'm self-conscious but like to put on a front.
-            I often take criticism very personal and try to not show it. I've
-            overcome many obstacles to be where I am now, but I'm nowhere near
-            where I want to be. Until I get there, I'll continue to keep moving
-            forward towards my own personal goals.
-          </p>
-          <p>
-            I like thought provoking questions and discussions. Some people will
-            say I'm overly optimistic but I see that as a strength. I can come
-            off as cold or rude at times, but that's not anyones fault but my
-            own.
-          </p>
+          <LazyLoad>
+            <a href={hero} target="_blank" rel="noopener noreferrer">
+              <img
+                src={hero}
+                alt="Deku being wholesome and protecting his mother while dressed up as All Might."
+              />
+            </a>
+          </LazyLoad>
         </div>
       </div>
     </section>

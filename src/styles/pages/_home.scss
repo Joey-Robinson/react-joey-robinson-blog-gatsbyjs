@@ -3,6 +3,15 @@
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 5rem;
+  &--bottom {
+    justify-self: center;
+    img,
+    a {
+      display: block;
+      width: 100%;
+      justify-self: center;
+    }
+  }
   &--greeting {
     grid-row: 2;
     @include respond(tabPort) {
