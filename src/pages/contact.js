@@ -6,6 +6,7 @@ import ResumeDownload from "../components/about/about.resume"
 import SEO from "../components/seo"
 import ContactTyping from "../components/contact/contact.typing"
 import PageHeading from "../components/page.heading"
+import writing from "../images/writing.gif"
 
 const Contact = () => (
   <Layout>
@@ -36,6 +37,9 @@ const Contact = () => (
       </div>
       <div className="contact--right">
         <ContactTyping />
+      </div>
+      <div className="contact--gif">
+        <img src={writing} alt="" />
       </div>
       <>
         <ContactForm />
