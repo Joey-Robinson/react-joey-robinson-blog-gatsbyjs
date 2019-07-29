@@ -10,6 +10,12 @@
     grid-row: 2;
     align-self: center;
     justify-self: center;
+    @include respond(tabLand) {
+      display: none;
+    }
+    @include respond(phone) {
+      display: none;
+    }
     img {
       justify-self: center;
       display: block;
@@ -23,6 +29,7 @@
     align-self: start;
     text-align: center;
     font-size: 2rem;
+    padding: 1.5rem 0 0 0;
     @include respond(tabLand) {
       grid-column: 1;
       grid-row: 2;
@@ -33,23 +40,17 @@
   }
   &--resume {
     grid-column: 1;
+    justify-self: center;
     @include respond(tabLand) {
-      justify-self: left;
-      width: 70vw;
-      ul,
-      a,
-      button {
-        width: 70vw;
-      }
     }
     @include respond(phone) {
       grid-column: 1;
-      justify-self: center;
-      margin: 0;
-      ul {
-        justify-self: center;
-        text-align: center;
-        width: 100vw;
+      ul,
+      li,
+      a,
+      button {
+        grid-column: 1;
+        margin: 0 auto;
         font-size: 1.6rem;
       }
     }
@@ -59,7 +60,6 @@
       @include respond(phone) {
         justify-self: left;
         font-size: 2rem;
-        padding: 1.5rem;
       }
     }
   }
@@ -90,6 +90,7 @@
       }
       @include respond(phone) {
         padding: 1.5rem;
+        word-spacing: 5px;
       }
     }
   }

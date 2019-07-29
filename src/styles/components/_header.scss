@@ -39,18 +39,15 @@
 .scroll {
   background: #202020;
   height: 8.5vh;
-  // transition: background-color 25ms ease-in;
-  // transition: height 200ms ease-in;
   @include respond(tabLand) {
     height: 7vh;
   }
   @include respond(phone) {
-    height: 14vh;
+    height: 12vh;
   }
 }
 
 .nav {
-  // transition: background-color 25ms ease-in;
   &--blog,
   &--portfolio,
   &--contact,
