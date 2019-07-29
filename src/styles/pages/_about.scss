@@ -101,7 +101,12 @@
       }
     }
   }
+  &--settings {
+    font-size: 1.8rem;
+    grid-row: 7;
+  }
   &--resume {
+    grid-row: 6;
     margin: 1.5rem 0;
     @include respond(phone) {
       grid-row: 6;

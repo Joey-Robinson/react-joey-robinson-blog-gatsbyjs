@@ -38,7 +38,7 @@ const Blog = ({ data }) => (
       <>
         <PageHeading content="Blog" />
         {data.allContentfulBlogPost.edges.map(post => (
-          <div key={post.node.title} className="container">
+          <div key={post.node.title} className="container colors">
             <h1 className="container--title">
               <Link to={`/${post.node.slug}/`}>{post.node.title} &rarr;</Link>
             </h1>

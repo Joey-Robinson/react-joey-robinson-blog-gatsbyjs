@@ -5,6 +5,7 @@ import ResumeDownload from "../components/about/about.resume"
 import ContactList from "../components/contact/contact.list"
 import SEO from "../components/seo"
 import PageHeading from "../components/page.heading"
+import AboutTyping from "../components/about/about.typing"
 
 const Me = () => (
   <Layout>
@@ -91,6 +92,13 @@ const Me = () => (
       <div className="about--contact">
         <h1>Contact:</h1>
         <ContactList />
+      </div>
+      <div className="about--settings">
+        <h1>VSC Settings:</h1>
+        <br />
+        <pre>
+          <AboutTyping />
+        </pre>
       </div>
       <div className="about--resume">
         <h1>Resume Download:</h1>

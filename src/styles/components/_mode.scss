@@ -1,7 +1,10 @@
 .light-mode {
   transition: background-color 0.3s ease-in;
-  background-color: #e8e8e8;
   color: #2d2d2d;
+  background-color: #ffffff;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1600 900'%3E%3Cpolygon fill='%2362b38d' points='957 450 539 900 1396 900'/%3E%3Cpolygon fill='%2387df99' points='957 450 872.9 900 1396 900'/%3E%3Cpolygon fill='%236bc297' points='-60 900 398 662 816 900'/%3E%3Cpolygon fill='%237ed697' points='337 900 398 662 816 900'/%3E%3Cpolygon fill='%2375d1a0' points='1203 546 1552 900 876 900'/%3E%3Cpolygon fill='%2376cd95' points='1203 546 1552 900 1162 900'/%3E%3Cpolygon fill='%237fe0a9' points='641 695 886 900 367 900'/%3E%3Cpolygon fill='%236fc593' points='587 900 641 695 886 900'/%3E%3Cpolygon fill='%238af0b2' points='1710 900 1401 632 1096 900'/%3E%3Cpolygon fill='%2368bc90' points='1710 900 1401 632 1365 900'/%3E%3Cpolygon fill='%2396ffbb' points='1210 900 971 687 725 900'/%3E%3Cpolygon fill='%2362b38d' points='943 900 1210 900 971 687'/%3E%3C/svg%3E");
+  background-attachment: fixed;
+  background-size: cover;
   button {
     @include mode-buttons;
   }
@@ -9,16 +12,37 @@
   .projects--hr {
     color: black;
   }
+  & .colors:nth-child(even) {
+    box-shadow: 0 0 5px black;
+  }
+  & .colors:nth-child(odd) {
+    margin: 1.5rem 0;
+    background: rgba(45, 45, 45, 0.75);
+    color: white;
+    box-shadow: 0 0 5px black;
+  }
 }
 .dark-mode {
   color: #e8e8e8;
   background-color: #2d2d2d;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1600 900'%3E%3Cpolygon fill='%23fd5e53' points='957 450 539 900 1396 900'/%3E%3Cpolygon fill='%23904949' points='957 450 872.9 900 1396 900'/%3E%3Cpolygon fill='%23f94361' points='-60 900 398 662 816 900'/%3E%3Cpolygon fill='%23963c4d' points='337 900 398 662 816 900'/%3E%3Cpolygon fill='%23f02372' points='1203 546 1552 900 876 900'/%3E%3Cpolygon fill='%239a2c55' points='1203 546 1552 900 1162 900'/%3E%3Cpolygon fill='%23e00084' points='641 695 886 900 367 900'/%3E%3Cpolygon fill='%239a1a62' points='587 900 641 695 886 900'/%3E%3Cpolygon fill='%23ca0097' points='1710 900 1401 632 1096 900'/%3E%3Cpolygon fill='%23950574' points='1710 900 1401 632 1365 900'/%3E%3Cpolygon fill='%23aa00aa' points='1210 900 971 687 725 900'/%3E%3Cpolygon fill='%23880088' points='943 900 1210 900 971 687'/%3E%3C/svg%3E");
+  background-attachment: fixed;
+  background-size: cover;
   transition: background-color 0.3s ease-in;
   button {
     @include mode-buttons;
   }
   & .projects__span,
   .projects--hr {
-    color: salmon;
+    color: rgb(0, 255, 191);
+  }
+  & .colors:nth-child(even) {
+    box-shadow: 0 0 5px black;
+  }
+  & .colors:nth-child(odd) {
+    margin: 1.5rem 0;
+    background: rgba(255, 255, 255, 0.75);
+    color: #2d2d2d;
+    box-shadow: 0 0 5px black;
   }
 }
