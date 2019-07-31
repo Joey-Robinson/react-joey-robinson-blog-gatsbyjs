@@ -16,8 +16,9 @@
     padding: 1.5rem 0;
     @include respond(phone) {
       grid-row: 3;
-      width: 100%;
+      width: 95vw;
       grid-column: 1;
+      margin: 0 auto;
     }
     img,
     a {

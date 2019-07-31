@@ -53,13 +53,12 @@
     }
     @include respond(phone) {
       grid-column: 1;
-      justify-self: center;
       img,
       a {
         grid-column: 1;
         display: block;
-        width: 100%;
-        justify-self: center;
+        width: 90vw;
+        margin: 0 auto;
       }
     }
   }
@@ -73,6 +72,11 @@
     }
     @include respond(tabLand) {
       margin: 1.5rem 0;
+      img,
+      a {
+        width: 90vw;
+        margin: 0 auto;
+      }
     }
   }
 }
