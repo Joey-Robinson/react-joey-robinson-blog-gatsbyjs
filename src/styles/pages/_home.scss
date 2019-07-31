@@ -43,13 +43,14 @@
       font-size: 2rem;
     }
   }
-  &--bottom {
+  &--bottom,
+  &--image {
     grid-column: 1;
+    width: 100%;
     img,
     a {
-      justify-items: center;
+      width: 100%;
       justify-self: center;
-      justify-content: center;
     }
     @include respond(phone) {
       grid-column: 1;
@@ -57,23 +58,6 @@
       a {
         grid-column: 1;
         display: block;
-        width: 90vw;
-        margin: 0 auto;
-      }
-    }
-  }
-  &--image {
-    justify-self: center;
-    grid-column: 1;
-    img,
-    a {
-      display: block;
-      justify-self: center;
-    }
-    @include respond(tabLand) {
-      margin: 1.5rem 0;
-      img,
-      a {
         width: 90vw;
         margin: 0 auto;
       }
