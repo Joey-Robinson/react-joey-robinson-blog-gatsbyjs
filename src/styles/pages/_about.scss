@@ -119,12 +119,14 @@
     @include respond(phone) {
       grid-row: 6;
       margin: 0;
+      width: 90%;
+      justify-self: center;
     }
     h1 {
       padding: 3rem 0 0 0;
       font-size: 2.3rem;
       @include respond(phone) {
-        padding: 1.5rem;
+        padding: 3rem 0;
         font-size: 2rem;
       }
     }

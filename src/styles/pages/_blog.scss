@@ -9,12 +9,14 @@
   grid-template-columns: 3fr 1fr;
   grid-template-rows: repeat(3, 1fr);
   grid-auto-flow: column;
-  font-weight: 700;
   @include respond(tabLand) {
     grid-template-columns: 1fr auto;
     grid-template-rows: 5rem 2.5rem 1fr;
   }
   @include respond(phone) {
+    width: 100%;
+    margin: 1.5rem 0 0 0;
+    justify-self: center;
     grid-template-columns: 1fr;
     grid-template-rows: 5rem 2.5rem 1fr;
   }
@@ -24,10 +26,10 @@
     font-size: 2.3rem;
     padding: 0 1.5rem;
     @include respond(phone) {
+      align-self: start;
       grid-column: 1;
       grid-row: 1;
       font-size: 2rem;
-      padding: 1.5rem;
       justify-self: left;
     }
   }
@@ -38,12 +40,15 @@
     padding: 0 3rem;
     align-self: center;
     justify-self: right;
+    font-style: italic;
     @include respond(tabLand) {
       padding: 1.5rem 6rem 1.5rem 0;
     }
     @include respond(phone) {
+      align-self: center;
       grid-column: 1;
-      grid-row: 2;
+      grid-row: 1 / 3;
+      margin: 1rem 0 0 0;
       padding: 1.5rem;
       justify-self: left;
     }
@@ -55,6 +60,7 @@
     font-size: 1.8rem;
     padding: 1.5rem 2rem;
     margin: 0;
+    font-weight: 400;
     @include respond(tabLand) {
       font-size: 1.8rem;
       padding: 1.5rem 6rem 1.5rem 0;
