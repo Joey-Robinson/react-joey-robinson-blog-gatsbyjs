@@ -7,6 +7,10 @@
   top: 0;
   height: 10vh;
   z-index: 2;
+  [aria-current="page"] {
+    border-bottom: 2px solid cornflowerblue;
+  }
+
   @include respond(tabLand) {
     height: 8vh;
     grid-template-columns: 10vw auto 1fr 10vw;
@@ -39,6 +43,7 @@
 .scroll {
   background: #202020;
   height: 8.5vh;
+  transition: height 200ms ease-in;
   @include respond(tabLand) {
     height: 7vh;
   }
@@ -52,13 +57,12 @@
   &--portfolio,
   &--contact,
   &--about {
-    font-weight: 700;
     font-size: 1.6rem;
     justify-self: right;
     @include respond(phone) {
       justify-self: center;
       font-size: 1.6rem;
-      font-weight: 400;
+      letter-spacing: -1px;
     }
     a {
       display: block;
@@ -104,11 +108,12 @@
     justify-self: right;
     @include nav-defaults;
     @include respond(phone) {
+      svg {
+        display: block;
+        width: 2rem;
+        height: 1.5rem;
+      }
       justify-self: center;
     }
   }
-}
-
-[aria-current="page"] {
-  border-bottom: 2px solid cornflowerblue;
 }

@@ -1,0 +1,29 @@
+.fab {
+  background: rgb(0, 255, 191);
+  border-radius: 10rem;
+  position: fixed;
+  display: none;
+  @include respond(phone) {
+    top: 96%;
+    z-index: 10;
+    left: 5px;
+    display: grid;
+    width: 2rem;
+    height: 2rem;
+    svg,
+    img {
+      width: 1rem;
+      height: 1rem;
+      align-self: center;
+      justify-self: center;
+    }
+    a {
+      align-self: center;
+      justify-self: center;
+    }
+  }
+}
+
+#fab--link {
+  text-decoration: none;
+}

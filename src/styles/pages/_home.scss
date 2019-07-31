@@ -3,14 +3,8 @@
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 5rem;
-  &--bottom {
-    justify-self: center;
-    img,
-    a {
-      display: block;
-      width: 100%;
-      justify-self: center;
-    }
+  @include respond(phone) {
+    grid-template-columns: 1fr;
   }
   &--greeting {
     grid-row: 2;
@@ -19,6 +13,7 @@
       margin: 4.5rem 0;
     }
     @include respond(phone) {
+      padding: 0;
       margin: 6rem 0;
     }
     p {
@@ -29,7 +24,6 @@
         padding: 1.5rem 3rem 1.5rem 0;
       }
       @include respond(phone) {
-        // margin: 3rem 0;
         padding: 1.5rem;
       }
     }
@@ -49,7 +43,34 @@
       font-size: 2rem;
     }
   }
+  &--bottom {
+    grid-column: 1;
+    img,
+    a {
+      justify-items: center;
+      justify-self: center;
+      justify-content: center;
+    }
+    @include respond(phone) {
+      grid-column: 1;
+      justify-self: center;
+      img,
+      a {
+        grid-column: 1;
+        display: block;
+        width: 100%;
+        justify-self: center;
+      }
+    }
+  }
   &--image {
+    justify-self: center;
+    grid-column: 1;
+    img,
+    a {
+      display: block;
+      justify-self: center;
+    }
     @include respond(tabLand) {
       margin: 1.5rem 0;
     }

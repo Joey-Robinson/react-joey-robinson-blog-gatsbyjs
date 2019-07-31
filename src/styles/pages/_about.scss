@@ -104,6 +104,14 @@
   &--settings {
     font-size: 1.8rem;
     grid-row: 7;
+    @include respond(phone) {
+      margin: 3rem 0 0 0;
+      grid-column: 1;
+      justify-self: left;
+      font-size: 1rem;
+      font-weight: 700;
+      padding: 0 1.5rem;
+    }
   }
   &--resume {
     grid-row: 6;
