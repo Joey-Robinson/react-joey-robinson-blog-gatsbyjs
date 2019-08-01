@@ -18,13 +18,7 @@
       grid-row: 3;
       width: 95vw;
       grid-column: 1;
-      margin: 0 auto;
-    }
-    img,
-    a {
-      display: block;
-      height: auto;
-      width: 100%;
+      justify-self: center;
     }
   }
   &--hg {
