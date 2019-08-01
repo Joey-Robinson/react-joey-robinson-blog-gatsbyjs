@@ -10,6 +10,7 @@
   grid-template-rows: repeat(3, 1fr);
   grid-auto-flow: column;
   @include respond(tabLand) {
+    width: 95%;
     grid-template-columns: 1fr auto;
     grid-template-rows: 5rem 2.5rem 1fr;
   }
@@ -25,6 +26,11 @@
     display: inline-block;
     font-size: 2.3rem;
     padding: 0 1.5rem;
+    @include respond(tabLand) {
+      padding: 0 1.5rem;
+      margin: 0;
+      align-self: start;
+    }
     @include respond(phone) {
       align-self: start;
       grid-column: 1;
@@ -63,7 +69,7 @@
     font-weight: 400;
     @include respond(tabLand) {
       font-size: 1.8rem;
-      padding: 1.5rem 6rem 1.5rem 0;
+      padding: 0 1.5rem;
     }
     @include respond(phone) {
       grid-column: 1;
