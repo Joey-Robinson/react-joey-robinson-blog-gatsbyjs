@@ -29,13 +29,11 @@ const IndexPage = () => (
         <p>
           Hello everyone,{" "}
           <span role="img" aria-label="waving hand emoji">
-            👋
+            👋.
           </span>
-          . Welcome to my personal site. I'm, as stated above, a Front End
-          Developer. I don't know what to write here. I'm not great at talking
-          about myself. So, here's me. I'm a 33 year old developer. I want
-          success in my life and I'm making strides towards that. I work
-          incredibly hard and try to learn as much as I can.
+          I'm Joey Robinson, I'm currently working as a Junior Developer at
+          TrollAndToad in Corbin, KY. I also like to shitpost on twitter and
+          like to read stuff about tech and programming.
           <br />
           <br />
           Here's a picture of my cute dog:
