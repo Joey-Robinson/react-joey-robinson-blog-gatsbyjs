@@ -83,10 +83,11 @@ const Me = () => (
           <li>fetch</li>
           <li>Responsive Design</li>
           <li>Mobile First Design</li>
-          <li>Windows Development Environment</li>
-          <li>MacOS Development Environment</li>
+          <li>jQuery</li>
           <li>Cross Browser Testing</li>
           <li>Terminal</li>
+          <li>PHP 5.3 & PHP 7.0</li>
+          <li>Postgres</li>
         </ul>
       </div>
       <div className="about--contact">

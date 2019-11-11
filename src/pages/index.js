@@ -29,11 +29,11 @@ const IndexPage = () => (
         <p>
           Hello everyone,{" "}
           <span role="img" aria-label="waving hand emoji">
-            👋.
+            👋. &nbsp;
           </span>
-          I'm Joey Robinson, I'm currently working as a Junior Developer at
-          TrollAndToad in Corbin, KY. I also like to shitpost on twitter and
-          like to read stuff about tech and programming.
+          I'm Joey Robinson, I'm currently looking for new opportunities in the
+          development world. I want to express myself through my code and want a
+          company or position that will allow me to do just that.
           <br />
           <br />
           Here's a picture of my cute dog:
